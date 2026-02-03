@@ -1,0 +1,435 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const newsContainer = document.getElementById('news-container');
+    const dateDisplay = document.getElementById('current-date');
+    const yesterdayBtn = document.getElementById('yesterday-btn');
+    const todayBtn = document.getElementById('today-btn');
+    const categoryNav = document.getElementById('category-nav');
+
+    let allNewsData = []; // Store fetched data
+    let currentFilter = { type: 'all', value: null }; // type: 'all' | 'group' | 'specific'
+
+    // Define Allowed Subcategories for Österreich (Order matters!)
+    const allowedSubs = [
+        'Sport', 'Politik', 'Burgenland', 'Kärnten', 'Niederösterreich',
+        'Oberösterreich', 'Salzburg', 'Steiermark', 'Tirol', 'Vorarlberg',
+        'Wien', 'Wirtschaft', 'Chronik', 'Wissenschaft', 'Gesellschaft'
+    ];
+
+    // Helper to format date for display (German)
+    function formatDateDisplay(dateObj) {
+        return dateObj.toLocaleDateString('de-DE', {
+            weekday: 'long',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+    }
+
+    // Helper: Map raw category to Group and Sub-Category
+    function getCategoryGroup(rawCat, url) {
+        // Safe lower case
+        const lower = rawCat ? rawCat.toLowerCase() : '';
+        const isAtDomain = url && (url.includes('.at/') || url.endsWith('.at'));
+
+        // 1. STRICT RULE: Österreich ONLY if .at domain
+        if (isAtDomain) {
+            const group = 'Österreich';
+
+            // Try to find one of the allowed subcategories in the raw string
+            let sub = 'Allgemein';
+            const foundSub = allowedSubs.find(s => lower.includes(s.toLowerCase()));
+
+            if (foundSub) {
+                sub = foundSub;
+            } else {
+                // Fallbacks / Mappings for things not in list
+                if (lower.includes('kultur') || lower.includes('film') || lower.includes('musik')) sub = 'Gesellschaft';
+                else if (lower.includes('finanzen')) sub = 'Wirtschaft';
+                else if (lower.includes('wetter')) sub = 'Chronik'; // or keep as Allgemein/Wetter? User didn't specify Wetter in list, maybe falls to Allgemein or mapped.
+                // If it's just "Österreich" or others, it stays "Allgemein"
+            }
+
+            return { group, sub, original: rawCat };
+        }
+
+        // 2. Non-Austrian Categories (Standard Logic)
+        // Ensure we don't accidentally assign "Österreich" here if it was in the text but not .at (per user rule "alle anderen nicht")
+
+        if (!rawCat) return { group: 'Allgemein', sub: null, original: '' };
+
+        if (lower.includes('wissenschaft') || lower.includes('technik') || lower.includes('science') || lower.includes('ki')) {
+            return { group: 'Wissenschaft', sub: null, original: rawCat };
+        }
+        if (lower.includes('politik') || lower.includes('ausland') || lower.includes('international') || lower.includes('inland')) {
+            return { group: 'Politik', sub: null, original: rawCat };
+        }
+        if (lower.includes('sport')) return { group: 'Sport', sub: null, original: rawCat };
+        if (lower.includes('wirtschaft') || lower.includes('finanzen')) return { group: 'Wirtschaft', sub: null, original: rawCat };
+        if (lower.includes('kultur') || lower.includes('film') || lower.includes('musik') ||
+            lower.includes('gesundheit') || lower.includes('natur') || lower.includes('tier') ||
+            lower.includes('umwelt') || lower.includes('unterhaltung')) {
+            return { group: 'Gesellschaft', sub: null, original: rawCat };
+        }
+        if (lower.includes('wetter')) return { group: 'Wetter', sub: null, original: rawCat };
+        if (lower.includes('chronik')) return { group: 'Chronik', sub: null, original: rawCat };
+
+        // Check if rawCat itself was "Österreich" but not .at -> map to "Ausland" or keep raw? 
+        // User said "alle anderen nicht" belong in category Österreich.
+        // So if rawCat is "Österreich" but url is .de, catch it?
+        if (lower.includes('österreich')) return { group: 'Allgemein', sub: null, original: rawCat }; // Prevent it being a group if logic elsewhere used strictly rawCat
+
+        // Default: use raw category as group
+        return { group: rawCat, sub: null, original: rawCat };
+    }
+
+    // Set initial date in header
+    dateDisplay.textContent = formatDateDisplay(new Date());
+
+    // Fetch News function
+    async function fetchNews(dateParam = null) {
+        newsContainer.innerHTML = '<div class="loading-state">Nachrichten werden geladen...</div>';
+        categoryNav.innerHTML = ''; // Clear buttons on reload
+        currentFilter = { type: 'all', value: null };
+
+        try {
+            let url = '/api/news';
+            if (dateParam) {
+                url += `?date=${dateParam}`;
+            }
+
+            const response = await fetch(url);
+
+            if (!response.ok) {
+                throw new Error('Netzwerkfehler oder keine Daten');
+            }
+
+            const rawData = await response.json();
+
+            // Enrich data with grouping info
+            allNewsData = rawData.map(item => {
+                const groupInfo = getCategoryGroup(item.category || 'Allgemein', item.source_url);
+                return { ...item, ...groupInfo };
+            });
+
+            renderCategoryButtons();
+
+            // Initial render: show all
+            renderNews(allNewsData);
+
+            // Update header date if yesterday was requested
+            if (dateParam === 'yesterday') {
+                const d = new Date();
+                d.setDate(d.getDate() - 1);
+                dateDisplay.textContent = formatDateDisplay(d);
+                yesterdayBtn.style.display = 'none'; // Hide button after clicking
+                todayBtn.style.display = 'block'; // Show 'Today' button
+            } else {
+                // If fetching today (default), ensure Yesterday is shown
+                yesterdayBtn.style.display = 'block';
+                todayBtn.style.display = 'none';
+                dateDisplay.textContent = formatDateDisplay(new Date());
+            }
+
+        } catch (error) {
+            console.error('Fehler:', error);
+            newsContainer.innerHTML = '<div class="error-state">Keine Nachrichten verfügbar. Bitte prüfen Sie später erneut.</div>';
+        }
+    }
+
+    // Render Category Buttons (Groups and Dropdowns)
+    function renderCategoryButtons() {
+        categoryNav.innerHTML = '';
+
+        // 1. "Alle" Button
+        const allBtn = document.createElement('button');
+        allBtn.className = 'category-btn active';
+        allBtn.textContent = 'Alle';
+        allBtn.onclick = () => {
+            setActiveButton(allBtn);
+            currentFilter = { type: 'all', value: null };
+            renderNews(allNewsData);
+        };
+        categoryNav.appendChild(allBtn);
+
+        // 2. Identify Groups and their Sub-Items
+        const groups = {};
+        allNewsData.forEach(item => {
+            if (!groups[item.group]) {
+                groups[item.group] = new Set();
+            }
+            if (item.sub) {
+                groups[item.group].add(item.sub);
+            }
+        });
+
+        // Sort groups alphabetically or by fixed order
+        const prioritiedGroups = ['Österreich', 'Chronik', 'Politik', 'Sport', 'Wirtschaft', 'Wissenschaft', 'Gesellschaft', 'Wetter'];
+        const otherGroups = Object.keys(groups).filter(g => !prioritiedGroups.includes(g)).sort();
+        const sortedGroups = [...prioritiedGroups.filter(g => groups[g]), ...otherGroups];
+
+        // 3. Render Buttons/Dropdowns
+        sortedGroups.forEach(groupName => {
+            const subItems = Array.from(groups[groupName]);
+
+            // Special case: "Österreich" or any group with sub-items gets a dropdown
+            // Limitation: For "Wissenschaft", we merged categories but didn't assign sub-items in mapping (sub was null).
+            // So they will be simple buttons unless I change mapping logic.
+            // Requirement was: Dropdown for Österreich. Merging for others. 
+            // My mapping returns `sub` only for Österreich currently. Correct.
+
+            if (groupName === 'Österreich' && subItems.length > 0) {
+                // Dropdown Structure
+                const dropdown = document.createElement('div');
+                dropdown.className = 'dropdown';
+
+                const dropBtn = document.createElement('button');
+                dropBtn.className = 'dropdown-btn category-btn'; // Add category-btn for base styles
+                dropBtn.innerHTML = `${groupName} <span class="dropdown-arrow">▼</span>`;
+
+                // Toggle Dropdown logic
+                dropBtn.onclick = (e) => {
+                    e.stopPropagation();
+                    // content is defined below, which is fine for closure
+                    const isShown = content.classList.contains('show');
+                    closeDropdowns(); // Close others
+
+                    if (!isShown) {
+                        const rect = dropBtn.getBoundingClientRect();
+                        content.style.top = `${rect.bottom}px`;
+                        content.style.left = `${rect.left}px`;
+                        content.classList.add('show');
+                    }
+                };
+
+                const content = document.createElement('div');
+                content.className = 'dropdown-content';
+
+                // "Alle aus [Group]" option
+                const allLink = document.createElement('a');
+                allLink.href = '#';
+                allLink.textContent = `Alle aus ${groupName}`;
+                allLink.onclick = (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    setActiveButton(dropBtn);
+                    currentFilter = { type: 'group', value: groupName };
+                    renderNews(allNewsData.filter(i => i.group === groupName));
+                    closeDropdowns();
+                };
+                content.appendChild(allLink);
+
+                // Sub-items
+                subItems.sort((a, b) => {
+                    const indexA = allowedSubs.indexOf(a);
+                    const indexB = allowedSubs.indexOf(b);
+                    // If both are in list, sort by index
+                    if (indexA !== -1 && indexB !== -1) return indexA - indexB;
+                    // If only A is in list, A comes first
+                    if (indexA !== -1) return -1;
+                    // If only B is in list, B comes first
+                    if (indexB !== -1) return 1;
+                    // Otherwise sort alphabetically
+                    return a.localeCompare(b);
+                }).forEach(sub => {
+                    const link = document.createElement('a');
+                    link.href = '#';
+                    link.textContent = sub;
+                    link.onclick = (e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        setActiveButton(dropBtn);
+                        currentFilter = { type: 'specific-sub', group: groupName, sub: sub };
+                        renderNews(allNewsData.filter(i => i.group === groupName && i.sub === sub));
+                        closeDropdowns();
+                    };
+                    content.appendChild(link);
+                });
+
+                dropdown.appendChild(dropBtn);
+                dropdown.appendChild(content);
+                categoryNav.appendChild(dropdown);
+
+            } else {
+                // Simple Button (Mergers logic)
+                const btn = document.createElement('button');
+                btn.className = 'category-btn';
+                btn.textContent = groupName;
+                btn.onclick = () => {
+                    setActiveButton(btn);
+                    currentFilter = { type: 'group', value: groupName };
+                    renderNews(allNewsData.filter(i => i.group === groupName));
+                };
+                categoryNav.appendChild(btn);
+            }
+        });
+
+    }
+
+    function closeDropdowns() {
+        document.querySelectorAll('.dropdown-content').forEach(el => el.classList.remove('show'));
+    }
+
+    // Helper: Set active class on buttons
+    function setActiveButton(activeBtn) {
+        document.querySelectorAll('.category-btn, .dropdown-btn').forEach(b => b.classList.remove('active'));
+        // If it's a dropdown button part of a structure, we need to find the button
+        // activeBtn is passed directly.
+        activeBtn.classList.add('active');
+    }
+
+    // Render News function
+    function renderNews(newsData) {
+        newsContainer.innerHTML = '';
+
+        const newsCount = document.getElementById('news-count');
+        if (newsCount) {
+            newsCount.textContent = `Anzahl der Einträge: ${newsData.length}`;
+        }
+
+        if (newsData.length === 0) {
+            newsContainer.innerHTML = '<div class="error-state">Keine Nachrichten in dieser Kategorie.</div>';
+            return;
+        }
+
+        // Group by DISPLAY category (The unified Group Name)
+        // OR by specific sub-category if we want headers to specific?
+        // Let's use the 'group' property for headers to keep it clean, 
+        // OR original category if the user is filtering? 
+        // Requirement: "Kategorien zusammenfassen". So headers should probably use the Group Name.
+
+        const grouped = newsData.reduce((acc, item) => {
+            const cat = item.group || 'Allgemein';
+            if (!acc[cat]) acc[cat] = [];
+            acc[cat].push(item);
+            return acc;
+        }, {});
+
+        for (const [category, items] of Object.entries(grouped)) {
+            const catSection = document.createElement('div');
+            catSection.className = 'news-category';
+
+            const catTitle = document.createElement('div');
+            catTitle.className = 'category-title';
+            // If filtering by specific sub-category (e.g. Steiermark), title "Österreich" is still fine, 
+            // or maybe "Österreich - Steiermark"?
+            // Let's keep it simple: Show Group Name.
+            catTitle.textContent = category;
+            catSection.appendChild(catTitle);
+
+            items.forEach(item => {
+                const article = createNewsItem(item);
+                catSection.appendChild(article);
+            });
+
+            newsContainer.appendChild(catSection);
+        }
+    }
+
+    // Create single news item element
+    function createNewsItem(item) {
+        const el = document.createElement('div');
+        el.className = 'news-item';
+
+        const warningHtml = item.warning
+            ? `<div class="warning-badge">\u26A0 ${item.warning}</div>`
+            : '';
+
+        el.innerHTML = `
+            <div class="news-header">
+                <span class="news-emoji">${item.emoji || '\uD83D\uDCF0'}</span>
+                <span class="news-headline">${item.headline}</span>
+            </div>
+            <div class="news-content">
+                <div class="news-body">
+                    <p class="news-teaser">${item.teaser}</p>
+                    <div class="news-meta">
+                        ${warningHtml}
+                        <a href="${item.source_url}" target="_blank" class="source-link">
+                            ${item.source_name} \u2197
+                        </a>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        // Add Click Listener for Accordion
+        const header = el.querySelector('.news-header');
+        header.addEventListener('click', () => {
+            const content = el.querySelector('.news-content');
+            const isOpen = content.classList.contains('open');
+
+            if (isOpen) {
+                content.classList.remove('open');
+            } else {
+                content.classList.add('open');
+            }
+        });
+
+        return el;
+    }
+
+    // Event Listeners
+    yesterdayBtn.addEventListener('click', () => {
+        fetchNews('yesterday');
+    });
+
+    todayBtn.addEventListener('click', () => {
+        fetchNews(null); // default to today
+    });
+
+    // Initial Load
+    fetchNews();
+
+    // Drag-to-Scroll Logic for Category Nav
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    categoryNav.addEventListener('mousedown', (e) => {
+        isDown = true;
+        categoryNav.classList.add('active');
+        startX = e.pageX - categoryNav.offsetLeft;
+        scrollLeft = categoryNav.scrollLeft;
+    });
+
+    categoryNav.addEventListener('mouseleave', () => {
+        isDown = false;
+        categoryNav.classList.remove('active');
+    });
+
+    categoryNav.addEventListener('mouseup', () => {
+        isDown = false;
+        categoryNav.classList.remove('active');
+    });
+
+    categoryNav.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - categoryNav.offsetLeft;
+        const walk = (x - startX) * 2; // Scroll-fast
+        categoryNav.scrollLeft = scrollLeft - walk;
+    });
+
+    // Back to Top Logic
+    const backToTopBtn = document.getElementById('back-to-top');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            backToTopBtn.classList.add('visible');
+        } else {
+            backToTopBtn.classList.remove('visible');
+        }
+    });
+
+    backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
+    // Close dropdowns when clicking outside
+    document.addEventListener('click', closeDropdowns);
+    // Also update position or close on scroll
+    categoryNav.addEventListener('scroll', closeDropdowns);
+});
