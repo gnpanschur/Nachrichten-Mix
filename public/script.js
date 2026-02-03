@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Helper: Map raw category to Group and Sub-Category
-    function getCategoryGroup(rawCat, url) {
+    function getCategoryGroup(rawCat, url, itemHeadline, itemTeaser) {
         // Safe lower case
         const lower = rawCat ? rawCat.toLowerCase() : '';
         const isAtDomain = url && (url.includes('.at/') || url.endsWith('.at'));
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Fallbacks / Mappings for things not in list
                 if (lower.includes('kultur') || lower.includes('film') || lower.includes('musik')) sub = 'Gesellschaft';
                 else if (lower.includes('finanzen')) sub = 'Wirtschaft';
-                else if (lower.includes('wetter')) sub = 'Chronik'; // or keep as Allgemein/Wetter? User didn't specify Wetter in list, maybe falls to Allgemein or mapped.
+                else if (lower.includes('wetter')) sub = 'Chronik';
                 // If it's just "Österreich" or others, it stays "Allgemein"
             }
 
@@ -53,30 +53,63 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // 2. Non-Austrian Categories (Standard Logic)
-        // Ensure we don't accidentally assign "Österreich" here if it was in the text but not .at (per user rule "alle anderen nicht")
-
         if (!rawCat) return { group: 'Allgemein', sub: null, original: '' };
 
-        if (lower.includes('wissenschaft') || lower.includes('technik') || lower.includes('science') || lower.includes('ki')) {
+        // Wissenschaft
+        // Includes: Archäologie, Bildung, Business & Erfolg (maybe?), Datenschutz
+        // + existing: technik, science, ki
+        if (lower.includes('wissenschaft') || lower.includes('technik') || lower.includes('science') || lower.includes('ki') ||
+            lower.includes('archäologie') || lower.includes('bildung') || lower.includes('datenschutz')) {
             return { group: 'Wissenschaft', sub: null, original: rawCat };
         }
-        if (lower.includes('politik') || lower.includes('ausland') || lower.includes('international') || lower.includes('inland')) {
+
+        // Politik
+        // Includes: Krieg, Medien, Medienkritik, Nahost, Soziales
+        // + existing: ausland, international, inland
+        if (lower.includes('politik') || lower.includes('ausland') || lower.includes('international') || lower.includes('inland') ||
+            lower.includes('krieg') || lower.includes('nahost') || lower.includes('soziales') ||
+            (lower.includes('medien') && !lower.includes('unternehmen'))) { // 'Medien' in Politik context, but 'Medien' also in Wirtschaft? User put Medien in Wirtschaft too. Let's optimize.
             return { group: 'Politik', sub: null, original: rawCat };
         }
-        if (lower.includes('sport')) return { group: 'Sport', sub: null, original: rawCat };
-        if (lower.includes('wirtschaft') || lower.includes('finanzen')) return { group: 'Wirtschaft', sub: null, original: rawCat };
-        if (lower.includes('kultur') || lower.includes('film') || lower.includes('musik') ||
-            lower.includes('gesundheit') || lower.includes('natur') || lower.includes('tier') ||
-            lower.includes('umwelt') || lower.includes('unterhaltung')) {
+
+        // Wirtschaft
+        // Includes: Medien, Netzwerk, Personalia, Unternehmen, Business & Erfolg
+        // + existing: finanzen
+        if (lower.includes('wirtschaft') || lower.includes('finanzen') || lower.includes('unternehmen') ||
+            lower.includes('netzwerk') || lower.includes('personalia') || lower.includes('business')) {
+            return { group: 'Wirtschaft', sub: null, original: rawCat };
+        }
+
+        // Gesellschaft
+        // Includes: Alltag & Lifestyle, Bezirke, Bücher, Dating, Digital Lifestyle, Familie, Glücksspiel, Haus & Garten, Hilfe, Korrekturen, Lifestyle, Literatur, Reisen, Tourismus, Weltgeschehen
+        // + existing: kultur, film, musik, gesundheit, natur, tier, umwelt, unterhaltung
+        const gesellschaftKeywords = [
+            'gesellschaft', 'kultur', 'film', 'musik', 'gesundheit', 'natur', 'tier', 'umwelt', 'unterhaltung',
+            'alltag', 'lifestyle', 'bezirke', 'bücher', 'dating', 'familie', 'glücksspiel', 'haus', 'garten',
+            'hilfe', 'korrekturen', 'literatur', 'reisen', 'tourismus', 'weltgeschehen', 'kunstmarkt'
+        ];
+        if (gesellschaftKeywords.some(k => lower.includes(k))) {
             return { group: 'Gesellschaft', sub: null, original: rawCat };
         }
+
+        // Sport
+        if (lower.includes('sport')) return { group: 'Sport', sub: null, original: rawCat };
+
+        // Wetter
         if (lower.includes('wetter')) return { group: 'Wetter', sub: null, original: rawCat };
+
+        // Chronik
         if (lower.includes('chronik')) return { group: 'Chronik', sub: null, original: rawCat };
+
+        // Allgemein (Explicit from User)
+        // Includes: Afrika, Audio/Podcasts
+        if (lower.includes('afrika') || lower.includes('audio') || lower.includes('podcast')) {
+            return { group: 'Allgemein', sub: null, original: rawCat };
+        }
 
         // Check if rawCat itself was "Österreich" but not .at -> map to "Ausland" or keep raw? 
         // User said "alle anderen nicht" belong in category Österreich.
-        // So if rawCat is "Österreich" but url is .de, catch it?
-        if (lower.includes('österreich')) return { group: 'Allgemein', sub: null, original: rawCat }; // Prevent it being a group if logic elsewhere used strictly rawCat
+        if (lower.includes('österreich')) return { group: 'Allgemein', sub: null, original: rawCat };
 
         // Default: use raw category as group
         return { group: rawCat, sub: null, original: rawCat };
@@ -107,7 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Enrich data with grouping info
             allNewsData = rawData.map(item => {
-                const groupInfo = getCategoryGroup(item.category || 'Allgemein', item.source_url);
+                const groupInfo = getCategoryGroup(item.category || 'Allgemein', item.source_url, item.headline, item.teaser);
                 return { ...item, ...groupInfo };
             });
 
@@ -292,11 +325,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // Group by DISPLAY category (The unified Group Name)
-        // OR by specific sub-category if we want headers to specific?
-        // Let's use the 'group' property for headers to keep it clean, 
-        // OR original category if the user is filtering? 
-        // Requirement: "Kategorien zusammenfassen". So headers should probably use the Group Name.
-
         const grouped = newsData.reduce((acc, item) => {
             const cat = item.group || 'Allgemein';
             if (!acc[cat]) acc[cat] = [];
@@ -310,11 +338,38 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const catTitle = document.createElement('div');
             catTitle.className = 'category-title';
-            // If filtering by specific sub-category (e.g. Steiermark), title "Österreich" is still fine, 
-            // or maybe "Österreich - Steiermark"?
-            // Let's keep it simple: Show Group Name.
             catTitle.textContent = category;
             catSection.appendChild(catTitle);
+
+            // SORTING LOGIC: Prioritize Football in "Österreich > Sport"
+            items.sort((a, b) => {
+                // Check if items are "Sport" (under Österreich)
+                const isSportA = (a.group === 'Österreich' && a.sub === 'Sport');
+                const isSportB = (b.group === 'Österreich' && b.sub === 'Sport');
+
+                // If both are Sport, check for Football content
+                if (isSportA && isSportB) {
+                    const footballKeywords = [
+                        'fußball', 'fussball', 'soccer', 'bundesliga', 'oefb', 'öfb', 'fifa', 'uefa', 'kicker', 'ball', 'tor', 'match', 'spiel', 'lig',
+                        'champions league', 'europa league', 'conference league', 'nationalteam', 'teamchef',
+                        'rapid', 'sturm', 'austria wien', 'lask', 'altach', 'hartberg', 'wolfsberg', 'wac', 'klagenfurt', 'blau-weiß', 'gak', 'red bull', 'salzburg', 'liefering', 'svr', 'ried', 'admira', 'vienna', 'sportclub',
+                        'tabellenführer', 'meisterschaft', 'cup', 'abstieg', 'aufstieg', 'relegation'
+                    ];
+
+                    // Safe text concatenation
+                    const txtA = ((a.headline || '') + ' ' + (a.teaser || '')).toLowerCase();
+                    const txtB = ((b.headline || '') + ' ' + (b.teaser || '')).toLowerCase();
+
+                    const aIsFootball = footballKeywords.some(k => txtA.includes(k));
+                    const bIsFootball = footballKeywords.some(k => txtB.includes(k));
+
+                    if (aIsFootball && !bIsFootball) return -1; // A (Football) comes first
+                    if (!aIsFootball && bIsFootball) return 1;  // B (Football) comes first
+                }
+
+                // Keep original order otherwise
+                return 0;
+            });
 
             items.forEach(item => {
                 const article = createNewsItem(item);
