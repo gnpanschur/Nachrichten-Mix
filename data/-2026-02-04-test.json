@@ -1,0 +1,22 @@
+[
+  {
+    "category": "Test",
+    "_info": "Dieser Text ist nur in der Datei sichtbar, nicht in der App.",
+    "headline": "Wie kann ich einen Artikel einstellen:",
+    "teaser": "Überlege welche Kategrie, Überschrift, Text, / source_name = Ersteller, url zum Ersteller, / ganz oben und unten [...]. / Zwischen den einzellnen Artikel ein Komma, / source_name ist Ersteller (Name, Firma)  / Name der Datei: 2026-02-04-test.json  ",
+    "source_name": "Test (verweist auf die URL) Achtng: .at landet in Österreich",
+    "source_url": "https://example.com",
+    "emoji": "🧪",
+    "warning": ""
+  },
+  {
+    "category": "Test",
+    "_info": "Dieser Eintrag wird durch 'ignore': true vom Skript ausgeblendet. Nur für Bearbeiter sichtbar.",
+    "headline": "2Dies ist ein 2ter Test-Artikel aus einer zweiten Datei",
+    "teaser": "Wenn auch dieser Artikel erscheint, funktioniert das Laden mehrerer JSON-Dateien erfolgreich.",
+    "source_name": "von wem?",
+    "source_url": "https://example.com",
+    "emoji": "🧪",
+    "warning": ""
+  }
+]
