@@ -208,7 +208,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Vibration feedback (mobile)
         if (navigator.vibrate) navigator.vibrate(50);
 
-        alert(`"${value}" ist jetzt dein Favorit!`);
+        showToast(`"${value}" ist jetzt dein Favorit`);
     }
 
 
@@ -239,11 +239,11 @@ document.addEventListener('DOMContentLoaded', () => {
             // Interaction: Long Press to Remove? Or just leave it.
             // Let's add long press to remove for convenience.
             addLongPressListener(favBtn, () => {
-                if (confirm('Favorit entfernen?')) {
+                showConfirm('Favorit entfernen', () => {
                     favoriteConfig = null;
                     localStorage.removeItem('newsAppFavorite');
                     renderCategoryButtons();
-                }
+                });
             });
 
             categoryNav.appendChild(favBtn);
@@ -679,5 +679,61 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
         });
+    }
+
+    // UI Helpers
+    function showToast(message) {
+        const toast = document.getElementById('toast-notification');
+        if (!toast) return;
+
+        toast.textContent = message;
+        toast.classList.remove('hidden');
+        toast.classList.add('show');
+
+        setTimeout(() => {
+            toast.classList.remove('show');
+            setTimeout(() => {
+                toast.classList.add('hidden');
+            }, 300); // match transition
+        }, 3000); // Show for 3 seconds
+    }
+
+    function showConfirm(message, onConfirm) {
+        const modal = document.getElementById('confirm-modal');
+        const msgEl = document.getElementById('modal-message');
+        const confirmBtn = document.getElementById('modal-confirm');
+        const cancelBtn = document.getElementById('modal-cancel');
+
+        if (!modal || !msgEl || !confirmBtn || !cancelBtn) return;
+
+        msgEl.textContent = message;
+        modal.classList.remove('hidden');
+        requestAnimationFrame(() => modal.classList.add('show')); // Anim frame for transition
+
+        const close = () => {
+            modal.classList.remove('show');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+            }, 200);
+            cleanup();
+        };
+
+        const handleConfirm = () => {
+            if (onConfirm) onConfirm();
+            close();
+        };
+
+        const handleCancel = () => {
+            close();
+        };
+
+        // Event Listeners (cleanup needed to avoid stacking)
+        const cleanup = () => {
+            confirmBtn.removeEventListener('click', handleConfirm);
+            cancelBtn.removeEventListener('click', handleCancel);
+        };
+
+        confirmBtn.addEventListener('click', handleConfirm);
+        cancelBtn.addEventListener('click', handleCancel);
     }
 });
