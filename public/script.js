@@ -176,21 +176,78 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // Load Favorite from Storage
+    let favoriteConfig = null;
+    try {
+        const storedFav = localStorage.getItem('newsAppFavorite');
+        if (storedFav) {
+            favoriteConfig = JSON.parse(storedFav);
+        }
+    } catch (e) {
+        console.error('Error reading favorite:', e);
+    }
+
+    // Helper to set Favorite
+    function setFavorite(type, value, group = null) {
+        // If clicking the current favorite again, maybe ask to remove? 
+        // For now, just overwrite.
+        const newFav = { type, value, group };
+
+        // Toggle off if same? (Optional)
+        // if (favoriteConfig && favoriteConfig.value === value) {
+        //     favoriteConfig = null;
+        //     localStorage.removeItem('newsAppFavorite');
+        // } else { ... }
+
+        favoriteConfig = newFav;
+        localStorage.setItem('newsAppFavorite', JSON.stringify(favoriteConfig));
+
+        // Re-render buttons to update UI
+        renderCategoryButtons();
+
+        // Vibration feedback (mobile)
+        if (navigator.vibrate) navigator.vibrate(50);
+
+        alert(`"${value}" ist jetzt dein Favorit!`);
+    }
+
+
     // Render Category Buttons (Groups and Dropdowns)
     function renderCategoryButtons() {
         categoryNav.innerHTML = '';
 
-        // 1. "Alle" Button
-        const allBtn = document.createElement('button');
-        allBtn.className = 'category-btn active';
-        allBtn.textContent = 'Alle';
-        allBtn.onclick = () => {
-            setActiveButton(allBtn);
-            currentFilter = { type: 'all', value: null };
-            renderNews(allNewsData);
-            if (searchInput) searchInput.value = ''; // Clear search on category click
-        };
-        categoryNav.appendChild(allBtn);
+        // 0. Render Favorite Button (if exists)
+        if (favoriteConfig) {
+            const favBtn = document.createElement('button');
+            favBtn.className = 'category-btn favorite';
+            favBtn.textContent = favoriteConfig.value + ' \u2605'; // Name + Star
+
+            // Interaction: Click to Filter
+            favBtn.onclick = () => {
+                setActiveButton(favBtn);
+                // Apply Filter Logic based on saved config
+                if (favoriteConfig.type === 'group') {
+                    currentFilter = { type: 'group', value: favoriteConfig.value };
+                    renderNews(allNewsData.filter(i => i.group === favoriteConfig.value));
+                } else if (favoriteConfig.type === 'specific-sub') {
+                    currentFilter = { type: 'specific-sub', group: favoriteConfig.group, sub: favoriteConfig.value };
+                    renderNews(allNewsData.filter(i => i.group === favoriteConfig.group && i.sub === favoriteConfig.value));
+                }
+                if (searchInput) searchInput.value = '';
+            };
+
+            // Interaction: Long Press to Remove? Or just leave it.
+            // Let's add long press to remove for convenience.
+            addLongPressListener(favBtn, () => {
+                if (confirm('Favorit entfernen?')) {
+                    favoriteConfig = null;
+                    localStorage.removeItem('newsAppFavorite');
+                    renderCategoryButtons();
+                }
+            });
+
+            categoryNav.appendChild(favBtn);
+        }
 
         // 2. Identify Groups and their Sub-Items
         const groups = {};
@@ -212,27 +269,20 @@ document.addEventListener('DOMContentLoaded', () => {
         sortedGroups.forEach(groupName => {
             const subItems = Array.from(groups[groupName]);
 
-            // Special case: "Österreich" or any group with sub-items gets a dropdown
-            // Limitation: For "Wissenschaft", we merged categories but didn't assign sub-items in mapping (sub was null).
-            // So they will be simple buttons unless I change mapping logic.
-            // Requirement was: Dropdown for Österreich. Merging for others. 
-            // My mapping returns `sub` only for Österreich currently. Correct.
-
             if (groupName === 'Österreich' && subItems.length > 0) {
                 // Dropdown Structure
                 const dropdown = document.createElement('div');
                 dropdown.className = 'dropdown';
 
                 const dropBtn = document.createElement('button');
-                dropBtn.className = 'dropdown-btn category-btn'; // Add category-btn for base styles
+                dropBtn.className = 'dropdown-btn category-btn';
                 dropBtn.innerHTML = `${groupName} <span class="dropdown-arrow">▼</span>`;
 
                 // Toggle Dropdown logic
                 dropBtn.onclick = (e) => {
                     e.stopPropagation();
-                    // content is defined below, which is fine for closure
                     const isShown = content.classList.contains('show');
-                    closeDropdowns(); // Close others
+                    closeDropdowns();
 
                     if (!isShown) {
                         const rect = dropBtn.getBoundingClientRect();
@@ -241,6 +291,11 @@ document.addEventListener('DOMContentLoaded', () => {
                         content.classList.add('show');
                     }
                 };
+
+                // Add Long Press to Dropdown Header (Group Favorite)
+                addLongPressListener(dropBtn, () => {
+                    setFavorite('group', groupName, null);
+                });
 
                 const content = document.createElement('div');
                 content.className = 'dropdown-content';
@@ -255,7 +310,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     setActiveButton(dropBtn);
                     currentFilter = { type: 'group', value: groupName };
                     renderNews(allNewsData.filter(i => i.group === groupName));
-                    if (searchInput) searchInput.value = ''; // Clear search
+                    if (searchInput) searchInput.value = '';
                     closeDropdowns();
                 };
                 content.appendChild(allLink);
@@ -264,27 +319,33 @@ document.addEventListener('DOMContentLoaded', () => {
                 subItems.sort((a, b) => {
                     const indexA = allowedSubs.indexOf(a);
                     const indexB = allowedSubs.indexOf(b);
-                    // If both are in list, sort by index
                     if (indexA !== -1 && indexB !== -1) return indexA - indexB;
-                    // If only A is in list, A comes first
                     if (indexA !== -1) return -1;
-                    // If only B is in list, B comes first
                     if (indexB !== -1) return 1;
-                    // Otherwise sort alphabetically
                     return a.localeCompare(b);
                 }).forEach(sub => {
                     const link = document.createElement('a');
                     link.href = '#';
                     link.textContent = sub;
+
+                    // Click: Filter
                     link.onclick = (e) => {
                         e.preventDefault();
                         e.stopPropagation();
                         setActiveButton(dropBtn);
                         currentFilter = { type: 'specific-sub', group: groupName, sub: sub };
                         renderNews(allNewsData.filter(i => i.group === groupName && i.sub === sub));
-                        if (searchInput) searchInput.value = ''; // Clear search
+                        if (searchInput) searchInput.value = '';
                         closeDropdowns();
                     };
+
+                    // Long Press to set Sub-Category as Favorite
+                    // Note: 'a' tags need special handling or just standard listener
+                    addLongPressListener(link, () => {
+                        setFavorite('specific-sub', sub, groupName);
+                        closeDropdowns();
+                    });
+
                     content.appendChild(link);
                 });
 
@@ -301,12 +362,69 @@ document.addEventListener('DOMContentLoaded', () => {
                     setActiveButton(btn);
                     currentFilter = { type: 'group', value: groupName };
                     renderNews(allNewsData.filter(i => i.group === groupName));
-                    if (searchInput) searchInput.value = ''; // Clear search
+                    if (searchInput) searchInput.value = '';
                 };
+
+                // Add Long Press
+                addLongPressListener(btn, () => {
+                    setFavorite('group', groupName, null);
+                });
+
                 categoryNav.appendChild(btn);
             }
         });
 
+        // 1. "Alle" Button (Now at the end)
+        const allBtn = document.createElement('button');
+        allBtn.className = 'category-btn active'; // Default active, logic updates this later
+        allBtn.textContent = 'Alle';
+        allBtn.onclick = () => {
+            setActiveButton(allBtn);
+            currentFilter = { type: 'all', value: null };
+            renderNews(allNewsData);
+            if (searchInput) searchInput.value = '';
+        };
+        categoryNav.appendChild(allBtn);
+
+    }
+
+    // Helper: Add Long Press Listener (Works for Touch and Mouse)
+    function addLongPressListener(element, callback) {
+        let timer;
+        const pressDuration = 800; // 800ms
+
+        const start = (e) => {
+            // e.preventDefault(); // Don't prevent default immediately, might be a click
+            timer = setTimeout(() => {
+                if (navigator.vibrate) navigator.vibrate(50); // Feedback
+                callback();
+                // Prevent click firing after long press?
+                // This is tricky. Often handled by a flag.
+                element.dataset.longPressed = "true";
+            }, pressDuration);
+        };
+
+        const end = (e) => {
+            if (timer) clearTimeout(timer);
+        };
+
+        const clickCheck = (e) => {
+            if (element.dataset.longPressed === "true") {
+                e.preventDefault();
+                e.stopPropagation();
+                element.dataset.longPressed = "false"; // Reset
+            }
+        };
+
+        element.addEventListener('mousedown', start);
+        element.addEventListener('touchstart', start, { passive: true });
+
+        element.addEventListener('mouseup', end);
+        element.addEventListener('mouseleave', end);
+        element.addEventListener('touchend', end);
+
+        // Intercept click if long press happened
+        element.addEventListener('click', clickCheck, { capture: true });
     }
 
     function closeDropdowns() {
@@ -542,6 +660,22 @@ document.addEventListener('DOMContentLoaded', () => {
                     renderNews(allNewsData.filter(i => i.group === currentFilter.group && i.sub === currentFilter.sub));
                     const dropBtn = Array.from(document.querySelectorAll('.dropdown-btn')).find(b => b.innerText.includes(currentFilter.group));
                     if (dropBtn) dropBtn.classList.add('active');
+                }
+            }
+        });
+    }
+
+    // Fullscreen Logic
+    const fullscreenBtn = document.getElementById('fullscreen-btn');
+    if (fullscreenBtn) {
+        fullscreenBtn.addEventListener('click', () => {
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen().catch((err) => {
+                    console.error(`Error attempting to enable fullscreen: ${err.message}`);
+                });
+            } else {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
                 }
             }
         });

@@ -57,40 +57,101 @@ body {
     margin-bottom: 0.25rem;
 }
 
-.date-display {
-    font-size: 0.9rem;
-    color: #94a3b8;
-    margin-bottom: 0.5rem;
+.header-title-row {
+    position: relative;
+    /* Enable absolute positioning for children */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.25rem;
+    height: 40px;
+    /* Reserve space */
 }
 
-/* Search Container */
-.search-container {
+/* Remove margin from h1 inside the row to avoid conflict */
+.header-title-row h1 {
+    margin-bottom: 0;
+    line-height: 1.2;
+}
+
+.fullscreen-btn {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 1px solid #4ade80;
+    /* Green border */
+    color: #4ade80;
+    /* Green text */
+    font-size: 0.7rem;
+    /* Slightly smaller to fit */
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 4px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.fullscreen-btn:hover {
+    background: rgba(74, 222, 128, 0.1);
+    /* Light green background */
+    border-color: #4ade80;
+}
+
+/* Compact Search Row */
+.search-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
     margin: 0.5rem 0 1rem;
-    padding: 0 1rem;
+    padding: 0 0.5rem;
+}
+
+.hint-small {
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.2;
+    flex: 1;
+    /* Allow text to take space or wrap if needed */
     text-align: center;
+    min-width: 60px;
+    /* Prevent crushing */
+}
+
+/* Center input has fixed/max width */
+.search-wrapper {
+    flex: 0 1 140px;
+    /* Shrink/Grow but aim for 140px */
 }
 
 #search-input {
     width: 100%;
-    max-width: 400px;
-    padding: 10px 16px;
-    border-radius: 20px;
+    padding: 6px 10px;
+    /* Smaller padding */
+    border-radius: 15px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     background-color: rgba(255, 255, 255, 0.1);
     color: var(--white);
-    font-size: 1rem;
+    font-size: 0.9rem;
     outline: none;
-    transition: all 0.2s;
     text-align: center;
+    transition: all 0.2s;
 }
 
 #search-input::placeholder {
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.4);
 }
 
 #search-input:focus {
     background-color: rgba(255, 255, 255, 0.2);
     border-color: var(--accent-color);
+    width: 100%;
+    /* Ensure it stays put */
 }
 
 /* Category Nav */
@@ -133,6 +194,22 @@ body {
     background-color: var(--accent-color);
     border-color: var(--accent-color);
     color: var(--white);
+}
+
+.category-btn.favorite {
+    background-color: var(--warning-color);
+    border-color: var(--warning-color);
+    color: var(--white);
+    margin-right: 0.5rem;
+    /* Separate from "Alle" */
+    font-weight: bold;
+}
+
+.category-btn.favorite:hover,
+.category-btn.favorite.active {
+    background-color: #dc2626;
+    /* Darker Red */
+    border-color: #dc2626;
 }
 
 /* Dropdown Styles */
