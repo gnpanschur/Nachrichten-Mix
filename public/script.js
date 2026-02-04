@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const yesterdayBtn = document.getElementById('yesterday-btn');
     const todayBtn = document.getElementById('today-btn');
     const categoryNav = document.getElementById('category-nav');
+    const searchInput = document.getElementById('search-input');
 
     let allNewsData = []; // Store fetched data
     let currentFilter = { type: 'all', value: null }; // type: 'all' | 'group' | 'specific'
@@ -59,15 +60,16 @@ document.addEventListener('DOMContentLoaded', () => {
         // Includes: Archäologie, Bildung, Business & Erfolg (maybe?), Datenschutz
         // + existing: technik, science, ki
         if (lower.includes('wissenschaft') || lower.includes('technik') || lower.includes('science') || lower.includes('ki') ||
-            lower.includes('archäologie') || lower.includes('bildung') || lower.includes('datenschutz')) {
+            lower.includes('archäologie') || lower.includes('bildung') || lower.includes('datenschutz') ||
+            lower.includes('it-sicherheit') || lower.includes('technologie')) {
             return { group: 'Wissenschaft', sub: null, original: rawCat };
         }
 
         // Politik
-        // Includes: Krieg, Medien, Medienkritik, Nahost, Soziales
+        // Includes: Krieg, Medien, Medienkritik, Nahost, Soziales, Militär
         // + existing: ausland, international, inland
         if (lower.includes('politik') || lower.includes('ausland') || lower.includes('international') || lower.includes('inland') ||
-            lower.includes('krieg') || lower.includes('nahost') || lower.includes('soziales') ||
+            lower.includes('krieg') || lower.includes('nahost') || lower.includes('soziales') || lower.includes('militär') ||
             (lower.includes('medien') && !lower.includes('unternehmen'))) { // 'Medien' in Politik context, but 'Medien' also in Wirtschaft? User put Medien in Wirtschaft too. Let's optimize.
             return { group: 'Politik', sub: null, original: rawCat };
         }
@@ -83,10 +85,12 @@ document.addEventListener('DOMContentLoaded', () => {
         // Gesellschaft
         // Includes: Alltag & Lifestyle, Bezirke, Bücher, Dating, Digital Lifestyle, Familie, Glücksspiel, Haus & Garten, Hilfe, Korrekturen, Lifestyle, Literatur, Reisen, Tourismus, Weltgeschehen
         // + existing: kultur, film, musik, gesundheit, natur, tier, umwelt, unterhaltung
+        // + new: debatten, kunst, persönliches, zeitgeist ("Kunst und Architektur" covered by "kunst")
         const gesellschaftKeywords = [
             'gesellschaft', 'kultur', 'film', 'musik', 'gesundheit', 'natur', 'tier', 'umwelt', 'unterhaltung',
             'alltag', 'lifestyle', 'bezirke', 'bücher', 'dating', 'familie', 'glücksspiel', 'haus', 'garten',
-            'hilfe', 'korrekturen', 'literatur', 'reisen', 'tourismus', 'weltgeschehen', 'kunstmarkt'
+            'hilfe', 'korrekturen', 'literatur', 'reisen', 'tourismus', 'weltgeschehen', 'kunstmarkt',
+            'debatten', 'kunst', 'persönliches', 'zeitgeist'
         ];
         if (gesellschaftKeywords.some(k => lower.includes(k))) {
             return { group: 'Gesellschaft', sub: null, original: rawCat };
@@ -102,8 +106,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (lower.includes('chronik')) return { group: 'Chronik', sub: null, original: rawCat };
 
         // Allgemein (Explicit from User)
-        // Includes: Afrika, Audio/Podcasts
-        if (lower.includes('afrika') || lower.includes('audio') || lower.includes('podcast')) {
+        // Includes: Afrika, Audio/Podcasts, Lotto, Service
+        if (lower.includes('afrika') || lower.includes('audio') || lower.includes('podcast') ||
+            lower.includes('lotto') || lower.includes('service')) {
             return { group: 'Allgemein', sub: null, original: rawCat };
         }
 
@@ -139,10 +144,12 @@ document.addEventListener('DOMContentLoaded', () => {
             const rawData = await response.json();
 
             // Enrich data with grouping info
-            allNewsData = rawData.map(item => {
-                const groupInfo = getCategoryGroup(item.category || 'Allgemein', item.source_url, item.headline, item.teaser);
-                return { ...item, ...groupInfo };
-            });
+            allNewsData = rawData
+                .filter(item => !item.ignore) // Skip items marked with "ignore": true
+                .map(item => {
+                    const groupInfo = getCategoryGroup(item.category || 'Allgemein', item.source_url, item.headline, item.teaser);
+                    return { ...item, ...groupInfo };
+                });
 
             renderCategoryButtons();
 
@@ -181,6 +188,7 @@ document.addEventListener('DOMContentLoaded', () => {
             setActiveButton(allBtn);
             currentFilter = { type: 'all', value: null };
             renderNews(allNewsData);
+            if (searchInput) searchInput.value = ''; // Clear search on category click
         };
         categoryNav.appendChild(allBtn);
 
@@ -247,6 +255,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     setActiveButton(dropBtn);
                     currentFilter = { type: 'group', value: groupName };
                     renderNews(allNewsData.filter(i => i.group === groupName));
+                    if (searchInput) searchInput.value = ''; // Clear search
                     closeDropdowns();
                 };
                 content.appendChild(allLink);
@@ -273,6 +282,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         setActiveButton(dropBtn);
                         currentFilter = { type: 'specific-sub', group: groupName, sub: sub };
                         renderNews(allNewsData.filter(i => i.group === groupName && i.sub === sub));
+                        if (searchInput) searchInput.value = ''; // Clear search
                         closeDropdowns();
                     };
                     content.appendChild(link);
@@ -291,6 +301,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     setActiveButton(btn);
                     currentFilter = { type: 'group', value: groupName };
                     renderNews(allNewsData.filter(i => i.group === groupName));
+                    if (searchInput) searchInput.value = ''; // Clear search
                 };
                 categoryNav.appendChild(btn);
             }
@@ -341,14 +352,18 @@ document.addEventListener('DOMContentLoaded', () => {
             catTitle.textContent = category;
             catSection.appendChild(catTitle);
 
-            // SORTING LOGIC: Prioritize Football in "Österreich > Sport"
+            // SORTING LOGIC: Prioritize Football in "Sport" (General or Österreich)
             items.sort((a, b) => {
-                // Check if items are "Sport" (under Österreich)
-                const isSportA = (a.group === 'Österreich' && a.sub === 'Sport');
-                const isSportB = (b.group === 'Österreich' && b.sub === 'Sport');
+                // Check if items are "Sport"
+                const isSportA = (a.group === 'Sport' || (a.group === 'Österreich' && a.sub === 'Sport'));
+                const isSportB = (b.group === 'Sport' || (b.group === 'Österreich' && b.sub === 'Sport'));
 
                 // If both are Sport, check for Football content
                 if (isSportA && isSportB) {
+                    // PRIORITIZE ICON: Check for football emoji
+                    if (a.emoji === '⚽' && b.emoji !== '⚽') return -1;
+                    if (a.emoji !== '⚽' && b.emoji === '⚽') return 1;
+
                     const footballKeywords = [
                         'fußball', 'fussball', 'soccer', 'bundesliga', 'oefb', 'öfb', 'fifa', 'uefa', 'kicker', 'ball', 'tor', 'match', 'spiel', 'lig',
                         'champions league', 'europa league', 'conference league', 'nationalteam', 'teamchef',
@@ -487,4 +502,48 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('click', closeDropdowns);
     // Also update position or close on scroll
     categoryNav.addEventListener('scroll', closeDropdowns);
+
+    // Search Logic
+    if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase().trim();
+
+            if (query.length > 0) {
+                // Filter all news (ignore current category filter to search globally)
+                const filtered = allNewsData.filter(item => {
+                    const headline = (item.headline || '').toLowerCase();
+                    const teaser = (item.teaser || '').toLowerCase();
+                    return headline.includes(query) || teaser.includes(query);
+                });
+                renderNews(filtered);
+                // Remove active class from buttons to indicate custom filter
+                document.querySelectorAll('.category-btn, .dropdown-btn').forEach(b => b.classList.remove('active'));
+            } else {
+                // Return to current filter view
+                if (currentFilter.type === 'all') {
+                    renderNews(allNewsData);
+                    // Highlight Alle
+                    const allBtn = Array.from(document.querySelectorAll('.category-btn')).find(b => b.textContent === 'Alle');
+                    if (allBtn) allBtn.classList.add('active');
+                } else if (currentFilter.type === 'group') {
+                    renderNews(allNewsData.filter(i => i.group === currentFilter.value));
+                    // Highlight group button... slightly complex to find exact ref, but logic holds.
+                    // Ideally we should store reference to active button, but for now simple restore is okay.
+                    // Let's try to restore active class by finding text content?
+                    const btn = Array.from(document.querySelectorAll('.category-btn')).find(b => b.textContent === currentFilter.value);
+                    if (btn) btn.classList.add('active');
+
+                    // Also handle dropdowns? 
+                    // If it was a dropdown, currentFilter.value is the group name.
+                    const dropBtn = Array.from(document.querySelectorAll('.dropdown-btn')).find(b => b.innerText.includes(currentFilter.value));
+                    if (dropBtn) dropBtn.classList.add('active');
+
+                } else if (currentFilter.type === 'specific-sub') {
+                    renderNews(allNewsData.filter(i => i.group === currentFilter.group && i.sub === currentFilter.sub));
+                    const dropBtn = Array.from(document.querySelectorAll('.dropdown-btn')).find(b => b.innerText.includes(currentFilter.group));
+                    if (dropBtn) dropBtn.classList.add('active');
+                }
+            }
+        });
+    }
 });
