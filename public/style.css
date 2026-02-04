@@ -84,15 +84,19 @@ body {
     /* Green border */
     color: #4ade80;
     /* Green text */
-    font-size: 0.7rem;
-    /* Slightly smaller to fit */
+    /* Green text */
+    font-size: 0.6rem;
+    /* Smaller */
+    line-height: 1;
+    /* Tight line height */
     text-transform: uppercase;
     cursor: pointer;
     border-radius: 4px;
-    padding: 4px 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 2px 4px;
+    /* Smaller padding */
+    display: table;
+    /* allow multiline text easily, or keep flex but add text-align */
+    text-align: center;
     transition: all 0.2s;
 }
 
@@ -113,7 +117,7 @@ body {
 }
 
 .hint-small {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     color: rgba(255, 255, 255, 0.6);
     line-height: 1.2;
     flex: 1;
@@ -314,7 +318,7 @@ body {
 }
 
 .news-header {
-    padding: 1rem;
+    padding: 0.5rem;
     display: flex;
     align-items: flex-start;
     /* Align emoji/text to top */
@@ -325,12 +329,12 @@ body {
 
 .news-emoji {
     font-size: 1.5rem;
-    margin-right: 1rem;
+    margin-right: 0.5rem;
     line-height: 1.2;
 }
 
 .news-headline {
-    font-size: 1.1rem;
+    font-size: 1.0rem;
     font-weight: 500;
     line-height: 1.4;
     flex: 1;
