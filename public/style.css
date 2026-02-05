@@ -77,9 +77,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0;
     height: 40px;
     /* Reserve space */
+}
+
+.date-display {
+    margin: 0;
+    line-height: 1.0;
+    padding-bottom: 0.25rem;
+    font-size: 0.85rem;
 }
 
 /* Remove margin from h1 inside the row to avoid conflict */
