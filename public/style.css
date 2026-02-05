@@ -43,12 +43,26 @@ body {
 .app-header {
     background-color: var(--primary-color);
     color: var(--white);
-    padding: 1rem 0;
+    padding: 1rem 0 0.5rem 0;
+    /* Reduced bottom padding */
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Box shadow removed here, moved to sticky wrapper if needed, or keep? 
+       If header scrolls away, shadow should be on the sticky part. */
+    /* position: sticky;  <-- REMOVED */
+    /* top: 0; */
+    z-index: 1000;
+}
+
+.category-sticky-wrapper {
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 999;
+    /* Just below modals/toasts */
+    background-color: var(--primary-color);
+    /* Match header */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding-bottom: 0.5rem;
+    /* Add some spacing */
 }
 
 .app-header h1 {
