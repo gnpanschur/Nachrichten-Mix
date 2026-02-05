@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nachrichten-Mix</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="app-header">
+        <div class="container">
+            <div class="header-title-row">
+                <h1>Nachrichten-Mix</h1>
+                <button id="fullscreen-btn" class="fullscreen-btn" aria-label="Vollbildmodus">Full<br>Screen</button>
+            </div>
+            <p id="current-date" class="date-display"></p>
+            <div class="search-row">
+                <span class="hint-small">Tippe auf die Nachricht, um den Text zu öffnen</span>
+                <div class="search-wrapper">
+                    <input type="text" id="search-input" placeholder="Suchen..." aria-label="Suchen">
+                </div>
+                <span class="hint-small">Kategorie 1 Sekunde gedrückt halten → Favorit</span>
+            </div>
+            <div id="category-nav" class="scroll-nav">
+                <!-- Category buttons will be injected here -->
+            </div>
+        </div>
+    </header>
+
+    <main class="app-main">
+        <div class="container" id="news-container">
+            <!-- News items will be injected here -->
+            <div class="loading-state">Lade Nachrichten...</div>
+        </div>
+    </main>
+
+    <footer class="app-footer">
+        <div class="container">
+            <button id="yesterday-btn" class="footer-btn">Nachrichten von Gestern</button>
+            <button id="today-btn" class="footer-btn" style="display: none;">Nachrichten von Heute</button>
+            <div class="impressum">
+                <a href="impressum.html">Impressum</a>
+            </div>
+            <div id="news-count" style="margin-top: 1rem; font-size: 0.85rem; color: #64748b;"></div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top" aria-label="Nach oben scullen">
+        &#8679; <!-- Up Arrow -->
+    </button>
+
+    <!-- UI Elements -->
+    <div id="toast-notification" class="toast hidden"></div>
+
+    <div id="confirm-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <p id="modal-message"></p>
+            <div class="modal-buttons">
+                <button id="modal-cancel" class="modal-btn cancel">Nein</button>
+                <button id="modal-confirm" class="modal-btn confirm">Ja</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

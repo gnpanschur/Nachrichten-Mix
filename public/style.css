@@ -1,0 +1,593 @@
+:root {
+    --primary-color: #0f172a;
+    /* Dark Blue */
+    --secondary-color: #334155;
+    /* Slate */
+    --text-color: #1e293b;
+    --text-light: #ffffff;
+    --bg-color: #42696b;
+    /* Light Gray/Whiteish */
+    --white: #ffffff;
+    --accent-color: #0ea5e9;
+    /* Sky Blue */
+    --hover-color: #38bdf8;
+    --warning-color: #ef4444;
+    /* Red */
+    --border-color: #e2e8f0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Header */
+.app-header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.app-header h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.header-title-row {
+    position: relative;
+    /* Enable absolute positioning for children */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.25rem;
+    height: 40px;
+    /* Reserve space */
+}
+
+/* Remove margin from h1 inside the row to avoid conflict */
+.header-title-row h1 {
+    margin-bottom: 0;
+    line-height: 1.2;
+}
+
+.fullscreen-btn {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 1px solid #4ade80;
+    /* Green border */
+    color: #4ade80;
+    /* Green text */
+    /* Green text */
+    font-size: 0.6rem;
+    /* Smaller */
+    line-height: 1;
+    /* Tight line height */
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 2px 4px;
+    /* Smaller padding */
+    display: table;
+    /* allow multiline text easily, or keep flex but add text-align */
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.fullscreen-btn:hover {
+    background: rgba(74, 222, 128, 0.1);
+    /* Light green background */
+    border-color: #4ade80;
+}
+
+/* Compact Search Row */
+.search-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0.5rem 0 1rem;
+    padding: 0 0.5rem;
+}
+
+.hint-small {
+    font-size: 0.6rem;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.2;
+    flex: 1;
+    /* Allow text to take space or wrap if needed */
+    text-align: center;
+    min-width: 60px;
+    /* Prevent crushing */
+}
+
+/* Center input has fixed/max width */
+.search-wrapper {
+    flex: 0 1 140px;
+    /* Shrink/Grow but aim for 140px */
+}
+
+#search-input {
+    width: 100%;
+    padding: 6px 10px;
+    /* Smaller padding */
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--white);
+    font-size: 0.9rem;
+    outline: none;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+#search-input::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+#search-input:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: var(--accent-color);
+    width: 100%;
+    /* Ensure it stays put */
+}
+
+/* Category Nav */
+.scroll-nav {
+    display: flex;
+    overflow-x: auto;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    /* Add horizontal padding */
+    white-space: nowrap;
+    justify-content: flex-start;
+    /* Ensure start alignment for scrolling */
+    flex-wrap: nowrap;
+    /* Force single line */
+    -webkit-overflow-scrolling: touch;
+    /* Smooth scrolling on iOS */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.scroll-nav::-webkit-scrollbar {
+    display: none;
+}
+
+.category-btn {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--white);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.category-btn:hover,
+.category-btn.active,
+.dropdown-btn:hover,
+.dropdown-btn.active {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: var(--white);
+}
+
+.category-btn.favorite {
+    background-color: var(--warning-color);
+    border-color: var(--warning-color);
+    color: var(--white);
+    margin-right: 0.5rem;
+    /* Separate from "Alle" */
+    font-weight: bold;
+}
+
+.category-btn.favorite:hover,
+.category-btn.favorite.active {
+    background-color: #dc2626;
+    /* Darker Red */
+    border-color: #dc2626;
+}
+
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-btn {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--white);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    white-space: nowrap;
+    transition: all 0.2s;
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    /* Fixed to viewport to avoid overflow clipping */
+    background-color: var(--primary-color);
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 2000;
+    /* Higher than header */
+    border-radius: 8px;
+    padding: 0.5rem 0;
+    margin-top: 0.5rem;
+    border: 1px solid var(--border-color);
+}
+
+.dropdown-content a {
+    color: var(--white);
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 0.9rem;
+    transition: background-color 0.2s;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Show dropdown when class 'show' is added */
+.dropdown-content.show {
+    display: block;
+}
+
+/* Down arrow */
+.dropdown-arrow {
+    font-size: 0.7em;
+    margin-left: 4px;
+}
+
+
+
+/* Main Content */
+.app-main {
+    flex: 1;
+    padding: 2rem 0;
+}
+
+/* News List */
+.news-category {
+    margin-bottom: 1.5rem;
+}
+
+.category-title {
+    font-size: 1.2rem;
+    /* Increased size */
+    text-align: center;
+    /* Centered */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 0.25rem;
+}
+
+/* News Item (Accordion) */
+.news-item {
+    background-color: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    transition: box-shadow 0.2s ease;
+}
+
+.news-item:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.news-header {
+    padding: 0.5rem;
+    display: flex;
+    align-items: flex-start;
+    /* Align emoji/text to top */
+    cursor: pointer;
+    background-color: var(--white);
+    -webkit-tap-highlight-color: transparent;
+}
+
+.news-emoji {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+    line-height: 1.2;
+}
+
+.news-headline {
+    font-size: 1.0rem;
+    font-weight: 500;
+    line-height: 1.4;
+    flex: 1;
+}
+
+.news-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background-color: #eef6f6;
+    /* Light themed background */
+}
+
+.news-content.open {
+    /* Max-height set via JS or large value */
+    max-height: 1000px;
+    /* Increased limit */
+    border-top: 1px solid var(--border-color);
+}
+
+.news-body {
+    padding: 1rem 1rem 1.5rem 3.5rem;
+    /* Indent to align with text, excluding emoji */
+}
+
+/* Mobile: Reduce indent on very small screens */
+@media (max-width: 480px) {
+    .news-body {
+        padding: 1rem;
+    }
+}
+
+/* Toast Notification */
+.toast {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(15, 23, 42, 0.95);
+    color: var(--white);
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 3000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+    font-size: 0.9rem;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.toast.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+
+.toast.hidden {
+    transform: translateX(-50%) translateY(20px);
+}
+
+/* Modal Dialog */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s;
+}
+
+.modal-overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    max-width: 80%;
+    width: 300px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transform: scale(0.95);
+    transition: transform 0.2s;
+}
+
+.modal-overlay.show .modal-content {
+    transform: scale(1);
+}
+
+.modal-message {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+.modal-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.modal-btn {
+    padding: 0.5rem 1.5rem;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.modal-btn.cancel {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--white);
+}
+
+.modal-btn.cancel:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.modal-btn.confirm {
+    background-color: var(--warning-color);
+    color: var(--white);
+}
+
+.modal-btn.confirm:hover {
+    background-color: #dc2626;
+}
+
+.news-teaser {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.news-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 0.9rem;
+    align-items: center;
+}
+
+.source-link {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.source-link:hover {
+    text-decoration: underline;
+}
+
+.warning-badge {
+    background-color: #fee2e2;
+    color: var(--warning-color);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+/* Footer */
+.app-footer {
+    background-color: #e2e8f0;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: auto;
+}
+
+.footer-btn {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto 1.5rem auto;
+    transition: background-color 0.2s;
+}
+
+.footer-btn:hover {
+    background-color: #020617;
+}
+
+.footer-btn:active {
+    transform: translateY(1px);
+}
+
+.impressum a {
+    color: black;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.loading-state,
+.error-state {
+    text-align: center;
+    padding: 3rem;
+    color: var(--text-light);
+}
+
+.error-state {
+    color: var(--warning-color);
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 2000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s, background-color 0.2s, transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-top:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+.back-to-top:active {
+    transform: translateY(0);
+}
