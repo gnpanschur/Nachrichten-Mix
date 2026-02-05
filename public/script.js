@@ -57,20 +57,21 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!rawCat) return { group: 'Allgemein', sub: null, original: '' };
 
         // Wissenschaft
-        // Includes: Archäologie, Bildung, Business & Erfolg (maybe?), Datenschutz
+        // Includes: Archäologie, Bildung, Business & Erfolg (maybe?), Datenschutz, Medizin
         // + existing: technik, science, ki
         if (lower.includes('wissenschaft') || lower.includes('technik') || lower.includes('science') || lower.includes('ki') ||
             lower.includes('archäologie') || lower.includes('bildung') || lower.includes('datenschutz') ||
-            lower.includes('it-sicherheit') || lower.includes('technologie')) {
+            lower.includes('it-sicherheit') || lower.includes('technologie') || lower.includes('medizin')) {
             return { group: 'Wissenschaft', sub: null, original: rawCat };
         }
 
         // Politik
-        // Includes: Krieg, Medien, Medienkritik, Nahost, Soziales, Militär
+        // Includes: Krieg, Medien, Medienkritik, Nahost, Soziales, Militär, Welt
         // + existing: ausland, international, inland
         if (lower.includes('politik') || lower.includes('ausland') || lower.includes('international') || lower.includes('inland') ||
             lower.includes('krieg') || lower.includes('nahost') || lower.includes('soziales') || lower.includes('militär') ||
-            (lower.includes('medien') && !lower.includes('unternehmen'))) { // 'Medien' in Politik context, but 'Medien' also in Wirtschaft? User put Medien in Wirtschaft too. Let's optimize.
+            (lower.includes('medien') && !lower.includes('unternehmen')) ||
+            (lower.includes('welt') && !lower.includes('umwelt'))) { // Check Welt but exclude Umwelt
             return { group: 'Politik', sub: null, original: rawCat };
         }
 
@@ -83,14 +84,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // Gesellschaft
-        // Includes: Alltag & Lifestyle, Bezirke, Bücher, Dating, Digital Lifestyle, Familie, Glücksspiel, Haus & Garten, Hilfe, Korrekturen, Lifestyle, Literatur, Reisen, Tourismus, Weltgeschehen
+        // Includes: Alltag & Lifestyle, Bezirke, Bücher, Dating, Digital Lifestyle, Familie, Glücksspiel, Haus & Garten, Hilfe, Korrekturen, Lifestyle, Literatur, Reisen, Tourismus, Weltgeschehen, Kriminalität, Soziale Themen
         // + existing: kultur, film, musik, gesundheit, natur, tier, umwelt, unterhaltung
-        // + new: debatten, kunst, persönliches, zeitgeist ("Kunst und Architektur" covered by "kunst")
+        // + new: debatten, kunst, persönliches, zeitgeist
         const gesellschaftKeywords = [
             'gesellschaft', 'kultur', 'film', 'musik', 'gesundheit', 'natur', 'tier', 'umwelt', 'unterhaltung',
             'alltag', 'lifestyle', 'bezirke', 'bücher', 'dating', 'familie', 'glücksspiel', 'haus', 'garten',
             'hilfe', 'korrekturen', 'literatur', 'reisen', 'tourismus', 'weltgeschehen', 'kunstmarkt',
-            'debatten', 'kunst', 'persönliches', 'zeitgeist'
+            'debatten', 'kunst', 'persönliches', 'zeitgeist', 'kriminalität', 'soziale themen'
         ];
         if (gesellschaftKeywords.some(k => lower.includes(k))) {
             return { group: 'Gesellschaft', sub: null, original: rawCat };
@@ -99,16 +100,15 @@ document.addEventListener('DOMContentLoaded', () => {
         // Sport
         if (lower.includes('sport')) return { group: 'Sport', sub: null, original: rawCat };
 
-        // Wetter
-        if (lower.includes('wetter')) return { group: 'Wetter', sub: null, original: rawCat };
-
         // Chronik
         if (lower.includes('chronik')) return { group: 'Chronik', sub: null, original: rawCat };
 
         // Allgemein (Explicit from User)
-        // Includes: Afrika, Audio/Podcasts, Lotto, Service
+        // Includes: Afrika, Audio/Podcasts, Lotto, Service, Wetter, Barrierefreiheit, Kaufberatung, Rechtliches, Sonstiges
         if (lower.includes('afrika') || lower.includes('audio') || lower.includes('podcast') ||
-            lower.includes('lotto') || lower.includes('service')) {
+            lower.includes('lotto') || lower.includes('service') || lower.includes('wetter') ||
+            lower.includes('barrierefreiheit') || lower.includes('kaufberatung') || lower.includes('rechtliches') ||
+            lower.includes('sonstiges')) {
             return { group: 'Allgemein', sub: null, original: rawCat };
         }
 
@@ -344,6 +344,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     addLongPressListener(link, () => {
                         setFavorite('specific-sub', sub, groupName);
                         closeDropdowns();
+                    });
+
+                    // Prevent context menu on long press (mobile) for links
+                    link.addEventListener('contextmenu', (e) => {
+                        e.preventDefault();
                     });
 
                     content.appendChild(link);
@@ -667,18 +672,36 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Fullscreen Logic
     const fullscreenBtn = document.getElementById('fullscreen-btn');
+
+    // Toggle Button
     if (fullscreenBtn) {
-        fullscreenBtn.addEventListener('click', () => {
-            if (!document.fullscreenElement) {
-                document.documentElement.requestFullscreen().catch((err) => {
-                    console.error(`Error attempting to enable fullscreen: ${err.message}`);
-                });
-            } else {
-                if (document.exitFullscreen) {
-                    document.exitFullscreen();
-                }
-            }
+        fullscreenBtn.addEventListener('click', (e) => {
+            e.stopPropagation(); // Prevent bubbling to the global listener to avoid conflict
+            toggleFullscreen();
         });
+    }
+
+    // Global Auto-Fullscreen on Click
+    document.addEventListener('click', () => {
+        if (!document.fullscreenElement) {
+            enterFullscreen();
+        }
+    });
+
+    function enterFullscreen() {
+        document.documentElement.requestFullscreen().catch((err) => {
+            // console.log(`Fullscreen info: ${err.message}`);
+        });
+    }
+
+    function toggleFullscreen() {
+        if (!document.fullscreenElement) {
+            enterFullscreen();
+        } else {
+            if (document.exitFullscreen) {
+                document.exitFullscreen();
+            }
+        }
     }
 
     // UI Helpers
