@@ -1,0 +1,29 @@
+[
+  {
+    "category": "Test1",
+    "headline": "Testing 1",
+    "teaser": "Die Autoindustrie in Europa erwartet durch die Initiative 'Made in Europe' einen positiven Impuls. Diese Strategie soll die Wettbewerbsfähigkeit der europäischen Automobilhersteller stärken und die Abhängigkeit von Importen reduzieren. Die Branche sieht in der Förderung lokaler Produktion und Innovation eine Chance, um den Herausforderungen des Marktes zu begegnen. Experten betonen die Notwendigkeit, die Produktionskapazitäten auszubauen und gleichzeitig nachhaltige Praktiken zu integrieren. Die Umsetzung dieser Strategie könnte auch Arbeitsplätze in der Region sichern.",
+    "source_name": "ORF",
+    "source_url": "https://www.xyz.de/",
+    "emoji": "📈",
+    "warning": ""
+  },
+  {
+    "category": "Test2",
+    "headline": "Testing 2",
+    "teaser": "USA und Russland planen einen Neustart des Militärdialogs, um Spannungen abzubauen. Ein Krisengespräch in Maskat soll die Atomverhandlungen und Sicherheitsfragen thematisieren. Die USA drängen auf eine umfassende Agenda, während der Iran sich auf das Atomprogramm konzentrieren möchte. Die Gespräche gelten als heikel, da die USA ihre Militärpräsenz in der Golfregion verstärkt haben. Kritiker im Iran befürchten, dass solche Verhandlungen der Regierung in Teheran zugutekommen könnten.",
+    "source_name": "ORF",
+    "source_url": "https://www.xyz.de",
+    "emoji": "⚖️",
+    "warning": ""
+  },
+  {
+        "category": "Test3",
+        "headline": "Testing 3",
+        "teaser": "Der Große Preis von Abu Dhabi 2025 hat stattgefunden. Die Ergebnisse des Rennens sowie die Session-Informationen sind nun verfügbar. Zudem wird auf den geheimen Formel-1-Shakedown in Barcelona eingegangen, der kürzlich stattfand. Die Testwoche in Barcelona wird hinsichtlich ihrer Bedeutung für die kommende Saison analysiert. Die Gesamtklassement-Daten werden ebenfalls bereitgestellt.",
+        "source_name": "Motorsport Total",
+        "source_url": "https://www.xyz.de/",
+        "emoji": "🏎️",
+        "warning": ""
+  }
+]
