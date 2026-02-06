@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Includes: Krieg, Medien, Medienkritik, Nahost, Soziales, Militär, Welt
         // + existing: ausland, international, inland
         if (lower.includes('politik') || lower.includes('ausland') || lower.includes('international') || lower.includes('inland') ||
-            lower.includes('krieg') || lower.includes('nahost') || lower.includes('soziales') || lower.includes('militär') ||
+            lower.includes('krieg') || lower.includes('nahost') || lower.includes('soziales') || lower.includes('militär') || lower.includes('humanitäre krisen') ||
             (lower.includes('medien') && !lower.includes('unternehmen')) ||
             (lower.includes('welt') && !lower.includes('umwelt'))) { // Check Welt but exclude Umwelt
             return { group: 'Politik', sub: null, original: rawCat };
@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'gesellschaft', 'kultur', 'film', 'musik', 'gesundheit', 'natur', 'tier', 'umwelt', 'unterhaltung',
             'alltag', 'lifestyle', 'bezirke', 'bücher', 'dating', 'familie', 'glücksspiel', 'haus', 'garten',
             'hilfe', 'korrekturen', 'literatur', 'reisen', 'tourismus', 'weltgeschehen', 'kunstmarkt',
-            'debatten', 'kunst', 'persönliches', 'zeitgeist', 'kriminalität', 'soziale themen'
+            'debatten', 'kunst', 'persönliches', 'zeitgeist', 'kriminalität', 'soziale themen', 'meteo', 'casinos', 'persönlichkeiten'
         ];
         if (gesellschaftKeywords.some(k => lower.includes(k))) {
             return { group: 'Gesellschaft', sub: null, original: rawCat };
@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Includes: Afrika, Audio/Podcasts, Lotto, Service, Wetter, Barrierefreiheit, Kaufberatung, Rechtliches, Sonstiges
         if (lower.includes('afrika') || lower.includes('audio') || lower.includes('podcast') ||
             lower.includes('lotto') || lower.includes('service') || lower.includes('wetter') ||
-            lower.includes('barrierefreiheit') || lower.includes('kaufberatung') || lower.includes('rechtliches') ||
+            lower.includes('barrierefreiheit') || lower.includes('kaufberatung') || lower.includes('rechtliches') || lower.includes('dienstleistungen') ||
             lower.includes('sonstiges')) {
             return { group: 'Allgemein', sub: null, original: rawCat };
         }
@@ -702,6 +702,23 @@ document.addEventListener('DOMContentLoaded', () => {
                 document.exitFullscreen();
             }
         }
+    }
+
+    // Close App Logic
+    const closeAppBtn = document.getElementById('close-app-btn');
+    if (closeAppBtn) {
+        closeAppBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            showConfirm('Möchten Sie die App schließen?', () => {
+                window.close();
+                // Fallback check
+                setTimeout(() => {
+                    if (!window.closed) {
+                        showToast('Fenster kann nicht geschlossen werden (Browser-Sicherheitsrichtlinie).');
+                    }
+                }, 300);
+            });
+        });
     }
 
     // UI Helpers
