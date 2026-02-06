@@ -56,18 +56,27 @@ app.get('/api/news', (req, res) => {
             return res.status(500).json({ message: "Interner Serverfehler" });
         }
 
-        // Filter files that start with the date string and end with .json
+        // Filter files that start with the date string OR "permanent" and end with .json
         let matchingFiles = files.filter(file =>
-            file.startsWith(dateStr) && file.toLowerCase().endsWith('.json')
+            (file.startsWith(dateStr) || file.startsWith('permanent')) && file.toLowerCase().endsWith('.json')
         );
 
         if (matchingFiles.length === 0) {
-            console.log(`No files found for date: ${dateStr}`);
+            console.log(`No files found for date: ${dateStr} (and no permanent files)`);
             return res.status(404).json({ message: "Keine Nachrichten für dieses Datum verfügbar" });
         }
 
-        // SORTING: Main file (exact match) first, others alphabetically
+        // SORTING: Permanent files first (alphabetical), then Main file (exact match), then others
         matchingFiles.sort((a, b) => {
+            const aIsPerm = a.startsWith('permanent');
+            const bIsPerm = b.startsWith('permanent');
+
+            // Permanent files always come first
+            if (aIsPerm && !bIsPerm) return -1;
+            if (!aIsPerm && bIsPerm) return 1;
+            if (aIsPerm && bIsPerm) return a.localeCompare(b); // Sort permanent files alphabetically
+
+            // Then standard date files logic
             if (a === `${dateStr}.json`) return -1;
             if (b === `${dateStr}.json`) return 1;
             return a.localeCompare(b);

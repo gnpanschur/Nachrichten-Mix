@@ -1,0 +1,30 @@
+[
+
+  {
+    "category": "Permament 01",
+    "headline": "Nachricht Permament 01",
+    "teaser": "Diese Nachricht kommt aus Permament 001 01",
+    "source_name": "intern",
+    "source_url": "xxx",
+    "emoji": "📚",
+    "warning": ""
+  },
+  {
+    "category": "Permament 01",
+    "headline": "auch Diese Nachricht kommt aus Permament 001 02",
+    "teaser": "auch Diese Nachricht kommt aus Permament 001 02.",
+    "source_name": "intern",
+    "source_url": "xxx",
+    "emoji": "📚",
+    "warning": ""
+  },
+  {
+    "category": "Permament 01",
+    "headline": "und auch Diese Nachricht kommt aus Permament 001 03",
+    "teaser": "und auch Diese Nachricht kommt aus Permament 001 03.",
+    "source_name": "intern",
+    "source_url": "xxx",
+    "emoji": "📚",
+    "warning": ""
+  }
+]
