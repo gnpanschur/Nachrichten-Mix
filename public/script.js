@@ -704,6 +704,23 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // Close App Logic
+    const closeAppBtn = document.getElementById('close-app-btn');
+    if (closeAppBtn) {
+        closeAppBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            showConfirm('Möchten Sie die App schließen?', () => {
+                window.close();
+                // Fallback check
+                setTimeout(() => {
+                    if (!window.closed) {
+                        showToast('Fenster kann nicht geschlossen werden (Browser-Sicherheitsrichtlinie).');
+                    }
+                }, 300);
+            });
+        });
+    }
+
     // UI Helpers
     function showToast(message) {
         const toast = document.getElementById('toast-notification');

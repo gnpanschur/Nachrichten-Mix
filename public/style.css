@@ -134,6 +134,39 @@ body {
     border-color: #4ade80;
 }
 
+.close-app-btn {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 1px solid #ef4444;
+    /* Red border */
+    color: #ef4444;
+    /* Red text */
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 0 6px;
+    /* Adjust padding for box look */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    /* Fixed height for square-ish look */
+    width: 30px;
+    transition: all 0.2s;
+}
+
+.close-app-btn:hover {
+    background: rgba(239, 68, 68, 0.1);
+    /* Light red background */
+    color: #dc2626;
+    border-color: #dc2626;
+}
+
 /* Compact Search Row */
 .search-row {
     display: flex;
