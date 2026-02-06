@@ -1,0 +1,65 @@
+[
+    {
+        "category": "Politik",
+        "headline": "ÖVP-Vorstoß zu Asyl erntet scharfe Kritik",
+        "teaser": "Der Vorstoß von Bundeskanzler Christian Stocker (ÖVP), Asylwerber nur noch eine medizinische Basisversorgung zukommen zu lassen, stößt auf breite Ablehnung. Die Koalitionspartner SPÖ und NEOS sowie die Ärzteschaft kritisieren den Plan als ineffizient. Stocker begründet die Maßnahme mit langen Wartezeiten für in das System einzahlende Personen. Die SPÖ und NEOS warnen vor hohen Folgekosten und einer möglichen Zweiklassengesellschaft im Gesundheitssystem. Auch die Ärztekammer erinnert an den hippokratischen Eid, der eine umfassende Versorgung fordert. Die Debatte um die Gesundheitsversorgung für Asylwerber bleibt politisch umstritten.",
+        "source_name": "ORF",
+        "source_url": "https://orf.at/stories/3419381/",
+        "emoji": "⚖️",
+        "warning": ""
+    },
+    {
+        "category": "Wirtschaft",
+        "headline": "Turbulente Woche für Bitcoin, Gold und Tech",
+        "teaser": "Die Märkte erlebten eine turbulente Woche mit starken Schwankungen bei Bitcoin, Gold und Tech-Aktien. Der Bitcoin fiel zeitweise auf 60.000 Dollar, bevor er sich wieder erholte. Der Dow Jones überschritt erstmals die 50.000-Punkte-Marke. Analysten führen die Turbulenzen auf geopolitische Unsicherheiten und mögliche Zinserhöhungen in den USA zurück. Die Einführung neuer KI-Tools sorgte zudem für Panik unter Tech-Werten, die teils stark einbrachen. Anleger zeigen sich jedoch optimistisch, dass Bitcoin sich langfristig erholen wird.",
+        "source_name": "ORF",
+        "source_url": "https://orf.at/stories/3419382/",
+        "emoji": "📈",
+        "warning": ""
+    },
+    {
+        "category": "International",
+        "headline": "MAGA auf Jagd nach Einfluss in Europa",
+        "teaser": "Die USA fördern die Verbreitung amerikanischer Werte in Europa im Rahmen der Feierlichkeiten zum 250. Jahrestag der Unabhängigkeitserklärung. Das Außenministerium unterstützt MAGA-nahe Thinktanks und Organisationen. Trumps Ambitionen bezüglich Grönland belasten jedoch die Beziehungen zu europäischen Rechten. Die US-Regierung sieht in Europa einen Bedarf zu intervenieren, um die politische Freiheit zu fördern. Kritiker warnen vor einer zu starken Annäherung an die USA, da dies politische Risiken birgt.",
+        "source_name": "ORF",
+        "source_url": "https://orf.at/stories/3419388/",
+        "emoji": "🌍",
+        "warning": ""
+    },
+    {
+        "category": "Kultur",
+        "headline": "Kultgitarre von Kurt Cobain wird versteigert",
+        "teaser": "Die Fender Mustang von Kurt Cobain, mit der er den Hit \"Smells Like Teen Spirit\" spielte, wird versteigert. Die Gitarre gehört zu einer Sammlung, die im März bei Christie’s in New York angeboten wird. Experten schätzen den Wert der Gitarre auf bis zu fünf Millionen Dollar. Auch andere wertvolle Musikinstrumente, darunter eine Trommel der Beatles, werden versteigert. Ein Teil der Einnahmen soll an Wohltätigkeitsorganisationen gehen.",
+        "source_name": "ORF",
+        "source_url": "https://orf.at/stories/3419402/",
+        "emoji": "🎸",
+        "warning": ""
+    },
+    {
+        "category": "Technik/KI",
+        "headline": "EU-Kommission droht TikTok mit Strafe",
+        "teaser": "Die EU-Kommission hat TikTok wegen Verstößen gegen europäisches Recht vorläufig untersucht. Die Plattform soll suchtfördernde Mechanismen nutzen, die insbesondere Kinder und Jugendliche gefährden. Sollte TikTok keine Änderungen vornehmen, drohen hohe Strafen. Die Kommission betont, dass die derzeitigen Schutzmaßnahmen unzureichend sind. TikTok hat angekündigt, die Ergebnisse der Untersuchung anzufechten. Die Diskussion um Altersgrenzen in sozialen Netzwerken wird in der EU intensiviert.",
+        "source_name": "ORF",
+        "source_url": "https://orf.at/stories/3419408/",
+        "emoji": "⚙️",
+        "warning": ""
+    },
+    {
+        "category": "Politik",
+        "headline": "Trump entfernt rassistisches Video nach öffentlichem Aufschrei",
+        "teaser": "US-Präsident Donald Trump hat ein rassistisches Video von seiner Plattform Truth Social entfernt. Das Video, das Barack und Michelle Obama in einer beleidigenden Darstellung zeigte, war nur zwölf Stunden online. Die Kritik kam sowohl von Demokraten als auch von Republikanern, wobei einige Senatoren Trumps Verhalten als inakzeptabel bezeichneten. Der Rückzug des Videos erfolgte nach scharfer interner Kritik, insbesondere von Senator Tim Scott. Die Darstellung stammt vermutlich aus einem KI-Video, das bereits zuvor kursierte.",
+        "source_name": "ORF",
+        "source_url": "https://orf.at/stories/3419409/",
+        "emoji": "⚖️",
+        "warning": ""
+    },
+    {
+        "category": "Wirtschaft",
+        "headline": "OeNB-Gouverneur kündigt Senkung der Inflationsprognose an",
+        "teaser": "Martin Kocher, Gouverneur der Österreichischen Nationalbank, hat eine Senkung der Inflationsprognose angekündigt. Die aktuelle Schnellschätzung für Jänner liegt bei 2,0 Prozent, was positiv überrascht hat. Kocher erklärt, dass die Inflation stärker gesunken sei als erwartet, vor allem aufgrund stabiler Energiepreise. Für 2026 wird eine Korrektur der Prognose von ursprünglich 2,4 Prozent erwartet. Die Entwicklung der Inflationsrate wird im Jahresverlauf voraussichtlich um die zwei Prozent liegen.",
+        "source_name": "ORF",
+        "source_url": "https://orf.at/stories/3419413/",
+        "emoji": "📈",
+        "warning": ""
+    }
+]
