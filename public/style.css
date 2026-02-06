@@ -43,12 +43,33 @@ body {
 .app-header {
     background-color: var(--primary-color);
     color: var(--white);
-    padding: 1rem 0;
+    padding: 1rem 0 0.5rem 0;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
+    z-index: 1002;
+    /* High z-index to stay on top */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Shadow for the fixed part */
+}
+
+/* New Search Section (scrolls away) */
+.search-section {
+    background-color: var(--primary-color);
+    color: var(--white);
+    position: relative;
     z-index: 1000;
+}
+
+.category-sticky-wrapper {
+    position: sticky;
+    top: 4.8rem;
+    /* Approx height of header (Title + Date + Padding) */
+    z-index: 1001;
+    /* Above search, below header */
+    background-color: var(--primary-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding-bottom: 0.5rem;
 }
 
 .app-header h1 {
@@ -63,9 +84,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0;
     height: 40px;
     /* Reserve space */
+}
+
+.date-display {
+    margin: 0;
+    line-height: 1.0;
+    padding-bottom: 0.25rem;
+    font-size: 0.85rem;
 }
 
 /* Remove margin from h1 inside the row to avoid conflict */
@@ -112,7 +140,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
-    margin: 0.5rem 0 1rem;
+    margin: 0.1rem 0 1rem;
     padding: 0 0.5rem;
 }
 
