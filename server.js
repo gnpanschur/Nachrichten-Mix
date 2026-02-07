@@ -20,23 +20,45 @@ app.use((req, res, next) => {
 // Serve static files
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Helper to get formatted date "YYYY-MM-DD"
+// Helper to get formatted date "YYYY-MM-DD" in Vienna Timezone
 function getFormattedDate(date) {
-    const d = new Date(date);
-    const month = '' + (d.getMonth() + 1);
-    const day = '' + d.getDate();
-    const year = d.getFullYear();
+    // Use Intl.DateTimeFormat to get the date parts in the specific timezone
+    const formatter = new Intl.DateTimeFormat('de-AT', {
+        timeZone: 'Europe/Vienna',
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit'
+    });
 
-    return [year, month.padStart(2, '0'), day.padStart(2, '0')].join('-');
+    const parts = formatter.formatToParts(date);
+    const year = parts.find(p => p.type === 'year').value;
+    const month = parts.find(p => p.type === 'month').value;
+    const day = parts.find(p => p.type === 'day').value;
+
+    return `${year}-${month}-${day}`;
 }
 
 // API Endpoint
 app.get('/api/news', (req, res) => {
-    let targetDate = new Date();
+    let targetDate = new Date(); // Current server time
 
     // Check for "yesterday" query param
     if (req.query.date === 'yesterday') {
-        targetDate.setDate(targetDate.getDate() - 1);
+        // To get "yesterday" in Vienna:
+        // 1. Get current Vienna date string
+        // 2. Parse it back to a Date object (noon to avoid dst shifts issues)
+        // 3. Subtract 1 day
+        const viennaTodayStr = getFormattedDate(new Date());
+        const viennaDate = new Date(viennaTodayStr + 'T12:00:00'); // Midday to be safe
+        viennaDate.setDate(viennaDate.getDate() - 1);
+
+        // formats correctly because getFormattedDate handles the conversion again, 
+        // effectively using the timestamp. 
+        // BUT: if we just want the string for yesterday, we can just subtract 24h from *now* 
+        // and format that? No, 24h subtraction is risky across DST/Timezones.
+        // Better:
+        targetDate = viennaDate;
+
     } else if (req.query.date) {
         // Parse explicit date string if provided (e.g. ?date=2026-02-04)
         const parts = req.query.date.split('-');
