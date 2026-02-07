@@ -32,6 +32,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const lower = rawCat ? rawCat.toLowerCase() : '';
         const isAtDomain = url && (url.includes('.at/') || url.endsWith('.at'));
 
+        // 0. Olympia (Headline/Teaser check) - PRIORITY
+        const combinedText = ((itemHeadline || '') + ' ' + (itemTeaser || '')).toLowerCase();
+        if (combinedText.includes('olympi')) {
+            return { group: 'Olympia', sub: null, original: rawCat };
+        }
+
         // 1. STRICT RULE: Österreich ONLY if .at domain
         if (isAtDomain) {
             const group = 'Österreich';
@@ -61,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // + existing: technik, science, ki
         if (lower.includes('wissenschaft') || lower.includes('technik') || lower.includes('science') || lower.includes('ki') ||
             lower.includes('archäologie') || lower.includes('bildung') || lower.includes('datenschutz') ||
-            lower.includes('it-sicherheit') || lower.includes('technologie') || lower.includes('medizin')) {
+            lower.includes('it-sicherheit') || lower.includes('technologie') || lower.includes('medizin') || lower.includes('hr-trends')) {
             return { group: 'Wissenschaft', sub: null, original: rawCat };
         }
 
@@ -69,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Includes: Krieg, Medien, Medienkritik, Nahost, Soziales, Militär, Welt
         // + existing: ausland, international, inland
         if (lower.includes('politik') || lower.includes('ausland') || lower.includes('international') || lower.includes('inland') ||
-            lower.includes('krieg') || lower.includes('nahost') || lower.includes('soziales') || lower.includes('militär') || lower.includes('humanitäre krisen') ||
+            lower.includes('krieg') || lower.includes('nahost') || lower.includes('naher osten') || lower.includes('soziales') || lower.includes('militär') || lower.includes('humanitäre krisen') ||
             (lower.includes('medien') && !lower.includes('unternehmen')) ||
             (lower.includes('welt') && !lower.includes('umwelt'))) { // Check Welt but exclude Umwelt
             return { group: 'Politik', sub: null, original: rawCat };
@@ -91,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'gesellschaft', 'kultur', 'film', 'musik', 'gesundheit', 'natur', 'tier', 'umwelt', 'unterhaltung',
             'alltag', 'lifestyle', 'bezirke', 'bücher', 'dating', 'familie', 'glücksspiel', 'haus', 'garten',
             'hilfe', 'korrekturen', 'literatur', 'reisen', 'tourismus', 'weltgeschehen', 'kunstmarkt',
-            'debatten', 'kunst', 'persönliches', 'zeitgeist', 'kriminalität', 'soziale themen', 'meteo', 'casinos', 'persönlichkeiten'
+            'debatten', 'kunst', 'persönliches', 'zeitgeist', 'kriminalität', 'karriere', 'soziale themen', 'meteo', 'persönlichkeiten'
         ];
         if (gesellschaftKeywords.some(k => lower.includes(k))) {
             return { group: 'Gesellschaft', sub: null, original: rawCat };
@@ -108,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (lower.includes('afrika') || lower.includes('audio') || lower.includes('podcast') ||
             lower.includes('lotto') || lower.includes('service') || lower.includes('wetter') ||
             lower.includes('barrierefreiheit') || lower.includes('kaufberatung') || lower.includes('rechtliches') || lower.includes('dienstleistungen') ||
-            lower.includes('sonstiges')) {
+            lower.includes('casino') || lower.includes('sonstiges')) {
             return { group: 'Allgemein', sub: null, original: rawCat };
         }
 
@@ -261,7 +267,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         // Sort groups alphabetically or by fixed order
-        const prioritiedGroups = ['Österreich', 'Chronik', 'Politik', 'Sport', 'Wirtschaft', 'Wissenschaft', 'Gesellschaft', 'Wetter'];
+        const prioritiedGroups = ['Österreich', 'Olympia', 'Chronik', 'Politik', 'Sport', 'Wirtschaft', 'Wissenschaft', 'Gesellschaft', 'Wetter'];
         const otherGroups = Object.keys(groups).filter(g => !prioritiedGroups.includes(g)).sort();
         const sortedGroups = [...prioritiedGroups.filter(g => groups[g]), ...otherGroups];
 
