@@ -5,7 +5,7 @@
     "teaser": "eigendlicher Beitrag: 1.category, 2. headline 3. source_name: ORF. 4. ource_name: 5. URL-Adresse ",
     "source_name": "ORF",
     "source_url": "https://www.xyz.de/",
-    "emoji": "📈",
+    "emoji": "🧪",
     "warning": ""
   },
   {
@@ -14,16 +14,16 @@
     "teaser": "Diversen Text eingeben.",
     "source_name": "ORF",
     "source_url": "https://www.xyz.de",
-    "emoji": "⚖️",
+    "emoji": "🧪",
     "warning": ""
   },
   {
-        "category": "Test1",
-        "headline": "Testing 3",
-        "teaser": "siehe oben.",
-        "source_name": "Motorsport Total",
-        "source_url": "https://www.xyz.de/",
-        "emoji": "🏎️",
-        "warning": ""
+    "category": "Test1",
+    "headline": "Testing 3",
+    "teaser": "siehe oben.",
+    "source_name": "Motorsport Total",
+    "source_url": "https://www.xyz.de/",
+    "emoji": "🧪",
+    "warning": ""
   }
 ]
