@@ -266,8 +266,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Sort groups alphabetically or by fixed order
-        const prioritiedGroups = ['Österreich', 'Olympia', 'Chronik', 'Politik', 'Sport', 'Wirtschaft', 'Wissenschaft', 'Gesellschaft', 'Wetter'];
+        // Sort groups alphabetically or by fixed order 
+        const prioritiedGroups = ['Österreich', 'Olympia', 'Chronik', 'Politik', 'Sport', 'Wirtschaft', 'Wissenschaft', 'Gesellschaft', 'Wetter', 'Essay'];
         const otherGroups = Object.keys(groups).filter(g => !prioritiedGroups.includes(g)).sort();
         const sortedGroups = [...prioritiedGroups.filter(g => groups[g]), ...otherGroups];
 
