@@ -1,5 +1,4 @@
 [
- 
   
     {
         "category": "Allgemein",
@@ -235,15 +234,7 @@
         "emoji": "🥩",
         "warning": ""
     },
-    {
-        "category": "Allgemein / Kärnten",
-        "headline": "Radio Kärnten Programm am 7. Februar 2026",
-        "teaser": "Das Tagesprogramm von Radio Kärnten am 7. Februar 2026 bietet einen Überblick über die wichtigsten Themen des Tages. Die Sendungen umfassen unter anderem Berichte über den Bleiburger Fasching, das Einzel-Skispringen der Frauen bei den Olympischen Winterspielen und eine Vorschau auf das Fußballspiel GAK gegen WAC. Zudem wird ein Buchtipp und ein Pflanzentipp vorgestellt. Das Programm richtet sich an ein breites Publikum und bietet vielfältige Inhalte.",
-        "source_name": "ORF",
-        "source_url": "https://kaernten.orf.at/radio/stories/tagesthemen/",
-        "emoji": "📅",
-        "warning": ""
-    },
+    
     {
         "category": "Wirtschaft / Kärnten",
         "headline": "Mehr Förderung für junge Arbeitslose in Kärnten",
@@ -2413,15 +2404,7 @@
         "emoji": "🌱",
         "warning": ""
     },
-    {
-        "category": "Allgemein",
-        "headline": "Tägliche Fotos aus aller Welt",
-        "teaser": "Die Presse zeigt täglich beeindruckende Fotos aus verschiedenen Perspektiven und Naturschauspielen. Diese Bilder sollen die Betrachter in Erstaunen versetzen und die Vielfalt der Welt widerspiegeln.",
-        "source_name": "Die Presse",
-        "source_url": "https://www.diepresse.com/19218936/bilder-aus-aller-welt",
-        "emoji": "🌍",
-        "warning": ""
-    },
+    
     {
         "category": "Wirtschaft",
         "headline": "Exklusive Luxusimmobilien für Superreiche",
