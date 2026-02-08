@@ -1,31 +1,5 @@
 [
-    {
-        "category": "Allgemein",
-        "headline": "Neue TV-Programm App für Österreich verfügbar",
-        "teaser": "Die neue TV-Programm App von tvheute.at bietet eine innovative Benutzeroberfläche mit 'Swipe & Scroll'-Funktion. Nutzer können zwischen 48 TV-Sendern navigieren und erhalten Zugang zu umfangreichen Inhalten, darunter Beschreibungen und Kritiken. Die App ermöglicht es, verpasste Sendungen als Videostream nachzuholen. Zudem bietet sie eine schnelle Navigation und eine Übersicht über die verbleibende Sendezeit. Die App ist speziell auf die Bedürfnisse österreichischer Zuschauer zugeschnitten und ab sofort im österreichischen Store erhältlich.",
-        "source_name": "tvheute.at",
-        "source_url": "https://tvheute.at/TV-Programm-App/",
-        "emoji": "📺",
-        "warning": ""
-    },
-    {
-        "category": "Olympia",
-        "headline": "Olympische Winterspiele Mailand Cortina 2026 im Fokus",
-        "teaser": "Die Olympischen Winterspiele 2026 in Mailand und Cortina rücken näher. Die Vorbereitungen für die Spiele laufen bereits auf Hochtouren. Die ARD berichtet über das gesamte Programm und bietet aktuelle Nachrichten sowie Hintergründe zu den bevorstehenden Wettkämpfen. Die Veranstaltung verspricht, ein Highlight im internationalen Sportkalender zu werden. Zuschauer können sich auf umfassende Berichterstattung freuen.",
-        "source_name": "tvheute.at",
-        "source_url": "https://tvheute.at/ard-programm/heute-im-tv",
-        "emoji": "🏅",
-        "warning": ""
-    },
-    {
-        "category": "Allgemein",
-        "headline": "TV-Programme von 3SAT, 7MAXX und alpha",
-        "teaser": "Die Sender 3SAT, 7MAXX und alpha bieten ein abwechslungsreiches Programm. 3SAT zeigt unter anderem die Tagesschau, während 7MAXX Sportübertragungen wie SmackDown und Rugby bietet. Alpha präsentiert Dokumentationen und Unterhaltungssendungen. Die Programme sind auf die Interessen der Zuschauer abgestimmt und bieten eine breite Palette an Inhalten. Zuschauer können sich auf informative und unterhaltsame Sendungen freuen.",
-        "source_name": "tvheute.at",
-        "source_url": "https://tvheute.at/3sat-programm/heute-im-tv, https://tvheute.at/7maxx-programm/heute-im-tv, https://tvheute.at/alpha-programm/heute-im-tv",
-        "emoji": "📺",
-        "warning": ""
-    },
+  
     {
         "category": "Allgemein",
         "headline": "ARTE und ATV präsentieren TV-Programme",
@@ -260,15 +234,7 @@
         "emoji": "🥩",
         "warning": ""
     },
-    {
-        "category": "Allgemein / Kärnten",
-        "headline": "Radio Kärnten Programm am 7. Februar 2026",
-        "teaser": "Das Tagesprogramm von Radio Kärnten am 7. Februar 2026 bietet einen Überblick über die wichtigsten Themen des Tages. Die Sendungen umfassen unter anderem Berichte über den Bleiburger Fasching, das Einzel-Skispringen der Frauen bei den Olympischen Winterspielen und eine Vorschau auf das Fußballspiel GAK gegen WAC. Zudem wird ein Buchtipp und ein Pflanzentipp vorgestellt. Das Programm richtet sich an ein breites Publikum und bietet vielfältige Inhalte.",
-        "source_name": "ORF",
-        "source_url": "https://kaernten.orf.at/radio/stories/tagesthemen/",
-        "emoji": "📅",
-        "warning": ""
-    },
+    
     {
         "category": "Wirtschaft / Kärnten",
         "headline": "Mehr Förderung für junge Arbeitslose in Kärnten",
@@ -2438,15 +2404,7 @@
         "emoji": "🌱",
         "warning": ""
     },
-    {
-        "category": "Allgemein",
-        "headline": "Tägliche Fotos aus aller Welt",
-        "teaser": "Die Presse zeigt täglich beeindruckende Fotos aus verschiedenen Perspektiven und Naturschauspielen. Diese Bilder sollen die Betrachter in Erstaunen versetzen und die Vielfalt der Welt widerspiegeln.",
-        "source_name": "Die Presse",
-        "source_url": "https://www.diepresse.com/19218936/bilder-aus-aller-welt",
-        "emoji": "🌍",
-        "warning": ""
-    },
+    
     {
         "category": "Wirtschaft",
         "headline": "Exklusive Luxusimmobilien für Superreiche",
