@@ -1,31 +1,6 @@
 [
-    {
-        "category": "Allgemein",
-        "headline": "Neue TV-Programm App für Österreich verfügbar",
-        "teaser": "Die neue TV-Programm App von tvheute.at bietet eine innovative Benutzeroberfläche mit 'Swipe & Scroll'-Funktion. Nutzer können zwischen 48 TV-Sendern navigieren und erhalten Zugang zu umfangreichen Inhalten, darunter Beschreibungen und Kritiken. Die App ermöglicht es, verpasste Sendungen als Videostream nachzuholen. Zudem bietet sie eine schnelle Navigation und eine Übersicht über die verbleibende Sendezeit. Die App ist speziell auf die Bedürfnisse österreichischer Zuschauer zugeschnitten und ab sofort im österreichischen Store erhältlich.",
-        "source_name": "tvheute.at",
-        "source_url": "https://tvheute.at/TV-Programm-App/",
-        "emoji": "📺",
-        "warning": ""
-    },
-    {
-        "category": "Olympia",
-        "headline": "Olympische Winterspiele Mailand Cortina 2026 im Fokus",
-        "teaser": "Die Olympischen Winterspiele 2026 in Mailand und Cortina rücken näher. Die Vorbereitungen für die Spiele laufen bereits auf Hochtouren. Die ARD berichtet über das gesamte Programm und bietet aktuelle Nachrichten sowie Hintergründe zu den bevorstehenden Wettkämpfen. Die Veranstaltung verspricht, ein Highlight im internationalen Sportkalender zu werden. Zuschauer können sich auf umfassende Berichterstattung freuen.",
-        "source_name": "tvheute.at",
-        "source_url": "https://tvheute.at/ard-programm/heute-im-tv",
-        "emoji": "🏅",
-        "warning": ""
-    },
-    {
-        "category": "Allgemein",
-        "headline": "TV-Programme von 3SAT, 7MAXX und alpha",
-        "teaser": "Die Sender 3SAT, 7MAXX und alpha bieten ein abwechslungsreiches Programm. 3SAT zeigt unter anderem die Tagesschau, während 7MAXX Sportübertragungen wie SmackDown und Rugby bietet. Alpha präsentiert Dokumentationen und Unterhaltungssendungen. Die Programme sind auf die Interessen der Zuschauer abgestimmt und bieten eine breite Palette an Inhalten. Zuschauer können sich auf informative und unterhaltsame Sendungen freuen.",
-        "source_name": "tvheute.at",
-        "source_url": "https://tvheute.at/3sat-programm/heute-im-tv, https://tvheute.at/7maxx-programm/heute-im-tv, https://tvheute.at/alpha-programm/heute-im-tv",
-        "emoji": "📺",
-        "warning": ""
-    },
+ 
+  
     {
         "category": "Allgemein",
         "headline": "ARTE und ATV präsentieren TV-Programme",
