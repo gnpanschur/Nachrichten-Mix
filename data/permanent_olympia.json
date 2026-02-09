@@ -7,5 +7,32 @@
     "source_url": "https://www.laola1.at/de/wintersport/olympia-2026/ergebnisse/",
     "emoji": "🥇",
     "warning": ""
+  },
+  {
+    "category": "Gesellschaft",
+    "headline": "TV-Programm heute Abend",
+    "teaser": " - TV-Programm heute Abend - Klicke hier unten auf Lola1 - ",
+    "source_name": "tv-heute",
+    "source_url": "https://tvheute.at/",
+    "emoji": "📺",
+    "warning": ""
+  },
+  {
+    "category": "Gesellschaft",
+    "headline": "McMusic bietet musikalische Vielfalt für Events",
+    "teaser": "McMusic präsentiert eine breite Palette an musikalischen Angeboten, darunter exklusive Aufnahmen und Live-Mitschnitte. Die Band und DJ-Services sind in der Steiermark, Kärnten und Murtal aktiv. Sie bieten maßgeschneiderte Playlists und gehen auf individuelle Musikwünsche ein. Die vollständige Musikbibliothek ist auf SoundCloud verfügbar, während Eigenkompositionen auf Spotify zu finden sind. McMusic richtet sich an Hochzeiten und andere Veranstaltungen und verspricht unvergessliche musikalische Momente.",
+    "source_name": "McMusic",
+    "source_url": "https://www.mcmusic.at/index.html",
+    "emoji": "🎶",
+    "warning": ""
+  },
+  {
+    "category": "Gesellschaft",
+    "headline": "McMusic bietet WebApps für Nutzer an",
+    "teaser": "McMusic stellt eine Auswahl an WebApps zur Verfügung, die über die Sidebar zugänglich sind. Diese Apps bieten verschiedene Funktionen und Dienstleistungen, die den Nutzern helfen, ihre musikalischen Bedürfnisse zu erfüllen. Die Nutzung der Apps ist einfach und benutzerfreundlich gestaltet.",
+    "source_name": "McMusic",
+    "source_url": "https://www.mcmusic.at/links.html",
+    "emoji": "🖥️",
+    "warning": ""
   }
 ]
