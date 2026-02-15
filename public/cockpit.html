@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nachrichten Cockpit</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #3498db;
+            --text-color: #ecf0f1;
+            --bg-color: #1a1a1a;
+            --card-bg: #2d2d2d;
+            --success-color: #27ae60;
+            --danger-color: #c0392b;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            min-height: 100vh;
+            /* Changed from height: 100vh */
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        .nav-btn {
+            background: none;
+            border: 1px solid var(--text-color);
+            color: var(--text-color);
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .nav-btn:hover {
+            background: var(--text-color);
+            color: var(--primary-color);
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            /* Two fixed columns */
+            grid-template-rows: auto auto;
+            /* Auto rows */
+            gap: 20px;
+            padding: 20px;
+            flex-grow: 1;
+            /* Removed overflow: hidden to allow body scroll */
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            min-height: 500px;
+            /* Fixed minimum height */
+            height: auto;
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--accent-color);
+        }
+
+        .log-window {
+            background-color: #000;
+            color: #0f0;
+            font-family: 'Consolas', monospace;
+            padding: 10px;
+            border-radius: 5px;
+            flex-grow: 1;
+            overflow-y: auto;
+            max-height: 300px;
+            /* Force scrollbar after 300px */
+            min-height: 200px;
+            /* Ensure visible area */
+            font-size: 0.9rem;
+            margin-top: 10px;
+            white-space: pre-wrap;
+            border: 1px solid #333;
+        }
+
+        .controls {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"] {
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #555;
+            background-color: #444;
+            color: white;
+            flex-grow: 1;
+        }
+
+        button {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+
+        .btn-primary {
+            background-color: var(--accent-color);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #2980b9;
+        }
+
+        .btn-success {
+            background-color: var(--success-color);
+            color: white;
+        }
+
+        .btn-success:hover {
+            background-color: #219150;
+        }
+
+        .status-dot {
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 5px;
+        }
+
+        .status-idle {
+            background-color: #7f8c8d;
+        }
+
+        .status-running {
+            background-color: #f1c40f;
+            box-shadow: 0 0 5px #f1c40f;
+        }
+
+        .status-done {
+            background-color: #2ecc71;
+        }
+
+        .status-error {
+            background-color: #e74c3c;
+        }
+
+        /* IFrame specific */
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            background: white;
+            /* Text2Json might be light theme */
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-content {
+            background-color: var(--card-bg);
+            color: var(--text-color);
+            padding: 30px;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 800px;
+            max-height: 80vh;
+            overflow-y: auto;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            position: relative;
+            border: 1px solid var(--secondary-color);
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 2rem;
+            color: var(--text-color);
+            cursor: pointer;
+            border: none;
+            background: none;
+        }
+
+        .close-btn:hover {
+            color: var(--accent-color);
+        }
+
+        .help-section {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #444;
+            padding-bottom: 15px;
+        }
+
+        .help-section h3 {
+            color: var(--accent-color);
+            margin-top: 0;
+        }
+
+        .help-section ul {
+            padding-left: 20px;
+        }
+
+        .help-section li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div style="display:flex; align-items:center; gap:10px;">
+            <i class="fas fa-satellite-dish fa-lg"></i>
+            <h1>Nachrichten Cockpit</h1>
+            <span id="connection-status" style="font-size: 0.8rem; margin-left: 10px; color: #e74c3c;"><i
+                    class="fas fa-circle"></i> Disconnected</span>
+        </div>
+        <div style="display: flex; gap: 10px;">
+            <button onclick="openHelp()"
+                style="background-color: #3498db; color: white; border: none; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer; font-weight: bold;">
+                <i class="fas fa-info-circle"></i> Hilfe
+            </button>
+            <button onclick="openNotes()"
+                style="background-color: #e67e22; color: white; border: none; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer; font-weight: bold;">
+                <i class="fas fa-sticky-note"></i> Meine Notizen
+            </button>
+            <a href="index.html" class="nav-btn" target="_blank"
+                style="background-color: #42696b; color: white; border: none; font-weight: bold;"><i
+                    class="fas fa-home"></i> Zur App</a>
+            <button onclick="openAppData()" class="nav-btn"
+                style="background: none; border: 1px solid #ecf0f1; color: #ecf0f1; cursor: pointer;">
+                <i class="fas fa-folder-open"></i> App/data
+            </button>
+            <button onclick="killAll()"
+                style="background-color: #c0392b; color: white; border: none; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer; font-weight: bold;">
+                <i class="fas fa-power-off"></i> Alles Schließen
+            </button>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!-- Text To JSON Section (Right Column, Full Height) -->
+        <div class="card" style="grid-column: 2; grid-row: 1 / span 2;">
+            <div class="card-header">
+                <span class="card-title"><i class="fas fa-file-code"></i> Text To JSON Konverter</span>
+            </div>
+
+            <!-- Help Modal -->
+            <div id="helpModal" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn" onclick="closeHelp()">&times;</span>
+                    <h2 style="text-align: center; border-bottom: 2px solid var(--accent-color); padding-bottom: 10px;">
+                        Bedienungsanleitung</h2>
+
+                    <div class="help-section">
+                        <h3><i class="fas fa-search"></i> Recherche (div. URLs)</h3>
+                        <p>Startet den automatischen Recherche-Prozess. Das System ruft vordefinierte Nachrichtenquellen
+                            (URLs)
+                            ab, extrahiert relevante Artikel und bereitet diese für die Weiterverarbeitung vor.</p>
+                        <ul>
+                            <li><b>URLs in das Textfeld eingeben:</b> (Kann auch aus einer von dir vorgefertigten Liste
+                                kopiert werden)</li>
+                            <li><b>Start Recherche:</b> Beginnt den Prozess. Status und Logs werden im schwarzen Fenster
+                                angezeigt.</li>
+                            <li><b>Upload Skript:</b> Lädt die verarbeiteten Nachrichten auf den Server (GitHub) hoch
+                                (integriert
+                                in Recherche-Log).</li>
+                        </ul>
+                    </div>
+
+                    <div class="help-section">
+                        <h3><i class="fas fa-video"></i> Video2Text</h3>
+                        <p>Lädt YouTube-Videos herunter, transkribiert den Ton in Text und übersetzt diesen optional ins
+                            Deutsche.</p>
+                        <ul>
+                            <li><b>YouTube URL:</b> Hier den Link zum Video einfügen.</li>
+                            <li><b>Translate to German:</b> Haken setzen, um den Text automatisch ins Deutsche zu
+                                übersetzen.</li>
+                            <li><b>Start VideoDownload:</b> Lädt das EINE Video der URL herunter und verarbeitet es.
+                            </li>
+                            <li><b>Transcribe All Downloads:</b> Verarbeitet ALLE Videos, die sich bereits im
+                                "Downloads"- Ordner befinden und erzeugt daraus Text-Dateien.</li>
+                            <li><b>Downloads:</b> Öffnet den Downloads-Ordner der Videos und Texte im Windows-Explorer.
+                                Diese Texte kannst du dann in Text To JSON Konverter einfügen. </li>
+                        </ul>
+                    </div>
+
+                    <div class="help-section">
+                        <h3><i class="fas fa-file-code"></i> Text To JSON Konverter</h3>
+                        <p>Tool zur manuellen oder automatischen Umwandlung von Texten in das System-Format.</p>
+                        <ul>
+                            <li><b>Textfeld:</b> Text eingeben, reinkopieren, oder .txt hineinziehen.</li>
+                            <li><b>Einstellungen:</b> Länge der Zusammenfassungen oder "Single Headline" Modus wählen.
+                                (Mehrere Texte haben automatisch mehrere Headlines).</li>
+                            <li><b>Analysieren:</b> KI generiert JSON-Output.</li>
+                            <li><b>Speichern:</b> Über das Disketten-Symbol direkt in die App speichern.</li>
+                        </ul>
+                    </div>
+
+                    <div class="help-section">
+                        <h3>Systemsteuerung</h3>
+                        <ul>
+                            <li><b><i class="fas fa-home"></i> Zur App:</b> Öffnet die Nachrichten-App in einem neuen
+                                Tab.</li>
+                            <li><b><i class="fas fa-folder-open"></i> App/data:</b> Öffnet den Datenordner der App im
+                                Explorer.</li>
+                            <li><b><i class="fas fa-power-off"></i> Alles Schließen:</b> Fährt das gesamte System
+                                herunter (Server, Terminals, Prozesse). <b>Vorsicht!</b></li>
+                        </ul>
+                    </div>
+
+                    <div style="text-align: center; margin-top: 20px; color: #7f8c8d; font-size: 0.8rem;">
+                        &copy; 2026 Nachrichten Cockpit Pro / Design & Entwicklung: GunPan
+                    </div>
+                </div>
+            </div>
+            <!-- Embedding the Text2Json app via IFrame since it runs on 3001 -->
+            <!-- Or just linking to it if iframe issues occur. For now trying Iframe. -->
+            <div style="flex-grow: 1; background: #fff; border-radius: 4px; overflow: hidden;">
+                <iframe src="http://localhost:3001" title="Text To JSON"></iframe>
+            </div>
+        </div>
+
+        <!-- Recherche Section (Left Column, Top) -->
+        <div class="card" style="grid-column: 1; grid-row: 1;">
+            <div class="card-header">
+                <span class="card-title"><i class="fas fa-search"></i> Recherche (div. URLs)</span>
+                <span id="status-recherche"><span class="status-dot status-idle"></span> Bereit</span>
+            </div>
+            <div class="controls">
+                <button class="btn-primary" onclick="runRecherche()" id="btn-recherche">
+                    <i class="fas fa-play"></i> Start Recherche
+                </button>
+                <button class="btn-success" onclick="runSkript()" id="btn-skript">
+                    <i class="fas fa-cloud-upload-alt"></i> Run Upload GitHub / data
+                </button>
+                <button onclick="clearRechercheLog()"
+                    style="background-color: #c0392b; color: white; border: none; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer; font-weight: bold;">
+                    <i class="fas fa-trash"></i> Inhalt Löschen
+                </button>
+            </div>
+            <textarea class="log-window" id="log-recherche" placeholder="URLs hier eingeben (eine pro Zeile)..."
+                style="resize: vertical; color: #0f0; background-color: #000; width: 100%; box-sizing: border-box;"></textarea>
+        </div>
+
+        <!-- Video2Text Section (Left Column, Bottom) -->
+        <div class="card" style="grid-column: 1; grid-row: 2;">
+            <div class="card-header">
+                <span class="card-title"><i class="fas fa-video"></i> Video2Text</span>
+                <span id="status-video"><span class="status-dot status-idle"></span> Bereit</span>
+            </div>
+            <div class="controls" style="flex-wrap: wrap; gap: 10px; align-items: center;">
+                <!-- Row 1: Input + Translate Checkbox -->
+                <div style="display: flex; gap: 10px; width: 100%; align-items: center;">
+                    <input type="text" id="video-url" placeholder="YouTube URL hier einfügen..." style="flex-grow: 1;">
+                    <div style="display: flex; align-items: center; white-space: nowrap;">
+                        <input type="checkbox" id="translate-check" checked style="width: auto; margin-right: 5px;">
+                        <label for="translate-check" style="color: #ecf0f1; cursor: pointer;">Translate to
+                            German</label>
+                    </div>
+                </div>
+
+                <!-- Row 2: Buttons -->
+                <div style="display: flex; gap: 10px; width: 100%; margin-top: 10px;">
+                    <button class="btn-primary" onclick="runVideo2Text('url')" id="btn-video" style="flex: 1;">
+                        <i class="fas fa-download"></i> Start VideoDownload
+                    </button>
+                    <button class="btn-success" onclick="runVideo2Text('batch')" id="btn-video-batch"
+                        style="background-color: #d35400; flex: 1;">
+                        <i class="fas fa-layer-group"></i> Transcribe All Downloads
+                    </button>
+                    <button class="btn-secondary" onclick="openVideoDownloads()"
+                        style="background-color: #7f8c8d; color: white; flex: 1;">
+                        <i class="fas fa-folder-open"></i> Downloads
+                    </button>
+                </div>
+            </div>
+            <div class="log-window" id="log-video">
+                Waiting for command...
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        const socket = io();
+        const statusEl = document.getElementById('connection-status');
+
+        socket.on('connect', () => {
+            statusEl.innerHTML = '<i class="fas fa-circle"></i> Connected';
+            statusEl.style.color = '#2ecc71';
+        });
+
+        socket.on('disconnect', () => {
+            statusEl.innerHTML = '<i class="fas fa-circle"></i> Disconnected';
+            statusEl.style.color = '#e74c3c';
+        });
+
+        function appendLog(elementId, message) {
+            const el = document.getElementById(elementId);
+            // Check if it's a textarea or div
+            if (el.tagName === 'TEXTAREA') {
+                el.value += message + '\n';
+            } else {
+                el.innerHTML += message + '\n';
+            }
+            el.scrollTop = el.scrollHeight;
+        }
+
+        function setStatus(id, type, text) {
+            const el = document.getElementById(id);
+            let colorClass = 'status-idle';
+            if (type === 'running') colorClass = 'status-running';
+            if (type === 'done') colorClass = 'status-done';
+            if (type === 'error') colorClass = 'status-error';
+
+            el.innerHTML = `<span class="status-dot ${colorClass}"></span> ${text}`;
+        }
+
+        // --- Recherche ---
+        function runRecherche() {
+            // Permission for notification
+            if (Notification.permission !== "granted" && Notification.permission !== "denied") {
+                Notification.requestPermission();
+            }
+
+            const logEl = document.getElementById('log-recherche');
+            const rawInput = logEl.value;
+            const urls = rawInput.split('\n').map(u => u.trim()).filter(u => u.length > 0);
+
+            document.getElementById('btn-recherche').disabled = true;
+            setStatus('status-recherche', 'running', 'Läuft...');
+
+            // Append start message
+            logEl.value += '\n--- STARTING PROCESS ---\n';
+            logEl.scrollTop = logEl.scrollHeight;
+
+            fetch('/api/run/recherche', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ urls })
+            });
+        }
+
+        function clearRechercheLog() {
+            document.getElementById('log-recherche').value = '';
+        }
+
+        socket.on('log-recherche', (msg) => {
+            appendLog('log-recherche', msg);
+            if (msg.includes("DONE") || msg.includes("Erfolg")) {
+                setStatus('status-recherche', 'done', 'Fertig');
+                document.getElementById('btn-recherche').disabled = false;
+
+                // Notification
+                if (Notification.permission === "granted") {
+                    new Notification("Recherche Abgeschlossen!");
+                }
+            }
+        });
+
+        // --- Video2Text ---
+        function runVideo2Text(mode) {
+            const url = document.getElementById('video-url').value;
+            const translate = document.getElementById('translate-check').checked;
+
+            if (mode === 'url' && !url) return alert("Bitte URL eingeben!");
+
+            if (mode === 'url') document.getElementById('btn-video').disabled = true;
+            if (mode === 'batch') document.getElementById('btn-video-batch').disabled = true;
+
+            setStatus('status-video', 'running', 'Läuft...');
+            document.getElementById('log-video').innerHTML = 'Starting ' + mode + ' process...\n';
+
+            fetch('/api/run/video2text', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ url, mode, translate })
+            });
+        }
+
+        socket.on('log-video', (msg) => {
+            appendLog('log-video', msg);
+            if (msg.includes("DONE") || msg.includes("Transcription saved")) {
+                setStatus('status-video', 'done', 'Fertig');
+                document.getElementById('btn-video').disabled = false;
+                document.getElementById('btn-video-batch').disabled = false;
+            }
+        });
+
+        function openVideoDownloads() {
+            fetch('/api/open-video-downloads', { method: 'POST' });
+        }
+
+        function openAppData() {
+            fetch('/api/open-app-data', { method: 'POST' });
+        }
+
+        function openNotes() {
+            fetch('/api/open-notes', { method: 'POST' });
+        }
+
+        // --- Skript ---
+        function runSkript() {
+            document.getElementById('btn-skript').disabled = true;
+            // setStatus('status-skript', 'running', 'Läuft...'); // Removed status element
+            document.getElementById('log-recherche').innerHTML += '\n--- Starting Upload ---\n';
+            document.getElementById('log-recherche').scrollTop = document.getElementById('log-recherche').scrollHeight;
+
+            fetch('/api/run/skript', { method: 'POST' });
+        }
+
+        socket.on('log-skript', (msg) => {
+            appendLog('log-recherche', '[UPLOAD] ' + msg); // Redirect to Recherche log
+            if (msg.includes("DONE")) {
+                // setStatus('status-skript', 'done', 'Fertig');
+                document.getElementById('btn-skript').disabled = false;
+                appendLog('log-recherche', '--- Upload Finished ---\n');
+            }
+        });
+
+        function killAll() {
+            if (confirm("Wirklich ALLES schließen?")) {
+                fetch('/api/kill-all', { method: 'POST' });
+                document.body.innerHTML = "<h1 style='color:white; text-align:center; margin-top:50px;'>System wird heruntergefahren...</h1>";
+            }
+        }
+
+        // Help Modal Logic
+        const modal = document.getElementById("helpModal");
+
+        function openHelp() {
+            modal.style.display = "flex";
+        }
+
+        function closeHelp() {
+            modal.style.display = "none";
+        }
+
+        // Close on outside click
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
