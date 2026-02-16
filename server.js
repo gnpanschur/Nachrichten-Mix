@@ -12,7 +12,7 @@ const io = new Server(server);
 
 const PORT = 4000;
 
-// --- Auto-Start Text_To_Json Subsystem (Port 3001) ---
+// --- Auto-Start Text_To_Json Subsystem (Port 3002) ---
 const textToJsonPath = path.join(__dirname, '..', 'Text_To_Json', 'server.js');
 console.log(`Starting Text_To_Json subsystem at ${textToJsonPath}...`);
 
