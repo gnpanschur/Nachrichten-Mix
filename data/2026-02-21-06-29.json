@@ -1,0 +1,992 @@
+[
+    {
+        "category": "Wirtschaft",
+        "headline": "Gerichtsurteil zwingt Glovo zur Regelung von Arbeitsverhältnissen",
+        "teaser": "Ein Gericht in Italien ordnet an, dass Glovo die Arbeitsverhältnisse seiner 40.000 Fahrer regeln muss. Hintergrund sind ausbeuterische Arbeitsbedingungen, die zu einer Entlohnung unterhalb der Armutsgrenze führen. Die italienischen Gewerkschaften fordern die direkte Anstellung der Lieferboten und die Einhaltung des Arbeitsrechts. Der Fall ist ein Beispiel für die Herausforderungen in der Gig-Economy. Glovo kündigt an, mit den Behörden zu kooperieren.",
+        "source_name": "ORF",
+        "source_url": "https://orf.at/stories/3420781/",
+        "emoji": "📈",
+        "warning": ""
+    },
+    {
+        "category": "Chronik",
+        "headline": "Schauspieler verletzt Zuschauerin bei Theateraufführung",
+        "teaser": "Bei einer Aufführung von 'Richard III.' an der Berliner Schaubühne verletzte der Schauspieler Lars Eidinger versehentlich eine Zuschauerin mit einem Degen. Der Unfall ereignete sich während einer Kampfszene, als die Waffe aus seiner Hand glitt. Eidinger unterbrach die Vorstellung sofort und sorgte für medizinische Hilfe. Die Vorstellung wurde nicht fortgesetzt.",
+        "source_name": "ORF",
+        "source_url": "https://orf.at/stories/3420802/",
+        "emoji": "🎭",
+        "warning": ""
+    },
+    {
+        "category": "Politik",
+        "headline": "Festnahme von Andrew Mountbatten-Windsor als Wendepunkt für Royals",
+        "teaser": "Die Festnahme von Andrew Mountbatten-Windsor im Zusammenhang mit dem Epstein-Skandal markiert einen Wendepunkt für das britische Königshaus. König Charles III. geht härter mit seinem Bruder um als die verstorbene Queen. Mountbatten-Windsor wird wegen Fehlverhaltens in einem öffentlichen Amt untersucht. Die britische Regierung erwägt zudem einen Ausschluss Andrews aus der Thronfolge.",
+        "source_name": "ORF",
+        "source_url": "https://orf.at/stories/3420811/",
+        "emoji": "⚖️",
+        "warning": ""
+    },
+    {
+        "category": "Gesellschaft",
+        "headline": "Debatte über Teilzeitarbeit und 'Lifestyle-Teilzeit' in Österreich",
+        "teaser": "Die Arbeiterkammer präsentiert neue Zahlen zur Teilzeitarbeit in Österreich und relativiert das Konzept der 'Lifestyle-Teilzeit'. Viele Menschen arbeiten Teilzeit nicht aus freien Stücken, sondern aufgrund von Betreuungspflichten oder fehlenden Vollzeitangeboten. Der Anteil der Teilzeitbeschäftigten ist bei Frauen deutlich höher als bei Männern. Die AK fordert Maßnahmen zur Verbesserung der Arbeitsbedingungen für Teilzeitkräfte.",
+        "source_name": "ORF",
+        "source_url": "https://orf.at/stories/3420816/",
+        "emoji": "👩‍💼",
+        "warning": ""
+    },
+    {
+        "category": "Wirtschaft",
+        "headline": "US-Wirtschaft verliert unerwartet an Schwung",
+        "teaser": "Die US-Wirtschaft zeigt ein unerwartet schwaches Wachstum von nur 1,4 Prozent im letzten Quartal 2025. Ökonomen hatten ein Wachstum von 3,0 Prozent prognostiziert. Ein 43-tägiger Shutdown im Herbst hat das Wachstum erheblich gebremst. Präsident Trump fordert Zinssenkungen von der Notenbank Fed.",
+        "source_name": "ORF",
+        "source_url": "https://orf.at/stories/3420821/",
+        "emoji": "📉",
+        "warning": ""
+    },
+    {
+        "category": "Politik",
+        "headline": "Trump erwägt begrenzten Militärschlag auf den Iran",
+        "teaser": "US-Präsident Donald Trump zieht einen begrenzten Militärschlag gegen den Iran in Betracht, sollte es im Atomstreit zu keiner Einigung kommen. Er gab dem Iran eine Frist von zehn bis 15 Tagen, um in den Verhandlungen einzulenken. Der iranische Außenminister wies das Ultimatum zurück und betonte die Möglichkeit eines diplomatischen Abkommens. Berichten zufolge sind die militärischen Planungen der USA für einen Angriff bereits weit fortgeschritten, was gezielte Tötungen innerhalb der iranischen Führung zur Folge haben könnte.",
+        "source_name": "ORF",
+        "source_url": "https://orf.at/stories/3420842/",
+        "emoji": "⚖️",
+        "warning": ""
+    },
+    {
+        "category": "Wissenschaft",
+        "headline": "NASA plant bemannte Mondmission für 6. März",
+        "teaser": "Die NASA kündigt die bemannte Mondmission \"Artemis 2\" an, die frühestens am 6. März starten soll. Diese Mission wird die erste Mondreise seit über 50 Jahren darstellen und die bisher weiteste Reise ins All ermöglichen. Vorab wurde ein erfolgreicher Test für den Start durchgeführt, bei dem technische Abläufe geprobt und die Rakete betankt wurde. NASA-Manager äußern sich optimistisch über den Fortschritt der Vorbereitungen, betonen jedoch, dass noch Arbeit vor ihnen liegt.",
+        "source_name": "ORF",
+        "source_url": "https://orf.at/stories/3420848/",
+        "emoji": "🚀",
+        "warning": ""
+    },
+    {
+        "category": "Gesellschaft / Steiermark",
+        "headline": "Tuntenball in Graz feiert Vielfalt und Freiheit",
+        "teaser": "Der Grazer Tuntenball, ein bedeutendes Charity-Event für die LGBTIQ-Community, findet unter dem Motto \"Grand Bordell\" statt. Die Veranstaltung feiert seit über drei Jahrzehnten die Vielfalt und bietet einen Raum für kreative Outfits und Selbstentfaltung. Der Reinerlös kommt Projekten der RosaLila-PantherInnen zugute. Trotz steigender Ticketpreise bleibt der Tuntenball ein wichtiges Event zur Unterstützung queerer Menschen und deren Anliegen.",
+        "source_name": "ORF",
+        "source_url": "https://steiermark.orf.at/magazin/stories/3341515/",
+        "emoji": "🏳️‍🌈",
+        "warning": ""
+    },
+    {
+        "category": "Gesellschaft / Steiermark",
+        "headline": "Zillertaler Krapfen: Tradition trifft moderne Küche",
+        "teaser": "Im Genusstreffpunkt Höfer in Weinitzen bei Graz wird eine moderne Interpretation der traditionellen Zillertaler Krapfen angeboten. Die Zubereitung umfasst einen Teig aus Mehl und Ei, gefüllt mit einer Mischung aus Kartoffeln, Käse und Schnittlauch. Die Krapfen werden in Butterschmalz goldbraun ausgebacken und mit einem gemischten Salat serviert. Diese Speise vereint regionale Tradition mit zeitgemäßer Küche.",
+        "source_name": "ORF",
+        "source_url": "https://steiermark.orf.at/magazin/stories/3342473/",
+        "emoji": "🍽️",
+        "warning": ""
+    },
+    {
+        "category": "Chronik / Steiermark",
+        "headline": "Zweiter Toter nach Kohlenmonoxidunfall in Leoben",
+        "teaser": "In Leoben-Donawitz kam es bei einem Arbeitsunfall zu einem Kohlenmonoxidaustritt, bei dem zwei ungarische Arbeiter starben. Der 26-Jährige verstarb sofort, der 20-Jährige erlag am Donnerstag seinen Verletzungen. Beide waren mit Revisionsarbeiten in einem unterirdischen Schacht beschäftigt. Die genauen Umstände des Unfalls werden noch ermittelt.",
+        "source_name": "ORF",
+        "source_url": "https://steiermark.orf.at/stories/3342388/",
+        "emoji": "⚠️",
+        "warning": ""
+    },
+    {
+        "category": "Gesellschaft / Steiermark",
+        "headline": "Verkehrsclub ruft zu Haltestellencheck auf",
+        "teaser": "Der Verkehrsclub Österreich startet einen Haltestellen-Check für mehr als 7.500 Bus-Haltestellen in der Steiermark. Fahrgäste können Mängel über eine Online-Karte melden. Ziel ist die Verbesserung der Haltestellenqualität und der Verkehrssicherheit. Der Check läuft bis April 2026 und soll helfen, die Haltestellen barrierefrei und sicher zu gestalten.",
+        "source_name": "ORF",
+        "source_url": "https://steiermark.orf.at/stories/3342573/",
+        "emoji": "🚌",
+        "warning": ""
+    },
+    {
+        "category": "Wirtschaft / Steiermark",
+        "headline": "Südsteirischer Abbruchspezialist insolvent",
+        "teaser": "Das Abbruch-Unternehmen Demolit hat ein Sanierungsverfahren mit Eigenverwaltung angemeldet. 25 Mitarbeiter sind betroffen, die Passiva belaufen sich auf etwa 3,2 Millionen Euro. Gründe für die Insolvenz sind massive Verluste in den Jahren 2019 und 2020 sowie der Rückgang von Aufträgen. Eine Fortführung und Sanierung des Unternehmens ist geplant.",
+        "source_name": "ORF",
+        "source_url": "https://steiermark.orf.at/stories/3342619/",
+        "emoji": "📉",
+        "warning": ""
+    },
+    {
+        "category": "Chronik / Steiermark",
+        "headline": "Bursche flüchtete auf E-Scooter vor Polizei",
+        "teaser": "Ein 14-Jähriger in Voitsberg entzieht sich einer Verkehrsanhaltung und flüchtet mit einem E-Scooter. Trotz Polizeidurchsagen hält er nicht an und wird schließlich gestoppt. Der E-Scooter überschreitet die zulässige Höchstgeschwindigkeit. Nach einer weiteren Verkehrsanhaltung wird der Scooter sichergestellt und der Jugendliche angezeigt.",
+        "source_name": "ORF",
+        "source_url": "https://steiermark.orf.at/stories/3342652/",
+        "emoji": "🚔",
+        "warning": ""
+    },
+    {
+        "category": "Wirtschaft / Steiermark",
+        "headline": "Schutzstatus für Holz trifft Musikbranche",
+        "teaser": "Ab 5. März gelten strengere Artenschutzbestimmungen für das brasilianische Holz Fernambuk, das für Streichinstrumentenbögen verwendet wird. Die Musikbranche sieht sich mit administrativem Mehraufwand konfrontiert. Details zur Umsetzung werden derzeit abgestimmt. Instrumentenbauer fordern Klarheit über den Umgang mit bestehenden Beständen und den Verkauf von Bögen.",
+        "source_name": "ORF",
+        "source_url": "https://steiermark.orf.at/stories/3342663/",
+        "emoji": "🎻",
+        "warning": ""
+    },
+    {
+        "category": "Österreich / Burgenland",
+        "headline": "Oberwart verzeichnet Bevölkerungswachstum und stabile Finanzen",
+        "teaser": "Die Stadtgemeinde Oberwart feiert 2027 ihr 700-Jahr-Jubiläum. Junge Familien ziehen in die Stadt, was zu einem Anstieg der Einwohnerzahl auf 8.137 führt. Trotz hoher Investitionen, wie dem neuen Bildungscampus, bleibt die Finanzlage stabil mit einem Schuldenstand von knapp zehn Millionen Euro. Zukünftige Projekte beinhalten die Neugestaltung der Innenstadt, um diese attraktiver zu machen. Der Bürgermeister äußert sich zu geplanten Maßnahmen und der Möglichkeit einer erneuten Kandidatur bei den Wahlen 2027.",
+        "source_name": "ORF",
+        "source_url": "https://burgenland.orf.at/stories/3342595/",
+        "emoji": "🇦🇹",
+        "warning": ""
+    },
+    {
+        "category": "Politik / Burgenland",
+        "headline": "Revisionsverband sieht Vorwürfe gegen 'Neue Eisenstädter' als nicht erwiesen",
+        "teaser": "Der Österreichische Verband gemeinnütziger Bauvereinigungen hat bei einer Sonderprüfung der Wohnbaugesellschaft 'Neue Eisenstädter' keine Mängel festgestellt. Der Verband kritisiert die Einsetzung eines Regierungskommissärs durch das Land Burgenland als überraschend und nicht gerechtfertigt. Die Vorwürfe, zu hohe Zinsen an Mieter weiterverrechnet und Wohnungen unrechtmäßig verkauft zu haben, werden als unbegründet angesehen. Das Verfahren gegen die Einsetzung des Kommissärs läuft noch.",
+        "source_name": "ORF",
+        "source_url": "https://burgenland.orf.at/stories/3342600/",
+        "emoji": "⚖️",
+        "warning": ""
+    },
+    {
+        "category": "Chronik / Burgenland",
+        "headline": "Stromprobleme in Klinik Oberpullendorf behoben",
+        "teaser": "Die Klinik Oberpullendorf hatte über eine Woche mit Problemen in der Stromversorgung zu kämpfen, die vor allem die Röntgenabteilung betrafen. Ein Kurzschluss führte zu Einschränkungen, und mobile Röntgengeräte mussten eingesetzt werden. Externe Notstromaggregate wurden zur Überbrückung verwendet, jedoch kam es auch hier zu Ausfällen. Nach Reparaturen ist die reguläre Stromversorgung nun wiederhergestellt, und der Normalbetrieb kann fortgesetzt werden.",
+        "source_name": "ORF",
+        "source_url": "https://burgenland.orf.at/stories/3342607/",
+        "emoji": "⚡",
+        "warning": ""
+    },
+    {
+        "category": "Gesellschaft / Burgenland",
+        "headline": "Zwei Verurteilungen wegen Hasskriminalität in Eisenstadt",
+        "teaser": "Am Landesgericht Eisenstadt wurden zwei junge Männer wegen Hasskriminalität verurteilt. Sie lockten ein Opfer mit einem Fake-Account und verletzten es schwer. Die Täter gehören offenbar zur 'Pedo Hunter'-Szene, die unter dem Vorwand, Pädokriminelle zu jagen, Gewalt ausübt. Die Urteile sind rechtskräftig, und die Staatsanwaltschaft bezeichnet den Vorfall als ausufernde Selbstjustiz. Weitere Ermittlungen gegen andere Beteiligte laufen.",
+        "source_name": "ORF",
+        "source_url": "https://burgenland.orf.at/stories/3342640/",
+        "emoji": "⚖️",
+        "warning": ""
+    },
+    {
+        "category": "Wetter / Burgenland",
+        "headline": "Schneewarnung für das Burgenland",
+        "teaser": "Ein Italien-Tief bringt einen Wintereinbruch in die Osthälfte Österreichs, einschließlich des Burgenlands. Bis zu 30 Zentimeter Neuschnee sind bis Freitag zu erwarten, begleitet von starkem Wind, der Schneeverwehungen verursachen kann. Der Winterdienst ist vorbereitet, um die Straßen zu räumen, und auch die Feuerwehren rechnen mit erhöhten Einsätzen. Nach dem Wintereinbruch werden jedoch bereits am Samstag Plusgrade erwartet.",
+        "source_name": "ORF",
+        "source_url": "https://burgenland.orf.at/stories/3342660/",
+        "emoji": "❄️",
+        "warning": ""
+    },
+    {
+        "category": "Österreich / Burgenland",
+        "headline": "Asbest: Keine akute Gefahr laut Taskforce",
+        "teaser": "Das Land Burgenland präsentiert erste Ergebnisse der Luftmessungen zur Asbestbelastung. Die Taskforce erklärt, dass an den beprobten Standorten keine akute Gefahr besteht. Mittelfristig soll das belastete Material fachgerecht entfernt werden. In den nächsten zwei Wochen werden die Messungen an rund 100 Standorten abgeschlossen und im Frühjahr wiederholt. Zudem fordert die Taskforce gesetzliche Bestimmungen auf Bundesebene zur Regulierung der Gewinnung von Gestein.",
+        "source_name": "ORF",
+        "source_url": "https://burgenland.orf.at/stories/3342662/",
+        "emoji": "🇦🇹",
+        "warning": ""
+    },
+    {
+        "category": "Österreich / Burgenland",
+        "headline": "Schneechaos im Burgenland",
+        "teaser": "Heftige Schneefälle verursachen im Burgenland erhebliche Probleme. Zahlreiche Straßen sind gesperrt, und tausende Haushalte im Bezirk Jennersdorf und Güssing sind ohne Strom. Die Räumdienste sind im Dauereinsatz, um die Straßen befahrbar zu halten. In den letzten 12 Stunden wurden über 700 Einsätze verzeichnet, vor allem wegen umgestürzter Bäume und steckengebliebener Fahrzeuge. Auch der öffentliche Verkehr ist betroffen, mit Verspätungen und Ausfällen bei Buslinien. Schülerinnen und Schüler, die aufgrund des Schnees nicht zur Schule kommen konnten, sind entschuldigt.",
+        "source_name": "ORF",
+        "source_url": "https://burgenland.orf.at/stories/3342715/",
+        "emoji": "🇦🇹",
+        "warning": ""
+    },
+    {
+        "category": "Gesellschaft / Kärnten",
+        "headline": "Innenstädte: Leben statt Leerstand",
+        "teaser": "Eine Diskussionssendung im Fuchspalast in St. Veit widmet sich dem Thema Leerstand in Innenstädten. Viele Städte kämpfen mit leerstehenden Geschäftsflächen, insbesondere kleinere Bezirksstädte. Die Sendung thematisiert Maßnahmen zur Belebung der Innenstädte und die Herausforderungen durch den Onlinehandel. St. Veit an der Glan verzeichnet erste Erfolge mit mehr Neueröffnungen als Schließungen. Die Bevölkerung ist eingeladen, aktiv an der Diskussion teilzunehmen.",
+        "source_name": "ORF",
+        "source_url": "https://kaernten.orf.at/radio/stories/3342268/",
+        "emoji": "🏙️",
+        "warning": ""
+    },
+    {
+        "category": "Gesellschaft / Kärnten",
+        "headline": "Musik im Land – die Konzertsendung",
+        "teaser": "Die ORF Landesstudios Kärnten präsentieren eine Sendung über aktuelle Konzerte und musikalische Höhepunkte in Kärnten. Am Rosenmontag wird ein Konzertmitschnitt aus dem Konzerthaus Klagenfurt ausgestrahlt, mit Arien aus Opern und unterhaltsamen Operettennummern. Der Bariton Clemens Unterreiner und die Pianistin Maria Prinz stehen im Mittelpunkt des Programms, das sowohl musikalische Qualität als auch persönliche Note bietet.",
+        "source_name": "ORF",
+        "source_url": "https://kaernten.orf.at/radio/stories/musikimland/",
+        "emoji": "🎶",
+        "warning": ""
+    },
+    {
+        "category": "Gesellschaft / Kärnten",
+        "headline": "Aktuelle Wertung der ORF Schlagerparade",
+        "teaser": "Die ORF Schlagerparade kürt jede Woche die beliebtesten Hits der Radio Kärnten-Hörer. Die Wertung vom 15. Februar 2026 wird präsentiert. Die Sendung bietet einen Überblick über die meistgehörten Lieder in Österreich, erstellt von Music Trace.",
+        "source_name": "ORF",
+        "source_url": "https://kaernten.orf.at/radio/stories/schlagerparade/",
+        "emoji": "🎤",
+        "warning": ""
+    },
+    {
+        "category": "Gesellschaft / Kärnten",
+        "headline": "Diskussion über Neujahrsvorsätze in 'Streitkultur'",
+        "teaser": "In der Diskussionssendung 'Streitkultur' auf Radio Kärnten wird die Thematik von Neujahrsvorsätzen behandelt. Gesundheit, Fitness und Schönheit stehen im Fokus, wobei viele Kärntnerinnen und Kärntner mit guten Vorsätzen ins neue Jahr starten. Die Sendung beleuchtet die Herausforderungen einer nachhaltigen Lebensstiländerung und die Gründe für Unzufriedenheit mit dem eigenen Körper. Experten diskutieren, wie man Neujahrsziele erfolgreich umsetzen kann. Die Sendung wird auch als Videostream ausgestrahlt, und das Publikum kann aktiv teilnehmen.",
+        "source_name": "ORF",
+        "source_url": "https://kaernten.orf.at/radio/stories/streitkultur/",
+        "emoji": "💬",
+        "warning": ""
+    },
+    {
+        "category": "Gesellschaft / Kärnten",
+        "headline": "37. Häuslbauermesse in Klagenfurt eröffnet",
+        "teaser": "Die 37. Häuslbauermesse in Klagenfurt hat am Freitag ihre Tore geöffnet. Bis Sonntag können sich angehende Eigenheimbesitzer über Bau- und Sanierungsmöglichkeiten informieren. Die Messe zählt mit etwa 27.000 Besuchern zu den größten ihrer Art im Alpen-Adria-Raum. Rund 400 Aussteller präsentieren ihre Angebote auf 30.000 Quadratmetern. Ein Highlight ist die 'lebende Baustelle', bei der Lehrlinge live beim Bau eines Gartenhauses zu sehen sind. Die Messe bietet auch Informationen zu Förderungen für Sanierungsprojekte.",
+        "source_name": "ORF",
+        "source_url": "https://kaernten.orf.at/stories/3342691/",
+        "emoji": "🏡",
+        "warning": ""
+    },
+    {
+        "category": "Chronik / Kärnten",
+        "headline": "Prozess um Acoustic Lake Festival geht weiter",
+        "teaser": "Der Prozess um möglichen Sozialabgabenbetrug beim Acoustic Lakeside Festival wird fortgesetzt. Nach einer Revision der Finanzpolizei müssen alle 192 Vereinsmitglieder aussagen. Die Grundfrage ist, ob Helfer bei Vereinsveranstaltungen angemeldet werden müssen. Bei einer Razzia 2023 wurden viele Helfer als illegal Beschäftigte betrachtet. Der Verwaltungsgerichtshof entscheidet über die Einzelfälle. Der Anwalt der Vereinsobfrau kritisiert die lange Verfahrensdauer und die hohen Kosten für die Steuerzahler.",
+        "source_name": "ORF",
+        "source_url": "https://kaernten.orf.at/stories/3342692/",
+        "emoji": "⚖️",
+        "warning": ""
+    },
+    {
+        "category": "Allgemein / Kärnten",
+        "headline": "Tagesprogramm von Radio Kärnten am 20. Februar",
+        "teaser": "Das Tagesprogramm von Radio Kärnten am 20. Februar bietet einen Überblick über die wichtigsten Themen und Sendungen. Die Sendungen umfassen unter anderem Berichte von der '37. Häuslbauermesse' in Klagenfurt und die Vorbereitungen für 'Vienna Calling – Wer singt für Österreich?'. Zudem wird das Eishockeymagazin mit Einstiegen vom Eurovision Song Contest gesendet. Das Programm bietet auch Informationen zu Namenstagen und Bauernregeln.",
+        "source_name": "ORF",
+        "source_url": "https://kaernten.orf.at/radio/stories/tagesthemen/",
+        "emoji": "📅",
+        "warning": ""
+    },
+    {
+        "category": "Gesellschaft / Niederösterreich",
+        "headline": "Radio NÖ präsentiert interessante Gespräche mit prominenten Gästen",
+        "teaser": "Die Sendung 'Zu Gast nach 11' auf Radio NÖ bietet wochentags spannende Gespräche mit verschiedenen Persönlichkeiten. Vom Musiker Fred Jaklitsch bis zur Bestseller-Autorin Claudia Rossbacher erzählen die Gäste von ihrem Werdegang und persönlichen Geschichten. Die Sendung beleuchtet auch Themen wie Heimatmusik und die Herausforderungen von Krebspatienten. Die Vielfalt der Gäste reicht von Historikern bis zu Naturfotografen, die ihre Erlebnisse und Projekte vorstellen. Die Sendung verspricht inspirierende Einblicke in das Leben der Gäste und deren Verbindung zu Niederösterreich.",
+        "source_name": "ORF",
+        "source_url": "https://noe.orf.at/magazin/stories/3196008",
+        "emoji": "🇦🇹",
+        "warning": ""
+    },
+    {
+        "category": "Sport / Niederösterreich",
+        "headline": "Niederösterreich sucht die aktivste Firma",
+        "teaser": "Die NÖ-Firmenchallenge startet am 1. März und läuft bis 31. Mai. Unternehmen können ihre Mitarbeiter motivieren, sich aktiv zu betätigen und Bewegungsminuten zu sammeln. Die Challenge soll die Integration von Bewegung in den Arbeitsalltag fördern. Teilnehmer haben die Möglichkeit, Preise wie Niederösterreich-CARDs und Startplätze für lokale Marathon-Events zu gewinnen. Die Anmeldung ist bis zum 1. März möglich, und die Minuten werden über eine Handy-App erfasst.",
+        "source_name": "ORF",
+        "source_url": "https://noe.orf.at/magazin/stories/3340692/",
+        "emoji": "🏃‍♂️",
+        "warning": ""
+    },
+    {
+        "category": "Politik / Niederösterreich",
+        "headline": "Diskussion über Traisental-Schnellstraße S34",
+        "teaser": "Die geplante Traisental-Schnellstraße (S34) sorgt für anhaltende Diskussionen in der Region. Am 26. Februar findet eine öffentliche Diskussion statt, um die Vor- und Nachteile des Projekts zu erörtern. Die S34 soll eine Entlastung der stark belasteten Mariazeller Straße bieten, ist jedoch umstritten. Gegner äußern Bedenken hinsichtlich des Naturschutzes. Der Baustart könnte 2029 erfolgen, abhängig von Genehmigungen, die derzeit beim Europäischen Gerichtshof liegen. Die Diskussion wird live übertragen und bietet der Öffentlichkeit eine Plattform zur Meinungsäußerung.",
+        "source_name": "ORF",
+        "source_url": "https://noe.orf.at/magazin/stories/3341646/",
+        "emoji": "⚖️",
+        "warning": ""
+    },
+    {
+        "category": "Gesellschaft / Niederösterreich",
+        "headline": "Kirche in Hirschwang wird zum Kulturschauplatz",
+        "teaser": "Die Kirche in Hirschwang wird verkauft und künftig als Kulturschauplatz RaxworX genutzt. Die Erzdiözese Wien hat einen Käufer gefunden, da die Erhaltung der Kirche wirtschaftlich nicht mehr möglich war. RaxworX wird zeitgenössische Kunst und Kulturveranstaltungen bieten und soll vor allem ein jüngeres Publikum ansprechen. Die Eröffnung ist für Ende Juni 2026 geplant. Der letzte Gottesdienst in der Kirche findet am 8. März statt.",
+        "source_name": "ORF",
+        "source_url": "https://noe.orf.at/stories/3342658/",
+        "emoji": "🎭",
+        "warning": ""
+    },
+    {
+        "category": "Chronik / Niederösterreich",
+        "headline": "Ermittlungen nach dem Fund eines toten Kleinkindes",
+        "teaser": "Nach dem tragischen Fund eines toten Kleinkindes in Groß Gerungs laufen die Ermittlungen. Experten berichten von einem Anstieg ähnlicher Fälle und betonen den steigenden Druck auf Familien. Die Leiterin eines Kinderschutzzentrums weist auf Warnzeichen hin, die auf Überforderung und psychischen Druck hindeuten können. Es wird betont, dass Hilfe in Krisensituationen dringend angeboten werden sollte, um solche Tragödien zu verhindern. Die Gesellschaft wird aufgefordert, sensibler mit solchen Themen umzugehen und Unterstützung zu leisten.",
+        "source_name": "ORF",
+        "source_url": "https://noe.orf.at/stories/3342667/",
+        "emoji": "🚨",
+        "warning": ""
+    },
+    {
+        "category": "Österreich / Niederösterreich",
+        "headline": "Arbeiterkammer sichert 143 Millionen Euro für Arbeitnehmer",
+        "teaser": "Im Jahr 2025 haben über 132.000 Arbeitnehmer die Unterstützung der Arbeiterkammer Niederösterreich in Anspruch genommen. Die häufigsten Anliegen betrafen unregelmäßige Bezahlungen, Abfertigungen und Kündigungsentschädigungen, insbesondere in der Gastronomie. Die Arbeiterkammer konnte insgesamt 142,7 Millionen Euro für Betroffene zurückholen. Experten raten dazu, sich schnell zu melden, da es zahlreiche Fristen gibt. Zudem gab es einen erhöhten Beratungsbedarf aufgrund von Insolvenzen heimischer Betriebe.",
+        "source_name": "ORF",
+        "source_url": "https://noe.orf.at/stories/3342681/",
+        "emoji": "🇦🇹",
+        "warning": ""
+    },
+    {
+        "category": "Gesellschaft / Oberösterreich",
+        "headline": "Radio OÖ Winterparty auf der Höss",
+        "teaser": "Am 28. Februar findet die Radio Oberösterreich Winterparty an der Talstation Hinterstoder-Höss statt. Familien können sich auf ein vielfältiges Programm auf der Bärenhütte freuen, das ab 12:00 Uhr beginnt. Ab 14:30 Uhr wird die Partybühne eröffnet, auf der verschiedene Künstler auftreten. Der Eintritt zur Veranstaltung ist frei, jedoch ist eine Liftkarte erforderlich, um die Bärenhütte zu erreichen.",
+        "source_name": "ORF",
+        "source_url": "https://ooe.orf.at/magazin/stories/3341691/",
+        "emoji": "🎉",
+        "warning": ""
+    },
+    {
+        "category": "Gesellschaft / Oberösterreich",
+        "headline": "Dieter Chmelar zu Gast in der Linzer Torte",
+        "teaser": "Der Journalist und Kabarettist Dieter Chmelar ist derzeit mit Josi Prokopetz auf der Kabarett-Bühne aktiv. In der Sendung 'Linzer Torte' spricht er über sein Leben, seine Karriere und gesellschaftliche Themen. Chmelar verbindet Informationen mit Unterhaltung und hat sich als Gesellschaftsreporter einen Namen gemacht. Die Sendung ist auch als Podcast verfügbar.",
+        "source_name": "ORF",
+        "source_url": "https://ooe.orf.at/magazin/stories/3342518/",
+        "emoji": "🎭",
+        "warning": ""
+    },
+    {
+        "category": "Bildung / Oberösterreich",
+        "headline": "Debatte um AHS-Oberstufe: Latein vs. KI",
+        "teaser": "Bildungsminister Christoph Wiederkehr plant, die AHS-Oberstufe umzubauen, indem er Künstlicher Intelligenz mehr Raum gibt und Lateinstunden kürzt. Diese Reform stößt auf Widerstand, insbesondere an Schulen mit langer Tradition im Lateinunterricht. Befürworter der Reform betonen die Bedeutung digitaler Kompetenzen, während Kritiker die Gefahr sehen, dass Bildungstraditionen verloren gehen. Die Diskussion umfasst auch die Integration von KI in bestehende Fächer.",
+        "source_name": "ORF",
+        "source_url": "https://ooe.orf.at/stories/3341969/",
+        "emoji": "📚",
+        "warning": ""
+    },
+    {
+        "category": "Chronik / Oberösterreich",
+        "headline": "Mann bei Home-Invasion in Linz getötet",
+        "teaser": "In Linz wurde ein Mann bei einer mutmaßlichen Home-Invasion getötet. Die Polizei vermutet, dass die Täter auf der Suche nach Wertgegenständen waren. Das Handy des Opfers fehlt, was die Ermittlungen erschwert. Die Polizei geht von einem gewaltsamen Übergriff aus und untersucht mögliche Zusammenhänge mit einem Besuch einer unbekannten Person. Die Ermittlungen dauern an, und ein Kriminalpsychologe wurde zur Fallanalyse hinzugezogen.",
+        "source_name": "ORF",
+        "source_url": "https://ooe.orf.at/stories/3342714/",
+        "emoji": "🚨",
+        "warning": ""
+    },
+    {
+        "category": "Chronik / Oberösterreich",
+        "headline": "53-Jähriger starb bei Schneeräumarbeiten in Linz",
+        "teaser": "Ein tragischer Unfall ereignete sich im Linzer Stadtteil Ebelsberg, als ein 53-jähriger Mann bei Schneeräumarbeiten von einem Minitraktor erfasst wurde. Der Unfall passierte am Freitagmorgen, als der Mann versuchte, das ins Rutschen geratene Fahrzeug aufzuhalten. Trotz der sofortigen Hilfe der Feuerwehr erlag er noch an der Unfallstelle seinen schweren Verletzungen. Sein Kollege erlitt einen Schock und wurde betreut.",
+        "source_name": "ORF",
+        "source_url": "https://ooe.orf.at/stories/3342720/",
+        "emoji": "⚠️",
+        "warning": ""
+    },
+    {
+        "category": "Politik / Oberösterreich",
+        "headline": "Glocknerprozess: Urteil wegen grob fahrlässiger Tötung",
+        "teaser": "Ein 37-Jähriger wurde in Innsbruck wegen grob fahrlässiger Tötung verurteilt, nachdem seine 33-jährige Freundin am Großglockner erfroren ist. Das Gericht sprach eine bedingte Haftstrafe von fünf Monaten und eine Geldstrafe von 9.600 Euro aus. Das Urteil ist nicht rechtskräftig. Experten fordern mehr Bewusstsein für die Verantwortung von Tourenplanern in den Bergen, um ähnliche Vorfälle in Zukunft zu vermeiden.",
+        "source_name": "ORF",
+        "source_url": "https://ooe.orf.at/stories/3342740/",
+        "emoji": "⚖️",
+        "warning": ""
+    },
+    {
+        "category": "Gesellschaft / Oberösterreich",
+        "headline": "95 Prozent der Bevölkerung kennt neues Pfandsystem",
+        "teaser": "Laut einem aktuellen IMAS-Report sind 95 Prozent der Bevölkerung mit dem neuen Pfandsystem, das Anfang 2025 eingeführt wird, vertraut. Drei Viertel der Befragten halten die Einführung für positiv. 59 Prozent sammeln leere Pfandflaschen und -dosen, während 29 Prozent angeben, weniger davon zu kaufen. Die Zufriedenheit mit dem System ist hoch, jedoch gibt es auch Skeptiker, die Pfandgebinde wegwerfen.",
+        "source_name": "ORF",
+        "source_url": "https://ooe.orf.at/stories/3342752/",
+        "emoji": "♻️",
+        "warning": ""
+    },
+    {
+        "category": "Allgemein / Salzburg",
+        "headline": "Fräulein Grün und die Knospen im ORF-Radio Salzburg",
+        "teaser": "Am 21. Februar wird Karina Nouman, bekannt als Fräulein Grün, im ORF-Radio Salzburg über die Knospen und die Gemmotherapie sprechen. Die Sendung thematisiert die gesundheitlichen Vorteile von Pflanzenknospen und gibt Tipps zur Sammlung und Verwendung. Hörer können ihre Fragen vorab per E-Mail einreichen.",
+        "source_name": "ORF",
+        "source_url": "https://salzburg.orf.at/radio/stories/3038144/",
+        "emoji": "🌱",
+        "warning": ""
+    },
+    {
+        "category": "Allgemein / Salzburg",
+        "headline": "Astrologische Prognosen für das Jahr 2026",
+        "teaser": "Das Jahr 2026 wird als Jahr der neuen Möglichkeiten beschrieben, in dem die Planeten Merkur, Neptun und Saturn Einfluss auf das Leben der Menschen haben. Die Prognosen betonen Themen wie Klarheit, Mut und persönliche Entwicklung. Für jedes Sternzeichen werden individuelle Chancen und Herausforderungen aufgezeigt, die das Jahr prägen werden.",
+        "source_name": "ORF",
+        "source_url": "https://salzburg.orf.at/radio/stories/3335266/",
+        "emoji": "🔮",
+        "warning": ""
+    },
+    {
+        "category": "Gesellschaft / Salzburg",
+        "headline": "Tipps für die Fastenzeit: Mentale Strategien",
+        "teaser": "Die Fastenzeit beginnt und viele Menschen nutzen diese Zeit für einen Neustart. ORF-Mentalexperte Manuel Horeth gibt drei mentale Tipps, um den Prozess des Abnehmens zu unterstützen. Stress vor dem Essen sollte vermieden werden, um bewusster zu essen. Ein Motivations-Booster ist der Kauf eines Kleidungsstücks in der Wunschgröße. Zudem kann das Zähneputzen nach dem Essen helfen, den Appetit auf Süßes zu reduzieren. Diese Tipps sollen helfen, realistische Ziele zu setzen und den Weg zum Abnehmen zu erleichtern.",
+        "source_name": "ORF",
+        "source_url": "https://salzburg.orf.at/radio/stories/3341648/",
+        "emoji": "🧠",
+        "warning": ""
+    },
+    {
+        "category": "Sport / Salzburg",
+        "headline": "Wintertour in der Skiregion Hochkönig",
+        "teaser": "Die Wintertour von ORF-Radio Salzburg führt am 20. Februar in die Skiregion Hochkönig. Moderator Sebastian Grandits wird eine Ski-Show begleiten und verschiedene Programmpunkte präsentieren. Die Königstour umfasst mehrere Orte und bietet Herausforderungen für Skifahrer. Die Sendung beleuchtet auch die Entwicklung der Skimode und gibt Tipps für einen gelungenen Skitag. Die Veranstaltung verspricht spannende Einblicke in die Welt des Skifahrens und die Region Hochkönig.",
+        "source_name": "ORF",
+        "source_url": "https://salzburg.orf.at/radio/stories/3342566/",
+        "emoji": "⛷️",
+        "warning": ""
+    },
+    {
+        "category": "Gesellschaft / Salzburg",
+        "headline": "Astrologische Einblicke für die Woche",
+        "teaser": "Diese Woche bringt der Neumond im Wassermann neue Möglichkeiten und Klarheit. Astrologin Daniela Hruschka beschreibt, dass die Verbindung von Saturn und Neptun im Widder Vision und Verantwortung vereint. Glückskinder sind diese Woche Wassermann, Löwe und Schütze. Die astrologischen Einflüsse fördern langfristige Entscheidungen und persönliche Entwicklungen. Gespräche und neue Perspektiven sind ebenfalls Teil dieser Woche, die von innerer Stabilität und Klarheit geprägt ist.",
+        "source_name": "ORF",
+        "source_url": "https://salzburg.orf.at/radio/stories/horoskop/",
+        "emoji": "🔮",
+        "warning": ""
+    },
+    {
+        "category": "Gesellschaft / Salzburg",
+        "headline": "Mondkalender bis 22. Februar",
+        "teaser": "Der Mondkalender bietet Einblicke in die astrologischen Einflüsse bis zum 22. Februar. Der Neumond im Wassermann eröffnet neue Wege und Chancen. Die zunehmende Mondphase im Zeichen Fische lädt zur Regeneration ein, während der Mond im Widder zu schnellen Entscheidungen anregt. Die verschiedenen Mondphasen bieten ideale Tage für Entgiftung, kreative Projekte und persönliche Herausforderungen. Der Kalender gibt praktische Tipps für Haushalt, Gesundheit und Büro.",
+        "source_name": "ORF",
+        "source_url": "https://salzburg.orf.at/radio/stories/mondkalender/",
+        "emoji": "🌙",
+        "warning": ""
+    },
+    {
+        "category": "Allgemein / Salzburg",
+        "headline": "Webcams im Radio Salzburg Sendestudio",
+        "teaser": "Radio Salzburg bietet die Möglichkeit, den Moderatorinnen und Moderatoren bei der Arbeit über die Schulter zu schauen. Die Webcams im Sendestudio zeigen live, wenn das Mikrofon eingeschaltet ist und die Sendung läuft. Das Programm wird täglich zwischen 6.00 und 19.00 Uhr moderiert. Diese Initiative ermöglicht den Zuhörern einen Blick hinter die Kulissen des Radiosenders und fördert die Interaktion mit dem Publikum.",
+        "source_name": "ORF",
+        "source_url": "https://salzburg.orf.at/radio/stories/studiokamera/",
+        "emoji": "📹",
+        "warning": ""
+    },
+    {
+        "category": "Gesellschaft / Tirol",
+        "headline": "Radio Tirol sucht das Team des Tages",
+        "teaser": "Radio Tirol ruft die Tiroler Bevölkerung auf, ihre Lieblingsfreizeit- oder Arbeitsteams zu nominieren. Die besten Teams werden vorgestellt und erhalten die Möglichkeit, sich in einer Sendung zu präsentieren. Interessierte können sich mit einem Foto und einer Beschreibung ihres Teams anmelden. Die Aktion zielt darauf ab, die Wertschätzung für Gemeinschaft und Zusammenarbeit zu fördern.",
+        "source_name": "ORF",
+        "source_url": "https://tirol.orf.at/radio/stories/3272442/",
+        "emoji": "👥",
+        "warning": ""
+    },
+    {
+        "category": "Allgemein / Tirol",
+        "headline": "ORF Tirol bietet Podcasts zum Nachhören an",
+        "teaser": "ORF Tirol stellt eine Vielzahl von Podcasts zur Verfügung, die 30 Tage lang nachgehört werden können. Die Formate reichen von persönlichen Geschichten über Lebensbewältigung bis hin zu religiösen Themen und gesellschaftlichen Interviews. Die Podcasts sind auf der Plattform ORF Sound zugänglich und bieten eine breite Palette an Inhalten für unterschiedliche Interessen.",
+        "source_name": "ORF",
+        "source_url": "https://tirol.orf.at/radio/stories/podcast/",
+        "emoji": "🎙️",
+        "warning": ""
+    },
+    {
+        "category": "Allgemein / Tirol",
+        "headline": "Sendungen in ORF Radio Tirol",
+        "teaser": "ORF Radio Tirol bietet ein vielfältiges Sendeschema mit verschiedenen Formaten. Die Programme decken eine breite Palette an Themen ab und richten sich an ein breites Publikum. Details zu den Sendungen sind auf der Website von ORF Tirol verfügbar.",
+        "source_name": "ORF",
+        "source_url": "https://tirol.orf.at/radio/stories/sendeschema/",
+        "emoji": "📻",
+        "warning": ""
+    },
+    {
+        "category": "Kultur / Tirol",
+        "headline": "Ausstellung zeigt Werke von Warhol und Grosz",
+        "teaser": "In der Galerie Rhomberg in Innsbruck wird eine Ausstellung präsentiert, die Zeichnungen von Andy Warhol und George Grosz gegenüberstellt. Die Schau thematisiert die unterschiedlichen gesellschaftskritischen Ansätze der beiden Künstler. Warhols Arbeiten reflektieren den Kommerz, während Grosz soziale Ungleichheiten und Militarismus anprangert. Die Ausstellung bietet Einblicke in die künstlerischen Techniken und den Einfluss der beiden Künstler aufeinander.",
+        "source_name": "ORF",
+        "source_url": "https://tirol.orf.at/stories/3342657/",
+        "emoji": "🎨",
+        "warning": ""
+    },
+    {
+        "category": "Chronik / Tirol",
+        "headline": "Lawine schiebt Bus von Lechtalstraße",
+        "teaser": "Eine Lawine hat einen Bus auf der Lechtalstraße geschoben, alle Insassen blieben unverletzt. Der Vorfall ereignete sich im Gemeindegebiet von Bach. Die Polizei hat eine Umleitung eingerichtet, während die Bergrettung den Lawinenkegel sondierte. In den letzten Tagen gab es mehrere Lawinenunfälle, die zu zwei Todesfällen führten, weshalb der Lawinenwarndienst an Wintersportler appelliert, von Touren im freien Skiraum abzusehen.",
+        "source_name": "ORF",
+        "source_url": "https://tirol.orf.at/stories/3342719/",
+        "emoji": "🌨️",
+        "warning": ""
+    },
+    {
+        "category": "Wissenschaft / Tirol",
+        "headline": "Bartgeier-Ei zerbricht während Brutzeit",
+        "teaser": "Das Bartgeierpaar Romeo und Juliet hat kein eigenes Küken, da ihr Ei nach einem Monat Brutzeit zerbrach. Der Alpenzoo erklärt, dass solche Vorfälle Teil des natürlichen Brutgeschehens sind. Um das Paar im Brutmodus zu halten, wurden Attrappeneier in den Horst gelegt. Dies ist ein gängiger Teil der internationalen Erhaltungszucht für Bartgeier. In der Natur überlebt meist nur ein Küken, weshalb das zweite Küken in zoologischen Einrichtungen oft von Ammenpaaren großgezogen wird. Der Alpenzoo sieht gute Chancen, dass Romeo und Juliet als Ammenpaar für ein Bartgeierküken fungieren können.",
+        "source_name": "ORF",
+        "source_url": "https://tirol.orf.at/stories/3342723/",
+        "emoji": "🦅",
+        "warning": ""
+    },
+    {
+        "category": "Gesellschaft / Tirol",
+        "headline": "Careleaver: Herausforderungen nach Volljährigkeit",
+        "teaser": "Jugendliche aus Kinderschutzeinrichtungen müssen mit 18 Jahren auf eigenen Füßen stehen, was oft abrupt geschieht. Am internationalen „Care Day“ wird auf die Bedürfnisse dieser jungen Menschen hingewiesen. Es gibt keinen Rechtsanspruch auf Unterstützung über 18 hinaus, was zu Risiken wie Wohnungslosigkeit führen kann. In Tirol werden individuelle Beratungsleistungen bis zum 24. Lebensjahr angeboten, um den Übergang in die Selbstständigkeit zu erleichtern. Fachleute fordern eine rechtliche Verankerung für Nachbetreuung bis 24 Jahre. Das Land Tirol stellt Finanzmittel zur Verfügung, um Careleaver zu unterstützen.",
+        "source_name": "ORF",
+        "source_url": "https://tirol.orf.at/stories/3342728/",
+        "emoji": "👩‍🎓",
+        "warning": ""
+    },
+    {
+        "category": "Gesellschaft / Vorarlberg",
+        "headline": "Daniela Gau über Kommunikation mit älteren Generationen",
+        "teaser": "Die Kommunikationswissenschafterin Daniela Gau thematisiert in der Radiosendung „Ansichten“ die Bedeutung sensibler Kommunikation mit älteren Generationen. Sie plädiert für eine klare und verständliche Sprache sowie für individuelle Ansätze im Lernprozess. Ihr Konzept der Resonanz-Kommunikation zielt darauf ab, echte menschliche Nähe zu schaffen. Durch einfache Sprache und emotionale Ansätze möchte sie Brücken zwischen verschiedenen Generationen schlagen und die Kommunikation in Unternehmen verbessern.",
+        "source_name": "ORF",
+        "source_url": "https://vorarlberg.orf.at/radio/stories/3340858/",
+        "emoji": "🗣️",
+        "warning": ""
+    },
+    {
+        "category": "Allgemein / Vorarlberg",
+        "headline": "Rezept für Safranrisotto aus Vorarlberg",
+        "teaser": "Beate und Werner Fleisch präsentieren ein Rezept für Safranrisotto, das in Zusammenarbeit mit Christian Suter entstanden ist. Die Zubereitung umfasst Risottoreis, Safran, Knoblauch, Pfefferoni und Weißwein. Das Gericht wird mit Gemüsebrühe gekocht und mit kalter Butter verfeinert. Dieses Rezept zeigt die Verwendung regionaler Zutaten und die kulinarische Vielfalt Vorarlbergs.",
+        "source_name": "ORF",
+        "source_url": "https://vorarlberg.orf.at/radio/stories/3341089/",
+        "emoji": "🍚",
+        "warning": ""
+    },
+    {
+        "category": "Gesellschaft / Vorarlberg",
+        "headline": "Kabarett über die Herausforderungen der Pubertät",
+        "teaser": "Das Kabarett „Chill Mal! Am Ende der Geduld ist noch genug Pubertät übrig“ von Jan-Uwe Rogge und Matthias Jung thematisiert humorvoll die Herausforderungen, mit denen Eltern während der Pubertät konfrontiert sind. Die beiden Familienberater kombinieren Anekdoten mit pädagogischen Erkenntnissen, um Eltern zu ermutigen, gelassener zu reagieren. Sie betonen die Bedeutung einer stabilen Eltern-Kind-Bindung und den Einfluss digitaler Medien auf Jugendliche. Ziel ist es, Eltern zu entlasten und zu stärken.",
+        "source_name": "ORF",
+        "source_url": "https://vorarlberg.orf.at/radio/stories/3341184/",
+        "emoji": "😂",
+        "warning": ""
+    },
+    {
+        "category": "Österreich / Vorarlberg",
+        "headline": "Frühstücksdate in der Anstaltsapotheke des Landeskrankenhauses Feldkirch",
+        "teaser": "Das Team von „Guten Morgen Vorarlberg“ überrascht die Mitarbeiter der Anstaltsapotheke im Landeskrankenhaus Feldkirch mit einem Frühstück. Die Anstaltsapotheke versorgt alle Patientinnen und Patienten mit notwendigen Medikamenten. Das 15-köpfige Team hat sich die Überraschung verdient, da es für einen reibungslosen Ablauf sorgt. Interessierte können sich für ein Frühstücksdate mit den Moderatoren anmelden.",
+        "source_name": "ORF",
+        "source_url": "https://vorarlberg.orf.at/radio/stories/3342546/",
+        "emoji": "🇦🇹",
+        "warning": ""
+    },
+    {
+        "category": "Österreich / Vorarlberg",
+        "headline": "ORF Vorarlberg bleibt Marktführer im Radio",
+        "teaser": "ORF Radio Vorarlberg erreicht mit 25 Prozent Marktanteil die Spitzenposition im regionalen Radiomarkt. Täglich hören 126.000 Personen den Sender, der besonders bei über 35-Jährigen stark ist. Die TV-Sendungen „Vorarlberg heute“ und „Vorarlberg Wetter“ sind die beliebtesten Formate. Die Online-Präsenz verzeichnet über 127 Millionen Seitenaufrufe im Jahr 2025. ORF Vorarlberg bedankt sich für den großen Zuspruch und betont die Bedeutung von geprüften Inhalten.",
+        "source_name": "ORF",
+        "source_url": "https://vorarlberg.orf.at/stories/3339797/",
+        "emoji": "🇦🇹",
+        "warning": ""
+    },
+    {
+        "category": "Österreich / Wien",
+        "headline": "Afterwork-Event im Freiherz mit Sängerin Liah",
+        "teaser": "Am 24. Februar findet im Freiherz im Campus Wien ein Afterwork-Event statt. Die Sängerin Liah und DJane Mel Merio sorgen für musikalische Unterhaltung. Besucher können sich auf eine entspannte Atmosphäre mit Musik und Tanz freuen. Eine Tischreservierung wird empfohlen, und es gibt die Möglichkeit, Snacks und Drinks zu gewinnen. Der Eintritt ist frei.",
+        "source_name": "ORF",
+        "source_url": "https://wien.orf.at/radio/stories/3342147/",
+        "emoji": "🇦🇹",
+        "warning": ""
+    },
+    {
+        "category": "Österreich / Vorarlberg",
+        "headline": "Podcasts von Radio Vorarlberg im Überblick",
+        "teaser": "Radio Vorarlberg bietet eine Vielzahl von Podcasts zu unterschiedlichen Themen an. Dazu gehören Formate wie „Heiter bis wechselhaft“, der sich mit den Wechseljahren beschäftigt, und „Tatort Vorarlberg“, der echte Kriminalfälle behandelt. Weitere Podcasts thematisieren Kultur, Interviews und persönliche Herausforderungen. Die Angebote sind darauf ausgelegt, die Hörer zu informieren und zu unterhalten.",
+        "source_name": "ORF",
+        "source_url": "https://vorarlberg.orf.at/radio/stories/podcasts/",
+        "emoji": "🇦🇹",
+        "warning": ""
+    },
+    {
+        "category": "Gesellschaft / Wien",
+        "headline": "Gesundheitsstunde zu Bluthochdruck am 23. Februar",
+        "teaser": "In der kommenden Gesundheitsstunde von Radio Wien wird das Thema Bluthochdruck behandelt. Jeder vierte Österreicher ist betroffen, in der Altersgruppe über 70 Jahren sogar fast drei Viertel. Oft bleibt Bluthochdruck unentdeckt, was zu ernsthaften Folgen wie Schlaganfall oder Herzinfarkt führen kann. Die Sendung bietet Informationen zur Prävention und zu den Ursachen, wie Bewegungsmangel und Stress. Facharzt Prof. Dr. Johannes Kastner beantwortet Fragen der Zuhörer. Die Gesundheitsstunde findet am Montag, den 23. Februar, von 18.00 bis 19.00 Uhr statt.",
+        "source_name": "ORF",
+        "source_url": "https://wien.orf.at/radio/stories/3342172/",
+        "emoji": "🩺",
+        "warning": ""
+    },
+    {
+        "category": "Gesellschaft / Wien",
+        "headline": "Talk mit Nadja Maleh über Zucker und Genuss",
+        "teaser": "Nadja Maleh, Kabarettistin mit Multi-Kulti-Wurzeln, spricht im Talk aus dem Studio über Genuss und die Herausforderungen des Zuckerkonsums. Unter dem Titel 'Zuckergoscherl' thematisiert sie die süßen Lügen des Lebens und die gesellschaftlichen Gewohnheiten rund um Zucker. Der Talk findet am Sonntag, den 22. Februar, von 12.00 bis 13.00 Uhr statt. Maleh bringt humorvolle Pointen und reflektiert über die Beziehung der Menschen zu Süßigkeiten und deren Auswirkungen auf die Gesundheit.",
+        "source_name": "ORF",
+        "source_url": "https://wien.orf.at/radio/stories/3342275/",
+        "emoji": "🍭",
+        "warning": ""
+    },
+    {
+        "category": "Gesellschaft / Wien",
+        "headline": "Tipps zum Umtopfen von Zimmerpflanzen",
+        "teaser": "Der Frühling naht und es ist Zeit, Zimmerpflanzen umzutopfen. Radio-Wien-Pflanzenexperte Karl Ploberger gibt wichtige Tipps für das Umtopfen. Der richtige Zeitpunkt ist das Frühjahr, wenn die Pflanzen zu wachsen beginnen. Ploberger erklärt, wie man den alten Topf entfernt, wann und wie oft gegossen werden sollte und welche Erde am besten geeignet ist. Diese Tipps helfen, die Pflanzen gesund und kräftig zu halten.",
+        "source_name": "ORF",
+        "source_url": "https://wien.orf.at/radio/stories/3342471/",
+        "emoji": "🌱",
+        "warning": ""
+    },
+    {
+        "category": "Wissenschaft / Wien",
+        "headline": "Wissenschaftstalk über die Bedeutung des Schlafs",
+        "teaser": "Am 23. Februar findet ein Wissenschaftstalk über die Bedeutung des Schlafs für Gesundheit und Wohlbefinden statt. Schlafforscherin Ambra Stefani und Hans-Joachim Strokosch diskutieren unter der Moderation von Jasmin Dolati, warum Schlaf entscheidend für die Regeneration von Körper und Geist ist. Sie erörtern auch die Folgen von Schlafmangel und Strategien für erholsamen Schlaf. Die Aufzeichnung des Gesprächs wird am 1. März ausgestrahlt.",
+        "source_name": "ORF",
+        "source_url": "https://wien.orf.at/radio/stories/3342570/",
+        "emoji": "😴",
+        "warning": ""
+    },
+    {
+        "category": "Österreich / Wien",
+        "headline": "Wien Museum bietet Führungen in 25 Sprachen an",
+        "teaser": "Anlässlich des Tages der Muttersprache am 21. Februar lädt das Wien Museum zu Gratisführungen in 25 Sprachen ein. Die Führungen reflektieren die sprachliche Vielfalt der Wiener Bevölkerung, die sich im Alltag häufig mehrsprachig unterhält. Mitarbeiter des Museums präsentieren ihre Lieblingsobjekte in ihren Erst- und Zweitsprachen. Die angebotenen Sprachen reichen von Finnisch bis Arabisch und beinhalten auch einfache deutsche Sprache sowie Österreichische Gebärdensprache. Laut einer Umfrage sprechen 49 Prozent der Wiener in zwei Sprachen, 35 Prozent sogar in drei oder mehr.",
+        "source_name": "ORF",
+        "source_url": "https://wien.orf.at/stories/3342557/",
+        "emoji": "🇦🇹",
+        "warning": ""
+    },
+    {
+        "category": "Sport",
+        "headline": "ÖSV-Trio enttäuscht im Skicross bei Olympia",
+        "teaser": "Christina Födermayr, Sonja Gigler und Katrin Ofner konnten im Skicross nicht überzeugen. Ofner schied als beste Läuferin im Viertelfinale aus, während Födermayr und Gigler bereits im Achtelfinale ausschieden. Ofner äußerte ihre Enttäuschung über die verpasste Chance und bestätigte, dass dies ihre letzten Spiele waren. Gigler und Födermayr streben jedoch eine Teilnahme bei den nächsten Olympischen Spielen an. Der Wettbewerb endete mit Gold für die Deutsche Daniela Maier.",
+        "source_name": "ORF",
+        "source_url": "https://sport.orf.at/milanocortina2026/stories/3152534/",
+        "emoji": "🏅",
+        "warning": ""
+    },
+    {
+        "category": "Sport",
+        "headline": "Drohnen revolutionieren die Sportberichterstattung bei Olympia",
+        "teaser": "Drohnen haben sich bei den Olympischen Winterspielen als effektives Hilfsmittel etabliert. Sie bieten beeindruckende Perspektiven und ersetzen teilweise Helikopteraufnahmen. Der ORF-Regisseur Michael Kögler, der für die internationale Regie verantwortlich ist, hat die Rückkehr der Drohnen im Sport nach einem Vorfall 2015 vorangetrieben. Die neuen Standards ermöglichen eine sichere Nutzung, wobei Sicherheitsvorkehrungen strikt eingehalten werden müssen. Trotz des Hypes um die Drohnen sind sie in der Sportberichterstattung kein Neuland mehr.",
+        "source_name": "ORF",
+        "source_url": "https://sport.orf.at/milanocortina2026/stories/3152475/",
+        "emoji": "🎥",
+        "warning": ""
+    },
+    {
+        "category": "Sport",
+        "headline": "Curling begeistert bei den Olympischen Winterspielen",
+        "teaser": "Curling hat sich bei den Olympischen Winterspielen 2026 als beliebte Sportart etabliert. Die Atmosphäre im Eisstadion in Cortina ist elektrisierend, mit Fans aus aller Welt. Das Spiel wird als 'Schach auf dem Eis' bezeichnet und zieht zahlreiche Zuschauer an. Die Begeisterung für Curling wächst auch in Österreich, wo Kitzbühel als Zentrum des Sports gilt. Die Spiele bieten spannende Wettkämpfe und eine Vielzahl an internationalen Teilnehmern.",
+        "source_name": "ORF",
+        "source_url": "https://sport.orf.at/milanocortina2026/stories/3152299/",
+        "emoji": "🥌",
+        "warning": ""
+    },
+    {
+        "category": "Olympia",
+        "headline": "Gold-Duo trägt Fahne bei Schlussfeier der Olympischen Spiele",
+        "teaser": "Janine Flock und Alessandro Hämmerle tragen die österreichische Fahne bei der Schlussfeier der Olympischen Spiele in Verona. Flock, die Skeleton-Olympiasiegerin, sieht die Nominierung als besondere Ehre an. Hämmerle, der ebenfalls Gold im Snowboardcross gewonnen hat, teilt diese Ansicht. Beide Athleten betonen die Bedeutung dieser Aufgabe über den Medaillengewinn hinaus. Die Eröffnungsfeier hatte bereits mit besonderen Aktionen und Emotionen aufgewartet, darunter das Schultertragen von Anna Gasser durch Benjamin Karl.",
+        "source_name": "ORF",
+        "source_url": "https://sport.orf.at/milanocortina2026/stories/3152559/",
+        "emoji": "🇦🇹",
+        "warning": ""
+    },
+    {
+        "category": "Sport",
+        "headline": "USA und Kanada erreichen das Eishockey-Finale",
+        "teaser": "Im olympischen Eishockeyturnier stehen sich die USA und Kanada im Finale gegenüber. Kanada besiegt Finnland nach einem Rückstand mit 3:2, während die USA die Slowakei klar mit 6:2 schlagen. Nathan MacKinnon erzielt das entscheidende Tor für Kanada in der Schlussminute. Die Kanadier müssen auf ihren Kapitän Sidney Crosby verzichten, der verletzt ist. Das Finale findet am Sonntag statt, und die USA streben ihr erstes Olympiagold seit 1980 an.",
+        "source_name": "ORF",
+        "source_url": "https://sport.orf.at/milanocortina2026/stories/3152598",
+        "emoji": "🏒",
+        "warning": ""
+    },
+    {
+        "category": "Sport",
+        "headline": "Filip Misolic muss längere Verletzungspause einlegen",
+        "teaser": "Der österreichische Tennisprofi Filip Misolic fällt aufgrund einer Ruptur der Plantarfaszie für voraussichtlich acht Wochen aus. Die Verletzung wurde nach seiner Aufgabe beim Challenger in Lille diagnostiziert. Misolic plant, eine Zweitmeinung einzuholen, um weitere Schritte zu besprechen. Dies stellt einen Rückschlag für den derzeit einzigen österreichischen Top-100-Spieler dar.",
+        "source_name": "ORF",
+        "source_url": "https://sport.orf.at/stories/3152522/",
+        "emoji": "🎾",
+        "warning": ""
+    },
+    {
+        "category": "Sport",
+        "headline": "Curling begeistert bei Olympischen Spielen in Cortina",
+        "teaser": "Curling wird bei den Olympischen Spielen 2026 in Cortina als beliebte Sportart gefeiert. Die Atmosphäre im Stadio olimpico del ghiaccio ist elektrisierend, und die Spiele ziehen Fans aus der ganzen Welt an. Die Partien finden vor meist vollen Rängen statt, und die letzten Medaillen werden hier vergeben. Die Begeisterung für Curling wächst auch in Österreich, wo Kitzbühel als Zentrum des Sports gilt. Die kanadischen Teams sind Rekordsieger und ziehen viele Zuschauer an. Curling wird als strategisches Spiel beschrieben, das für alle Altersgruppen geeignet ist.",
+        "source_name": "ORF",
+        "source_url": "https://sport.orf.at/milanocortina2026/stories/3152299/",
+        "emoji": "🏅",
+        "warning": ""
+    },
+    {
+        "category": "Sport",
+        "headline": "Drohnen revolutionieren die Sportberichterstattung",
+        "teaser": "Drohnen sind bei den Olympischen Winterspielen 2026 ein fester Bestandteil der Berichterstattung. Sie bieten beeindruckende Perspektiven und verbessern die Zuschauererfahrung. Nach einem Vorfall im Jahr 2015 wurden neue Sicherheitsstandards eingeführt, die den Einsatz von Drohnen ermöglichen. Die Technik hat sich weiterentwickelt, und die Bildqualität ist nun auf 4K-Niveau. Sicherheit bleibt jedoch ein zentrales Thema, da trotz aller Vorsichtsmaßnahmen ein Restrisiko besteht. Die Drohnen werden in verschiedenen Sportarten eingesetzt und haben die Art und Weise, wie Sportereignisse gefilmt werden, verändert.",
+        "source_name": "ORF",
+        "source_url": "https://sport.orf.at/milanocortina2026/stories/3152475/",
+        "emoji": "🚁",
+        "warning": ""
+    },
+    {
+        "category": "Sport",
+        "headline": "Österreichs Skicross-Team enttäuscht bei Olympia",
+        "teaser": "Die österreichischen Skicrosserinnen Christina Födermayr, Sonja Gigler und Katrin Ofner konnten bei den Olympischen Spielen nicht überzeugen. Ofner schied im Viertelfinale aus, während Födermayr und Gigler im Achtelfinale ausschieden. Ofner, die ihre fünften Olympischen Spiele bestritt, zeigte sich enttäuscht über ihre Leistung. Gigler und Födermayr blicken jedoch optimistisch auf zukünftige Wettbewerbe. Die Medaille im Skicross ging an die Deutsche Daniela Maier, die sich im Finale durchsetzte.",
+        "source_name": "ORF",
+        "source_url": "https://sport.orf.at/milanocortina2026/stories/3152534/",
+        "emoji": "🏂",
+        "warning": ""
+    },
+    {
+        "category": "Sport",
+        "headline": "Österreichs Fahnenträger bei Schlussfeier stehen fest",
+        "teaser": "Die Olympiasieger Janine Flock und Alessandro Hämmerle werden bei der Schlussfeier der Olympischen Spiele in Mailand und Cortina die österreichische Fahne tragen. Flock bezeichnete die Nominierung als eine besondere Ehre, während Hämmerle stolz auf seine Aufgabe ist. Beide Athleten haben ihre Karrieren mit Goldmedaillen gekrönt. Die Schlussfeier findet am Sonntag in Verona statt, und die Nominierung wird als bedeutend für die Athleten angesehen.",
+        "source_name": "ORF",
+        "source_url": "https://sport.orf.at/milanocortina2026/stories/3152559/",
+        "emoji": "🇦🇹",
+        "warning": ""
+    },
+    {
+        "category": "Sport",
+        "headline": "Kanada und USA im Eishockey-Finale der Olympischen Spiele",
+        "teaser": "Im olympischen Eishockeyturnier stehen Kanada und die USA im Finale. Kanada besiegte Finnland in einem spannenden Halbfinale mit 3:2, während die USA die Slowakei mit 6:2 klar dominierten. Nathan MacKinnon erzielte das entscheidende Tor für Kanada in der Schlussminute. Die beiden Teams treffen im Finale am Sonntag aufeinander, und die Kanadier hoffen auf ihren weiteren Olympiasieg. Die USA streben nach ihrem ersten Olympiagold seit 1980.",
+        "source_name": "ORF",
+        "source_url": "https://sport.orf.at/milanocortina2026/stories/3152598",
+        "emoji": "🏒",
+        "warning": ""
+    },
+    {
+        "category": "Wissenschaft",
+        "headline": "5.000 Jahre alte Bakterien zeigen Antibiotikaresistenz",
+        "teaser": "In einer rumänischen Eishöhle entdeckten Forscher 5.000 Jahre alte Bakterien, die gegen mindestens zehn moderne Antibiotika resistent sind. Diese Bakterien könnten sowohl Risiken als auch Chancen für die moderne Medizin darstellen. Die Resistenz ist vermutlich das Ergebnis natürlicher Anpassungen an frühere Umwelteinflüsse. Die Entdeckung könnte helfen, neue Medikamente zu entwickeln, birgt jedoch auch die Gefahr, dass sich gefährliche 'Superbugs' bilden, wenn alte und moderne Bakterien interagieren.",
+        "source_name": "ORF",
+        "source_url": "https://science.orf.at/stories/3234254/",
+        "emoji": "🦠",
+        "warning": ""
+    },
+    {
+        "category": "Wissenschaft",
+        "headline": "Konzertgestaltung beeinflusst Musikerlebnis",
+        "teaser": "Eine neue Studie zeigt, dass die Gestaltung von Konzerten das Musikerlebnis erheblich beeinflusst. Faktoren wie Saalgestaltung, Moderation und visuelle Elemente spielen eine entscheidende Rolle für die Wahrnehmung der Musik. Die Forschung belegt, dass durchdachte Konzertformate das Eintauchen in die Musik fördern und das Publikum emotional stärker ansprechen können. Diese Erkenntnisse könnten zukünftige Konzertgestaltungen prägen und die Wertschätzung für klassische Musik steigern.",
+        "source_name": "ORF",
+        "source_url": "https://science.orf.at/stories/3234239/",
+        "emoji": "🎶",
+        "warning": ""
+    },
+    {
+        "category": "Gesellschaft",
+        "headline": "Zusammenziehen im Alter steigert Lebenszufriedenheit",
+        "teaser": "Eine aktuelle Studie zeigt, dass über 50-Jährige, die in einer neuen Partnerschaft zusammenziehen, eine signifikante Steigerung ihrer Lebenszufriedenheit erleben. Der rechtliche Status, wie eine Heirat, hat dabei weniger Einfluss als das Zusammenleben selbst. Bei bereits zusammenlebenden Paaren führt eine spätere Hochzeit nicht zu einem zusätzlichen Wohlbefinden. Die Forschung hebt die emotionale Widerstandsfähigkeit älterer Erwachsener hervor, die auch nach Trennungen stabil bleibt.",
+        "source_name": "ORF",
+        "source_url": "https://science.orf.at/stories/3234261/",
+        "emoji": "❤️",
+        "warning": ""
+    },
+    {
+        "category": "Sport",
+        "headline": "ORF Sport überträgt Live-Sportveranstaltungen",
+        "teaser": "Der ORF bietet eine Vielzahl an Live-Sportübertragungen über den Sender ORF Sport + sowie im Stream auf ORF ON an. Die Übertragungen sind jedoch vorbehaltlich kurzfristiger Änderungen. Zuschauer können sich auf ein breites Spektrum an Sportereignissen freuen, die live verfolgt werden können.",
+        "source_name": "ORF",
+        "source_url": "https://sport.orf.at/stories/3144099/",
+        "emoji": "📺",
+        "warning": ""
+    },
+    {
+        "category": "Wissenschaft",
+        "headline": "Risse im Schnee schneller als Theorie erlaubt",
+        "teaser": "Forschende haben herausgefunden, dass sich Risse in der Schneedecke mit Geschwindigkeiten von bis zu 130 Metern pro Sekunde ausbreiten können. Diese Geschwindigkeiten überschreiten die bisher angenommenen theoretischen Grenzen. Die Erkenntnisse könnten die Lawinenvorhersage verbessern, da schnellere Risse tendenziell zu größeren Lawinen führen. Die Studien wurden unter kontrollierten Bedingungen in Davos durchgeführt, wo gezielt Brüche in der Schneedecke ausgelöst wurden. Die Ergebnisse wurden in der Fachzeitschrift 'Nature Communications' veröffentlicht. Weitere Forschungen sind notwendig, um die Häufigkeit und die Rolle der Schneedeckeneigenschaften zu klären.",
+        "source_name": "ORF",
+        "source_url": "https://science.orf.at/stories/3234270/",
+        "emoji": "❄️",
+        "warning": ""
+    },
+    {
+        "category": "Gesellschaft",
+        "headline": "X-Algorithmus bevorzugt politisch rechte Inhalte",
+        "teaser": "Eine neue Studie zeigt, dass der Algorithmus von X, ehemals Twitter, politisch rechte Inhalte bevorzugt und Nachrichten aus journalistisch fundierten Quellen benachteiligt. Die Untersuchung umfasste 5.000 US-Nutzer und ergab, dass die algorithmische Sortierung die politische Einstellung der Nutzer beeinflussen kann. Der Wechsel von einem chronologischen zu einem algorithmisch gesteuerten Feed führte zu einer höheren Interaktion und einer verstärkten Sichtbarkeit konservativer Themen. Die Studie wirft Fragen zur Rolle sozialer Netzwerke in der politischen Meinungsbildung auf und zeigt, dass linke Nutzer nicht zu rechten Überzeugungen konvertieren.",
+        "source_name": "ORF",
+        "source_url": "https://science.orf.at/stories/3234271/",
+        "emoji": "🗳️",
+        "warning": ""
+    },
+    {
+        "category": "Gesellschaft",
+        "headline": "Pädagogische Grammatik für Gebärdensprache entwickelt",
+        "teaser": "Ab Herbst 2026 können Schüler an AHS-Oberstufen die Österreichische Gebärdensprache (ÖGS) als Zweite Lebende Fremdsprache wählen. Dazu wurde eine frei zugängliche pädagogische Grammatik für ÖGS und vier weitere europäische Gebärdensprachen entwickelt. Über 2.500 Videos sollen die Qualität des Gebärdensprachunterrichts verbessern. Die Entwicklung erfolgt im Rahmen des Projekts 'BAG-Sign', das auf linguistischen Erkenntnissen basiert. Die Einführung der ÖGS in den Lehrplan ist ein bedeutender Schritt zur Förderung der Kommunikation für gehörlose und schwerhörige Personen in Österreich.",
+        "source_name": "ORF",
+        "source_url": "https://science.orf.at/stories/3234275/",
+        "emoji": "👐",
+        "warning": ""
+    },
+    {
+        "category": "Wissenschaft",
+        "headline": "Astro-Fund begeistert die Fachwelt",
+        "teaser": "Ein österreichischer Forscher hat neuartige astronomische Objekte entdeckt, die als 'Little Red Dots' bezeichnet werden. Diese Objekte, die wie Sterne aussehen, sind tatsächlich Schwarze Löcher und haben in der Fachgemeinde großes Interesse geweckt. Der Fund könnte wichtige Hinweise auf die Entwicklung von Supermassiven Schwarzen Löchern liefern. Die Entdeckung wurde durch Daten des James-Webb-Teleskops ermöglicht und hat zu einer Vielzahl neuer Studien geführt. Die Forschung zu diesen Objekten ist dynamisch und zieht viele junge Wissenschaftler an.",
+        "source_name": "ORF",
+        "source_url": "https://science.orf.at/stories/3234278/",
+        "emoji": "🌌",
+        "warning": ""
+    },
+    {
+        "category": "Sport",
+        "headline": "Seattle Seahawks gewinnen Super Bowl gegen Patriots",
+        "teaser": "Die Seattle Seahawks haben den Super Bowl XL gegen die New England Patriots gewonnen. Quarterback Sam Darnold führte das Team zu einem klaren Sieg, während Kicker Jason Myers eine herausragende Leistung zeigte. Der Super Bowl 2026 wird als historisches Ereignis in die Geschichte des American Football eingehen. Die Seahawks feierten ihren Triumph mit einer großen Siegesfeier. Die wichtigsten Informationen zum Spiel und den Hintergründen sind ebenfalls verfügbar.",
+        "source_name": "Sportschau",
+        "source_url": "https://www.sportschau.de/american-football",
+        "emoji": "🏈",
+        "warning": ""
+    },
+    {
+        "category": "Sport",
+        "headline": "Sportschau jetzt auch im Auto verfügbar",
+        "teaser": "Die Sportschau bietet ab sofort Audio-Reportagen und Podcasts für Autofahrer an. Nutzer können die Inhalte über Apple CarPlay und Android Auto im Auto streamen. Die App ist für eine sichere Nutzung während der Fahrt optimiert. Zudem können Live-Ergebnisse abgerufen und Push-Benachrichtigungen aktiviert werden, um keine Spiele zu verpassen. Die neue Funktion soll das Sporterlebnis im Auto verbessern.",
+        "source_name": "Sportschau",
+        "source_url": "https://www.sportschau.de/app/mit-der-sportschau-im-auto-unterwegs,sportschau-automotive-carplay-100.html",
+        "emoji": "🚗",
+        "warning": ""
+    },
+    {
+        "category": "Sport",
+        "headline": "BBL-Pokal: Baskets Oldenburg im Halbfinale",
+        "teaser": "Die Baskets Oldenburg stehen im Halbfinale des BBL-Pokals und hoffen auf einen Sieg gegen Alba Berlin. Der US-Amerikaner Clemons spielt eine entscheidende Rolle für das Team. In weiteren Spielen der Basketball-Bundesliga haben die Alba-Frauen einen klaren Sieg gegen Osnabrück gefeiert. Die Liga zeigt sich weiterhin spannend, mit verschiedenen Teams, die um die besten Plätze kämpfen.",
+        "source_name": "Sportschau",
+        "source_url": "https://www.sportschau.de/basketball",
+        "emoji": "🏀",
+        "warning": ""
+    },
+    {
+        "category": "Sport",
+        "headline": "Alba-Frauen feiern Kantersieg in Osnabrück",
+        "teaser": "Die Basketballerinnen von Alba Berlin haben in der DBBL einen klaren Sieg gegen Osnabrück errungen. Die MBC Lions festigen mit einem Sieg in Herne ihren Platz in der Tabelle. In weiteren Spielen gab es enge Duelle, darunter ein Krimi in Hannover, den Alba nach Overtime verlor. Die Liga bleibt spannend, während die Teams um die Playoff-Plätze kämpfen.",
+        "source_name": "Sportschau",
+        "source_url": "https://www.sportschau.de/basketball/alles-zur-basketball-bundesliga-der-frauen,basketball-bundesliga-frauen-index-100.html",
+        "emoji": "🏀",
+        "warning": ""
+    },
+    {
+        "category": "Sport",
+        "headline": "Basketball-Nationalmannschaft der Frauen erreicht Platz fünf bei EM",
+        "teaser": "Die deutschen Basketballerinnen beenden die Europameisterschaft mit einem Sieg gegen Tschechien und sichern sich den fünften Platz. Dies ist das beste Abschneiden für die Mannschaft seit 1997. Zuvor gewannen die DBB-Frauen ein Platzierungsspiel gegen die Türkei. Trotz des Viertelfinalaus gegen Belgien haben die Spielerinnen die Erwartungen erfüllt. Die EM in Griechenland zeigt die Fortschritte im Frauenbasketball auf.",
+        "source_name": "Sportschau",
+        "source_url": "https://www.sportschau.de/basketball/alles-zur-basketball-nationalmannschaft-der-frauen,basketball-nationalmannschaft-frauen-100.html",
+        "emoji": "🏀",
+        "warning": ""
+    },
+    {
+        "category": "Wetter",
+        "headline": "Wetterbericht für die Steiermark",
+        "teaser": "In der Steiermark ist heute mit unbeständigem Wetter zu rechnen. Die Temperaturen liegen zwischen -3 und 7 Grad. Während es im Oberen Ennstal und im Ausseer Land immer wieder schneit oder regnet, bleibt es in der südlichen und östlichen Steiermark weitgehend trocken. Die Schneefallgrenze variiert zwischen 700 und 1100 Metern. Ein lebhafter bis kräftiger Nordwestwind weht in den Bergen und Tälern der Obersteiermark.",
+        "source_name": "ORF",
+        "source_url": "https://wetter.orf.at/steiermark/",
+        "emoji": "☁️",
+        "warning": ""
+    },
+    {
+        "category": "Wetter",
+        "headline": "Wetterbericht für Österreich",
+        "teaser": "Österreich erlebt heute unbeständiges Wetter mit häufigem Regen und Schneefall, insbesondere an der Alpennordseite. Die Schneefallgrenze liegt zwischen 800 und 1400 Metern. Im Süden zeigt sich die Sonne, während im Osten Glatteisgefahr besteht. Die Temperaturen variieren von frostigen Werten in der Früh bis zu 1 bis 9 Grad am Nachmittag. Ein sehr lebhafter Westwind ist zu erwarten.",
+        "source_name": "ORF",
+        "source_url": "https://wetter.orf.at/oes/",
+        "emoji": "☁️",
+        "warning": ""
+    },
+    {
+        "category": "Sport",
+        "headline": "Athletic Bilbao und FC Elche Ergebnisse",
+        "teaser": "Die aktuellen Ergebnisse von Athletic Bilbao und FC Elche sind auf der Plattform verfügbar. Details zu den Spielen und Statistiken können abgerufen werden. Diese Informationen sind für Fußballfans von Interesse, die die Leistungen der Teams verfolgen möchten.",
+        "source_name": "Laola1",
+        "source_url": "https://www.laola1.at/de/daten/ergebnisse/fussball/athletic-bilbao/",
+        "emoji": "⚽️",
+        "warning": ""
+    },
+    {
+        "category": "Sport",
+        "headline": "Ergebnisse der Fußballvereine in Österreich",
+        "teaser": "Mehrere österreichische Fußballvereine haben ihre aktuellen Ergebnisse veröffentlicht. Der First Vienna FC, Kapfenberger SV, SC Austria Lustenau und SKN St. Pölten sind in ihren jeweiligen Ligen aktiv. Die Ergebnisse dieser Teams sind für die Fans von großem Interesse, da sie die Leistung und den Stand in der Tabelle beeinflussen. Die Berichterstattung umfasst sowohl nationale als auch internationale Fußballereignisse. Die aktuelle Situation der Vereine zeigt die Dynamik des österreichischen Fußballs.",
+        "source_name": "Laola1",
+        "source_url": "https://www.laola1.at/de/daten/ergebnisse/fussball/",
+        "emoji": "⚽",
+        "warning": ""
+    },
+    {
+        "category": "Sport",
+        "headline": "Fußball International: Aktuelle Entwicklungen",
+        "teaser": "In der internationalen Fußballszene gibt es mehrere bemerkenswerte Entwicklungen. Elche erleidet in Bilbao die zehnte Saisonniederlage, während es im Spiel zwischen Mainz und Hamburg keinen Sieger gibt. Nürnberg erzielt ein Remis in Bochum, was einen Rückschlag für Bielefeld bedeutet. Borussia Dortmund hat die Möglichkeit, den Titelkampf in Leipzig zu beeinflussen. Zudem steht ein Comeback eines Mittelfeldstars von Barcelona bevor. Die Berichterstattung umfasst auch die deutsche Bundesliga und andere europäische Ligen.",
+        "source_name": "Laola1",
+        "source_url": "https://www.laola1.at/de/daten/news/fussball-international/",
+        "emoji": "⚽",
+        "warning": ""
+    },
+    {
+        "category": "Olympia",
+        "headline": "Dale-Skjevdal bringt Norwegen den Gold-Rekord",
+        "teaser": "Johannes Dale-Skjevdal gewinnt den Massenstart der Biathlon-Männer und sichert Norwegen den 17. Olympiasieg in 2026. Der 28-Jährige siegt fehlerfrei über 15 km und stellt damit einen neuen Rekord auf. Sturla Holm Laegreid erreicht Platz zwei, während Quentin Fillon Maillet Bronze gewinnt. Laegreid verlässt Antholz mit insgesamt fünf Medaillen. Die Olympischen Spiele in Mailand/Cortina neigen sich dem Ende zu, mit weiteren Entscheidungen am Samstag.",
+        "source_name": "Laola1",
+        "source_url": "https://www.laola1.at/de/red/wintersport/olympia-2026/biathlon/news/massenstart--dale-skjevdal-bringt-norwegen-den-gold-rekord/",
+        "emoji": "🏅",
+        "warning": ""
+    },
+    {
+        "category": "Olympia",
+        "headline": "Aktueller Medaillenspiegel Olympia 2026",
+        "teaser": "Der Medaillenspiegel der Olympischen Winterspiele 2026 in Mailand Cortina wird regelmäßig aktualisiert. In insgesamt 116 Bewerben kämpfen die besten Wintersportler um Medaillen. Der Stand zeigt, welche Nationen im Medaillenranking führend sind. Österreichs Leistungen werden ebenfalls berücksichtigt. Die Übersicht bietet einen umfassenden Einblick in die Medaillenvergabe und die aktuellen Platzierungen der teilnehmenden Länder.",
+        "source_name": "Laola1",
+        "source_url": "https://www.laola1.at/de/red/wintersport/olympia-2026/medaillenspiegel/medaillenspiegel-olympia-2026-aktuell/",
+        "emoji": "🥇",
+        "warning": ""
+    },
+    {
+        "category": "Olympia",
+        "headline": "Medailleentscheidungen am 14. Wettkampftag",
+        "teaser": "Am 14. Wettkampftag der Olympischen Spiele 2026 stehen insgesamt sieben Medaillenentscheidungen an. Die Übersicht listet die Medaillengewinner und bietet aktuelle Informationen zu den Wettkämpfen. Die Spiele nähern sich dem Ende, und die Spannung steigt, während Athleten um die letzten Medaillen kämpfen. Die Berichterstattung umfasst alle relevanten Ergebnisse und Entwicklungen des Tages.",
+        "source_name": "Laola1",
+        "source_url": "https://www.laola1.at/de/red/wintersport/olympia-2026/programm/olympia-live---alle-medaillen-von-tag-14-20-2--/",
+        "emoji": "🏅",
+        "warning": ""
+    },
+    {
+        "category": "Olympia",
+        "headline": "Österreichs Wettkämpfe am 21. Februar",
+        "teaser": "Am 21. Februar finden mehrere Wettkämpfe mit österreichischer Beteiligung statt. Die Athleten haben Chancen auf Medaillen in verschiedenen Disziplinen, darunter Viererbob, Skicross und Biathlon. Der Wettkampftag beginnt mit den Läufen im Viererbob und endet mit den Entscheidungen im Zweierbob der Frauen. Die österreichischen Sportler sind gut vorbereitet und hoffen auf Erfolge.",
+        "source_name": "Laola1",
+        "source_url": "https://www.laola1.at/de/red/wintersport/olympia-2026/programm/olympia-live---samstag-21-2---programm-oesterreicher-am-start/",
+        "emoji": "🇦🇹",
+        "warning": ""
+    },
+    {
+        "category": "Olympia",
+        "headline": "Österreichs Frauen im Skicross kämpfen um Medaillen",
+        "teaser": "Die österreichischen Skicross-Frauen treten am 14. Wettkampftag der Olympischen Spiele an. Die Athletinnen haben Chancen auf Medaillen und starten mit den Seeding-Runs. Der Tag bietet spannende Wettkämpfe, während die Sportlerinnen um den Einzug in die nächsten Runden kämpfen. Die Berichterstattung umfasst auch die weiteren Wettkämpfe des Tages, die für Österreich von Bedeutung sind.",
+        "source_name": "Laola1",
+        "source_url": "https://www.laola1.at/de/red/wintersport/olympia-2026/programm/olympia-live--oesterreichs-skicross-frauen-kaempfen-um-medaille/",
+        "emoji": "🇦🇹",
+        "warning": ""
+    },
+    {
+        "category": "Olympia",
+        "headline": "Österreichs Fahnenträger bei der Abschlussfeier der Olympischen Spiele 2026",
+        "teaser": "Die Olympiasieger Janine Flock und Alessandro Hämmerle tragen die österreichische Fahne bei der Abschlussfeier der Olympischen Spiele in Verona. Flock, die nach ihrer langen Karriere mit Gold krönte, sieht die Nominierung als besondere Ehre. Hämmerle, der seinen Titel im Snowboard-Cross verteidigte, bezeichnet die Aufgabe als perfekten Schlusspunkt seiner Olympiakarriere. Beide Athleten freuen sich, die österreichische Delegation zu repräsentieren und betonen die Bedeutung dieser Ehre.",
+        "source_name": "Laola1",
+        "source_url": "https://www.laola1.at/de/red/wintersport/olympia-2026/sonstiges/abschlussfeier--diese-olympiasieger-sind-oesterreichs-fahnentraeger/",
+        "emoji": "🇦🇹",
+        "warning": ""
+    },
+    {
+        "category": "Olympia",
+        "headline": "IOC untersucht Infantino-Rede bei Trumps Friedensrat",
+        "teaser": "Das Internationale Olympische Komitee (IOC) befasst sich mit dem Auftritt von FIFA-Präsident Gianni Infantino bei der ersten Sitzung des Friedensrats von Donald Trump. IOC-Präsidentin Kirsty Coventry kündigte an, die Situation zu prüfen und Informationen zur angeblichen Unterzeichnung von Dokumenten zu sammeln. Infantino, der auch IOC-Mitglied ist, sprach von einer 'echten Partnerschaft' zwischen dem Friedensrat und der FIFA. Kritiker werfen ihm vor, zu nah an politischen Akteuren zu stehen, die westliche Werte nicht teilen.",
+        "source_name": "Laola1",
+        "source_url": "https://www.laola1.at/de/red/wintersport/olympia-2026/sonstiges/ioc-befasst-sich-mit-infantino-rede-bei-trumps-friedensrat/",
+        "emoji": "⚖️",
+        "warning": ""
+    },
+    {
+        "category": "Wirtschaft",
+        "headline": "Nachhaltiges Bauen im Fokus bei Builtin Solutions GmbH",
+        "teaser": "Die Builtin Solutions GmbH zeigt, wie durch intelligente Bauplanung und moderne Technik nachhaltige Gebäude entstehen. Angesichts steigender Energiepreise ist ressourcenschonendes Bauen notwendig geworden. Das Unternehmen setzt auf Effizienz und langlebige Funktionalität in der Bauplanung. Besonders im Apotheken- und Ordinationsbau werden hohe Anforderungen an Energieeffizienz und Hygiene gestellt. Innovative Ansätze und digitale Planungstools sollen die Bauprojekte wirtschaftlich und ökologisch optimieren.",
+        "source_name": "5 Minuten",
+        "source_url": "https://www.5min.at/5lokales/energieeffizienz-im-fokus-nachhaltiges-bauen-mit-builtin-solutions-gmbh/",
+        "emoji": "📈",
+        "warning": ""
+    },
+    {
+        "category": "Gesellschaft",
+        "headline": "G.O.A.T. – Ein tierisch witziges Abenteuer im Kino",
+        "teaser": "Der Animationsfilm 'G.O.A.T. – Bock auf große Sprünge' erzählt die Geschichte eines kleinen Ziegenbocks, der in einem Hochleistungssportteam spielt. Trotz anfänglicher Skepsis seiner Teamkollegen kämpft Will darum, seine Träume zu verwirklichen. Die originelle Actionkomödie bietet eine Mischung aus Mutproben, Herz und Humor und richtet sich an ein jüngeres Publikum. Der Film ist mit bekannten Stimmen aus der Filmbranche besetzt und bietet eine unterhaltsame Geschichte über Selbstvertrauen und Teamgeist.",
+        "source_name": "5 Minuten",
+        "source_url": "https://www.5min.at/5lokales/g-o-a-t-bock-auf-grosse-spruenge-ein-tierisch-witziges-abenteuer/",
+        "emoji": "🎬",
+        "warning": ""
+    },
+    {
+        "category": "Gesellschaft",
+        "headline": "Kelag-PlusClub: Fit und gesund durch die Fastenzeit",
+        "teaser": "Der Kelag-PlusClub bietet während der Fastenzeit zahlreiche Angebote für Fitness und gesunde Ernährung. Mitglieder profitieren von Rabatten auf Fitnesskurse und gesunde Snacks. Das Giga Fit Klagenfurt bietet modernste Ausstattung für alle Fitnesslevel. Zudem gibt es frische Säfte und gesunde Snacks von pep juice bar und Schokamoli. Der PlusClub ermöglicht es, Gutscheine flexibel einzulösen und gemeinsam mit Freunden zu nutzen, um Geld zu sparen und gesund zu bleiben.",
+        "source_name": "5 Minuten",
+        "source_url": "https://www.5min.at/5lokales/mit-dem-kelag-plusclub-fit-und-gesund-durch-die-fastenzeit/",
+        "emoji": "🍏",
+        "warning": ""
+    },
+    {
+        "category": "Gesellschaft",
+        "headline": "Fasten richtig: Darm-Entgiftung als Basis",
+        "teaser": "Fasten kann eine wertvolle Auszeit für Körper und Geist sein, jedoch kann die Freisetzung von Schadstoffen den Erfolg bremsen. Ernährungsexperten empfehlen eine begleitende Darmreinigung, um die natürlichen Entlastungsprozesse zu unterstützen. Ein patentierter Wirkstoff aus Vulkanstein, PMA-Zeolith®, bindet unerwünschte Stoffe im Verdauungstrakt und hilft, diese auszuscheiden. Das Produkt BASIC DETOX wurde speziell für die Darm-Entgiftung während der Fastenzeit entwickelt und soll das Wohlbefinden fördern. Eine gezielte Reinigung des Darms kann dazu beitragen, die Fastenzeit als angenehme Auszeit zu erleben.",
+        "source_name": "5min",
+        "source_url": "https://www.5min.at/5lokales/so-geht-fasten-richtig-darm-entgiftung-als-basis/",
+        "emoji": "🍏",
+        "warning": ""
+    },
+    {
+        "category": "Allgemein",
+        "headline": "Wuthering Heights – Sturmhöhe im Kino",
+        "teaser": "Der Film 'Wuthering Heights – Sturmhöhe' bringt einen der bekanntesten Liebesromane zurück auf die große Leinwand. Die Geschichte handelt von der leidenschaftlichen und zerstörerischen Liebe zwischen Heathcliff und Catherine Earnshaw, die von gesellschaftlichen Zwängen und Eifersucht geprägt ist. Die Neuinterpretation von Emerald Fennell zeigt Margot Robbie und Jacob Elordi in den Hauptrollen. Der Film thematisiert die unstillbare Sehnsucht und die Herausforderungen, die die Protagonisten überwinden müssen. Die düstere Kulisse der englischen Moorlandschaft verstärkt die emotionale Tiefe der Erzählung.",
+        "source_name": "5min",
+        "source_url": "https://www.5min.at/5lokales/wuthering-heights-sturmhoehe-liebe-schmerz-und-unstillbare-sehnsucht/",
+        "emoji": "🎬",
+        "warning": ""
+    },
+    {
+        "category": "Chronik",
+        "headline": "Lawinenabgänge in Tirol fordern Todesopfer",
+        "teaser": "In Tirol sind am Freitag mehrere Lawinen abgegangen, die mindestens zwei Todesopfer gefordert haben. Die Bergrettung und Hubschrauber waren im Dauereinsatz, um die betroffenen Gebiete zu sichern und nach Verschütteten zu suchen. Die Lawinengefahr bleibt aufgrund der Wetterbedingungen hoch. Die Behörden raten zur Vorsicht und empfehlen, sich über die aktuellen Wetter- und Lawinenwarnungen zu informieren.",
+        "source_name": "5min",
+        "source_url": "https://www.5min.at/5region/oesterreich/",
+        "emoji": "⚠️",
+        "warning": ""
+    },
+    {
+        "category": "Wetter",
+        "headline": "Schneefall in Österreich: Wetterlage bleibt angespannt",
+        "teaser": "Österreich hat in den letzten Tagen mit starkem Schneefall zu kämpfen. Am Freitag fiel in vielen Regionen Schnee, und auch am Samstag wird weiterer Schneefall erwartet. Die Wetterbedingungen führen zu zahlreichen Einsätzen der Feuerwehr und der Rettungsdienste. In Wien verzeichnete die Feuerwehr 240 zusätzliche Einsätze aufgrund der winterlichen Verhältnisse. Die Bevölkerung wird aufgefordert, vorsichtig zu sein und sich auf mögliche Verkehrsbehinderungen einzustellen.",
+        "source_name": "5min",
+        "source_url": "https://www.5min.at/5region/oesterreich/",
+        "emoji": "❄️",
+        "warning": ""
+    }
+]
