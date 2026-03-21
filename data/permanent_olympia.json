@@ -1,13 +1,5 @@
 [
-  {
-    "category": "Olympia",
-    "headline": "Olympia-Medaillen 2026 im Überblick",
-    "teaser": " - Klicke hier unten auf Lola1 - ",
-    "source_name": "LAOLA1",
-    "source_url": "https://www.laola1.at/de/wintersport/olympia-2026/ergebnisse/",
-    "emoji": "🥇",
-    "warning": ""
-  },
+ 
   {
     "category": "Gesellschaft",
     "headline": "TV-Programm heute Abend",
@@ -28,8 +20,8 @@
   },
   {
     "category": "Gesellschaft",
-    "headline": "McMusic bietet WebApps für Nutzer an",
-    "teaser": "McMusic stellt eine Auswahl an WebApps zur Verfügung, die über die Sidebar zugänglich sind. Diese Apps bieten verschiedene Funktionen und Dienstleistungen, die den Nutzern helfen, ihre musikalischen Bedürfnisse zu erfüllen. Die Nutzung der Apps ist einfach und benutzerfreundlich gestaltet.",
+    "headline": "WebApps",
+    "teaser": "McMusic stellt eine Auswahl an WebApps zur Verfügung, die über die Sidebar zugänglich sind. Diese Apps bieten verschiedene Funktionen und Dienstleistungen an, ohne Webung.(z.B. Schnapsen, Hosn obi, 4 Gewinnt und einige andere) Die Nutzung der Apps ist einfach und benutzerfreundlich gestaltet.",
     "source_name": "McMusic",
     "source_url": "https://www.mcmusic.at/links.html",
     "emoji": "🖥️",
