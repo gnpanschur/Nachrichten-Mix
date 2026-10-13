@@ -1,0 +1,767 @@
+[
+    {
+        "category": "Wetter",
+        "headline": "Wetterbericht für die Steiermark",
+        "teaser": "In der Steiermark zeigt sich das Wetter heute recht sonnig mit einigen Wolken. Die Temperaturen liegen am Nachmittag zwischen 12 und 18 Grad. Ein leichter Nordwestwind weht. Die Tageslänge beträgt 11 Stunden und 2 Minuten. Der Mond befindet sich in der Phase des zunehmenden Mondes. Die Dämmerung beginnt am Morgen um 6:43 Uhr und endet am Abend um 18:46 Uhr.",
+        "source_name": "ORF",
+        "source_url": "https://wetter.orf.at/steiermark/",
+        "emoji": "☀️",
+        "warning": ""
+    },
+    {
+        "category": "Wetter",
+        "headline": "Wetterbericht für Österreich",
+        "teaser": "Das Wetter in Österreich ist heute größtenteils sonnig, mit vereinzelten Wolken. In Vorarlberg und Nordtirol sind jedoch trübe Bedingungen und erste Regenschauer zu erwarten. Die Höchsttemperaturen liegen zwischen 12 und 18 Grad. Ein kühler Nordwind weht. Die Tageslänge variiert je nach Region, mit Sonnenaufgang um 7:11 Uhr in Wien und Sonnenuntergang um 18:10 Uhr.",
+        "source_name": "ORF",
+        "source_url": "https://wetter.orf.at/oes/",
+        "emoji": "☀️",
+        "warning": ""
+    },
+    {
+        "category": "Sport",
+        "headline": "FC Sevilla Ergebnisse",
+        "teaser": "Der FC Sevilla hat in den letzten Spielen verschiedene Ergebnisse erzielt. Details zu den aktuellen Spielen und Ergebnissen sind verfügbar. Die Mannschaft zeigt eine wechselhafte Leistung in der laufenden Saison.",
+        "source_name": "Laola1",
+        "source_url": "https://www.laola1.at/de/daten/ergebnisse/fussball/fc-sevilla/",
+        "emoji": "⚽️",
+        "warning": ""
+    },
+    {
+        "category": "Sport",
+        "headline": "FC Turin Ergebnisse",
+        "teaser": "Der FC Turin hat in den letzten Begegnungen unterschiedliche Resultate erzielt. Informationen zu den aktuellen Spielen und Ergebnissen sind abrufbar. Die Leistung der Mannschaft variiert in der laufenden Saison.",
+        "source_name": "Laola1",
+        "source_url": "https://www.laola1.at/de/daten/ergebnisse/fussball/fc-turin/",
+        "emoji": "⚽️",
+        "warning": ""
+    },
+    {
+        "category": "Sport",
+        "headline": "Newcastle United Ergebnisse",
+        "teaser": "Newcastle United hat in den letzten Spielen verschiedene Ergebnisse erzielt. Aktuelle Informationen zu den Spielen und Ergebnissen sind verfügbar. Die Mannschaft zeigt eine wechselhafte Form in der laufenden Saison.",
+        "source_name": "Laola1",
+        "source_url": "https://www.laola1.at/de/daten/ergebnisse/fussball/newcastle-united/",
+        "emoji": "⚽️",
+        "warning": ""
+    },
+    {
+        "category": "Sport",
+        "headline": "IOC zahlt jedem Olympia-Teilnehmer künftig 10.000 Dollar",
+        "teaser": "Das Internationale Olympische Komitee gewährt künftig jedem Olympia-Teilnehmer einen Zuschuss von 10.000 US-Dollar. Der Fonds von 140 Millionen US-Dollar wird alle vier Jahre bereitgestellt. Athleten, die schwerwiegende Regelverstöße begangen haben, sind von diesem Zuschuss ausgeschlossen. Der Antrag kann auch rückwirkend für die Olympischen Spiele 2026 gestellt werden. Rund 14.000 Athleten sind berechtigt, diesen Zuschuss zu erhalten. Das Geld wird über die Nationalen Olympischen Komitees ausgezahlt und darf nicht von anderen Prämien abgezogen werden.",
+        "source_name": "Laola1",
+        "source_url": "https://www.laola1.at/de/red/olympia/ioc-zahlt-jedem-olympia-teilnehmer-kuenftig-10-000-dollar/",
+        "emoji": "🏅",
+        "warning": ""
+    },
+    {
+        "category": "Sport",
+        "headline": "ÖFB-Cup: Strafanträge nach Manipulation von Cup-Spiel",
+        "teaser": "Im ÖFB-Cup gibt es Strafanträge nach einem mutmaßlichen Manipulationsfall in Kärnten. Der Präsident von Sturm Graz äußert Kommunikationsbedarf. Das Achtelfinale des ÖFB-Cups hat bereits feste Termine und TV-Übertragungen. Zudem ist das Duell zwischen First Vienna und Rapid fast ausverkauft. WAC-Kapitän Wimmer hat sich eine schwere Knieverletzung zugezogen, während Austria Salzburg auf die Rückkehr ihres Abwehrchefs hofft. Red Bull Salzburg bleibt weiterhin ungeschlagen.",
+        "source_name": "Laola1",
+        "source_url": "https://www.laola1.at/de/daten/news/fussball/oefb-cup/",
+        "emoji": "⚽️",
+        "warning": ""
+    },
+    {
+        "category": "Sport",
+        "headline": "2. Liga: Admira Wacker gewinnt Fünf-Tore-Spektakel",
+        "teaser": "In der 2. Liga entscheidet Admira Wacker ein spannendes Spiel gegen Voitsberg mit fünf Toren für sich. Wels feiert seinen ersten Liga-Sieg seit zwei Monaten. Liefering setzt sich gegen Sturm Graz II durch, während Wacker einen späten Sieg bei Rapid II rettet. Sportdirektor Markus Katzer betont, dass nicht jeder Transfer sofort funktionieren kann. Das West-Derby steht bevor und die Liga wird auch im LIVE-Stream übertragen.",
+        "source_name": "Laola1",
+        "source_url": "https://www.laola1.at/de/daten/news/fussball/2--liga/",
+        "emoji": "⚽️",
+        "warning": ""
+    },
+    {
+        "category": "Sport",
+        "headline": "Fußball International: Carvajal unterschreibt bei Getafe",
+        "teaser": "In der internationalen Fußballszene hat Carvajal bei Getafe unterschrieben. Der Saisonstart für einige Teams ist der schlechteste seit 1986, was den Druck auf Trainer Carrick erhöht. In der Serie A hat das Schlusslicht seinen Trainer entlassen. Zudem wird Boateng Co-Trainer in der Süper Lig. Dortmund verlängert mit Trainer Kovac, während Ndukwe für Levante in der Nachspielzeit trifft. Mehrere Ligen sind betroffen, darunter die dt. Bundesliga und die Premier League.",
+        "source_name": "Laola1",
+        "source_url": "https://www.laola1.at/de/daten/news/fussball-international/",
+        "emoji": "⚽️",
+        "warning": ""
+    },
+    {
+        "category": "Sport",
+        "headline": "Udinese Calcio: Aktuelle Ergebnisse",
+        "teaser": "Die neuesten Ergebnisse von Udinese Calcio sind verfügbar. Die Mannschaft hat in den letzten Spielen unterschiedliche Leistungen gezeigt. Details zu den einzelnen Partien sind auf der Website einsehbar. Die aktuelle Form und die Platzierung in der Liga werden regelmäßig aktualisiert. Fans können sich über die neuesten Entwicklungen und Statistiken informieren.",
+        "source_name": "Laola1",
+        "source_url": "https://www.laola1.at/de/daten/ergebnisse/fussball/udinese-calcio/",
+        "emoji": "⚽️",
+        "warning": ""
+    },
+    {
+        "category": "Olympia",
+        "headline": "Parasport-Vertreter befürworten zeitigere Winterspiele",
+        "teaser": "Vertreter des Parasports sprechen sich für eine Vorverlegung der Paralympics aus. Athletensprecher Markus Salcher und ÖPC-Präsidentin Maria Rauch-Kallat unterstützen die Idee, die Winterspiele künftig früher abzuhalten. Grund sind die schwierigen Schneeverhältnisse in der Vergangenheit und der Klimawandel. Die Diskussion über eine mögliche Vorverlegung wurde durch eine IOC-Arbeitsgruppe angestoßen. Salcher betont, dass der Abstand zwischen Olympia und Paralympics nicht zu groß sein sollte. Die Thematik bleibt aufgrund der klimatischen Herausforderungen aktuell.",
+        "source_name": "Laola1",
+        "source_url": "https://www.laola1.at/de/red/olympia/winter-olympia/paralympics-2026/parasport-vertreter-befuerworten-zeitigere-winterspiele/",
+        "emoji": "🇦🇹",
+        "warning": ""
+    },
+    {
+        "category": "Olympia",
+        "headline": "Erster prominenter Kombi-Abgang: Japaner wechselt zum Skispringen",
+        "teaser": "Ryota Yamamoto, Olympia-Dritter von 2022, wechselt von der Nordischen Kombination zum Skispringen. Der 29-Jährige möchte weiterhin an den Olympischen Spielen teilnehmen und sieht im Skispringen eine neue Herausforderung. Yamamoto war im vergangenen Winter der bestplatzierte Japaner im Weltcup. Er plant, beim Saisonauftakt in Lillehammer am 22. November zu starten. Der Wechsel erfolgt nach dem Aus der Nordischen Kombination bei Olympia, was die Entscheidung für ihn nicht leicht machte.",
+        "source_name": "Laola1",
+        "source_url": "https://www.laola1.at/de/red/wintersport/nord--kombi/news/erster-prominenter-kombi-abgang--japaner-wechselt-zum-skispringen/",
+        "emoji": "🇦🇹",
+        "warning": ""
+    },
+    {
+        "category": "Olympia",
+        "headline": "Hohes Olympia-Defizit sorgt für Kritik in Italien",
+        "teaser": "Die Organisatoren der Olympischen Winterspiele 2026 in Italien rechnen mit einem Haushaltsdefizit von rund 310 Millionen Euro. Höhere Kosten und geringere Einnahmen führen zu dieser Prognose. Die Stiftung Mailand, die für die Veranstaltungen verantwortlich ist, hat die beteiligten Regionen aufgefordert, zur Deckung des Defizits beizutragen. Kritiker sehen sich durch die Nachricht in ihrer Meinung über die hohen Kosten von Großereignissen bestätigt. Die Debatte über die finanziellen Auswirkungen von Olympischen Spielen wird neu entfacht.",
+        "source_name": "Laola1",
+        "source_url": "https://www.laola1.at/de/red/wintersport/olympia-2026/sonstiges/hohes-olympia-defizit-sorgt-fuer-kritik-in-italien/",
+        "emoji": "🇦🇹",
+        "warning": ""
+    },
+    {
+        "category": "Olympia",
+        "headline": "Shiffrin teilt Hassnachrichten nach politischer Äußerung",
+        "teaser": "Die US-Skifahrerin Mikaela Shiffrin veröffentlicht Hassnachrichten, die sie während der Olympischen Winterspiele erhalten hat. Diese Reaktionen folgten auf ihre kritischen Äußerungen zur politischen Lage in den USA. Shiffrin gewann Gold im Slalom und hielt sich während der Spiele von sozialen Medien fern. Ihr Team kontaktierte die Plattformbetreiber, um die Hasskommentare zu melden. Die politische Situation unter Trump war ein zentrales Thema während der Spiele, was zu negativen Reaktionen auf die Athleten führte.",
+        "source_name": "Laola1",
+        "source_url": "https://www.laola1.at/de/red/wintersport/olympia-2026/ski-alpin/nach-politischer-aeusserung-shiffrin-teilt-hassnachrichten/",
+        "emoji": "🇦🇹",
+        "warning": ""
+    },
+    {
+        "category": "Wissenschaft",
+        "headline": "Österreichs Gold-Historie: Alle Olympia-Medaillen seit 1924",
+        "teaser": "Eine umfassende Übersicht zeigt alle Medaillengewinner Österreichs bei den Olympischen Winterspielen seit 1924. Die Historie reicht von den ersten Erfolgen in Chamonix bis zu den jüngsten Triumphen. Die Liste umfasst bedeutende Athleten und ihre Erfolge über die Jahrzehnte. Die Medaillenstatistik wird vor den kommenden Winterspielen in Mailand/Cortina 2026 präsentiert, um die Erfolge der rot-weiß-roten Athleten zu würdigen.",
+        "source_name": "Laola1",
+        "source_url": "https://www.laola1.at/de/red/wintersport/olympia-2026/statistiken/oeoc-medaillen/oesterreichs-gold-archiv--alle-olympia-medaillen-seit-1924/",
+        "emoji": "🇦🇹",
+        "warning": ""
+    },
+    {
+        "category": "Sport",
+        "headline": "Lindsey Vonn muss sich erneut operieren lassen",
+        "teaser": "Die US-amerikanische Skifahrerin Lindsey Vonn hat angekündigt, sich erneut einer Operation zu unterziehen. Der Eingriff ist notwendig, nachdem sie bei den Olympischen Spielen in Cortina 2026 schwer gestürzt ist. Vonn plant, die Operation im November durchzuführen, gefolgt von einer Genesungszeit von etwa neun Monaten. Trotz der Herausforderungen zeigt sie Optimismus und schließt eine Rückkehr in den Weltcup nicht aus. Vonn hat in der Vergangenheit zahlreiche Erfolge im Ski-Alpin gefeiert und bleibt eine bedeutende Figur im Sport.",
+        "source_name": "Laola1",
+        "source_url": "https://www.laola1.at/de/red/wintersport/ski-alpin/news/ski-star-vonn-muss-wieder-unters-messer/",
+        "emoji": "⛷️",
+        "warning": ""
+    },
+    {
+        "category": "Gesellschaft",
+        "headline": "Knirpsetreff in der Playworld Wien für Kleinkinder",
+        "teaser": "Die Playworld Wien bietet mit dem Knirpsetreff ein Indoor-Abenteuer für Kleinkinder bis 3 Jahre. An einem sicheren Ort können die Kleinen spielen, klettern und Neues entdecken. Die Veranstaltung ist speziell auf die Bedürfnisse von Kleinkindern ausgerichtet und bietet zahlreiche Aktivitäten. Eltern können sich währenddessen entspannen, während ihre Kinder in einem geschützten Umfeld spielen. Der Eintrittspreis für ein Kleinkind beträgt 11 Euro, inklusive einer Begleitperson. Die Playworld legt großen Wert auf Sicherheit und regelmäßige Kontrollen der Geräte.",
+        "source_name": "5 Minuten",
+        "source_url": "https://www.5min.at/5lokales/knirpsetreff-in-der-playworld-wien-das-exklusive-abenteuer-fuer-kleine-entdecker-bis-3-jahre/",
+        "emoji": "👶",
+        "warning": ""
+    },
+    {
+        "category": "Wirtschaft",
+        "headline": "Neue Celsius WIFI-Technologie für modernes Heizen",
+        "teaser": "Die Celsius WIFI-Technologie revolutioniert das Heizen mit Infrarot. Sie bietet eine smarte Impulssteuerung und eine Echtzeit-Verbrauchsanzeige. Die Technologie ist effizient und ermöglicht eine digitale Steuerung über eine App. Das System kann auch ältere Modelle nachrüsten, was eine kostengünstige Lösung darstellt. Die Celsius Paneele sind nicht nur funktional, sondern auch ästhetisch ansprechend und in verschiedenen Designs erhältlich. Diese Innovation könnte die Art und Weise, wie Haushalte heizen, nachhaltig verändern.",
+        "source_name": "5 Minuten",
+        "source_url": "https://www.5min.at/5lokales/nie-mehr-eine-alte-heizung-smart-heizen-mit-der-neuen-celsius-wifi-technologie/",
+        "emoji": "⚙️",
+        "warning": ""
+    },
+    {
+        "category": "Gesellschaft",
+        "headline": "Kelag-PlusClub-Gutscheine für sportliche Aktivitäten",
+        "teaser": "Der Kelag-PlusClub bietet Gutscheine für verschiedene sportliche Aktivitäten in Klagenfurt an. Mitglieder können Rabatte auf HIIT-Training, Ruderkurse und Outdoor-Ausrüstung erhalten. Die Gutscheine ermöglichen es, bei verschiedenen Sportveranstaltungen zu sparen und die eigene Fitness zu steigern. Die Initiative zielt darauf ab, mehr Menschen zu einem aktiven Lebensstil zu motivieren und gleichzeitig finanzielle Vorteile zu bieten. Mitglieder können die Gutscheine flexibel nutzen und auch mit Freunden teilen.",
+        "source_name": "5 Minuten",
+        "source_url": "https://www.5min.at/5lokales/sportlich-durch-den-herbst-jetzt-mit-den-kelag-plusclub-gutscheinen-sparen/",
+        "emoji": "🏋️‍♂️",
+        "warning": ""
+    },
+    {
+        "category": "Wirtschaft",
+        "headline": "Ranacher startet italienische Markttage in Kärnten",
+        "teaser": "Ab dem 1. Oktober veranstaltet Ranacher italienische Markttage in Kärnten. Besucher können Aktions-Pantoffeln zu einem Preis von 30 Euro erwerben, inklusive einer kostenlosen Fußmessung. Die Aktion läuft bis zum 16. Oktober und zielt darauf ab, das Marktgefühl Italiens nach Kärnten zu bringen. Neben den Pantoffeln werden auch Produkte zur Fußgesundheit angeboten. Ranacher möchte die Kunden ansprechen und ihnen die Möglichkeit geben, hochwertige Produkte zu attraktiven Preisen zu erwerben.",
+        "source_name": "5 Minuten",
+        "source_url": "https://www.5min.at/5lokales/tarvis-preise-in-kaernten-ranacher-startet-am-1-oktober-grosse-aktion/",
+        "emoji": "🛍️",
+        "warning": ""
+    },
+    {
+        "category": "Gesellschaft",
+        "headline": "The Social Reckoning: Film über Facebook-Skandal",
+        "teaser": "Der Film 'The Social Reckoning' thematisiert die Enthüllungen einer Whistleblowerin über Facebook. Inspiriert von wahren Begebenheiten, zeigt das Drehbuch von Aaron Sorkin die gefährliche Reise der Ingenieurin Frances Haugen, die gemeinsam mit einem Reporter die Geheimnisse des Tech-Konzerns aufdeckt. Der Film verspricht ein hochkarätiges Ensemble und wird von Sorkin selbst inszeniert. Die Veröffentlichung könnte die Diskussion über die Verantwortung von sozialen Medien neu entfachen.",
+        "source_name": "5 Minuten",
+        "source_url": "https://www.5min.at/5lokales/the-social-reckoning-jeder-klick-hat-seinen-preis/",
+        "emoji": "🎬",
+        "warning": ""
+    },
+    {
+        "category": "Österreich",
+        "headline": "Debatte um Pensionsantrittsalter in Österreich",
+        "teaser": "Die Diskussion über das Pensionsantrittsalter in Österreich gewinnt an Fahrt. AMS-Chef Johannes Kopf spricht sich für eine Erhöhung des Antrittsalters aus, was in der Bevölkerung auf geteilte Meinungen stößt. Kritiker warnen vor den sozialen Folgen einer solchen Maßnahme, während Befürworter auf die Notwendigkeit einer nachhaltigen Pensionsfinanzierung hinweisen. Diese Debatte wird voraussichtlich auch in den kommenden Wochen und Monaten weitergeführt.",
+        "source_name": "5 Minuten",
+        "source_url": "https://www.5min.at/5region/oesterreich/",
+        "emoji": "⚖️",
+        "warning": ""
+    },
+    {
+        "category": "Österreich",
+        "headline": "Explosion bei Tankstelle in Güssing",
+        "teaser": "Bei Schleifarbeiten in einem Domschacht einer Tankstelle im Bezirk Güssing kam es zu einer Explosion, bei der ein 70-jähriger Mann verletzt wurde. Der Verletzte musste mit Verbrennungen ins Krankenhaus geflogen werden. Die genauen Umstände des Vorfalls sind noch unklar, die Polizei hat Ermittlungen aufgenommen. Anwohner berichten von einem lauten Knall, der in der Umgebung zu hören war.",
+        "source_name": "5 Minuten",
+        "source_url": "https://www.5min.at/burgenland/",
+        "emoji": "🚒",
+        "warning": ""
+    },
+    {
+        "category": "Politik",
+        "headline": "SPÖ warnt vor Verkauf von Energie Steiermark",
+        "teaser": "Im Sonderlandtag äußert SPÖ-Chef Max Lercher scharfe Kritik am geplanten Verkauf von über 25 Prozent der Energie Steiermark. Er warnt vor Kontrollverlust und fordert, dass das Unternehmen zu 100 Prozent im Eigentum des Landes bleibt. Lercher betont, dass private Investoren nicht im Interesse der Bevölkerung handeln und fordert eine transparente Diskussion über die Energiepolitik. Der Verkauf könnte weitreichende Konsequenzen für die Energieversorgung in der Steiermark haben.",
+        "source_name": "5 Minuten",
+        "source_url": "https://www.5min.at/5lokales/lercher-energie-steiermark-muss-zu-100-prozent-im-eigentum-des-landes-bleiben/",
+        "emoji": "⚖️",
+        "warning": ""
+    },
+    {
+        "category": "Österreich",
+        "headline": "Frostige Temperaturen in Österreich",
+        "teaser": "Am 13. Oktober 2026 wurden in mehreren Regionen Österreichs frostige Temperaturen gemessen. Die Tiefstwerte lagen in den frühen Morgenstunden bei bis zu minus 6,3 Grad. Meteorologen warnen vor möglichen Schäden an Pflanzen und empfehlen, empfindliche Gewächse zu schützen. Die Wetterlage könnte auch in den kommenden Tagen zu weiteren Kälteeinbrüchen führen.",
+        "source_name": "5 Minuten",
+        "source_url": "https://www.5min.at/5region/oesterreich/",
+        "emoji": "❄️",
+        "warning": ""
+    },
+    {
+        "category": "Wirtschaft",
+        "headline": "Neue Celsius WIFI-Technologie revolutioniert das Heizen",
+        "teaser": "Die Celsius WIFI-Technologie bietet eine smarte Impulssteuerung und Echtzeit-Verbrauchsanzeige für Infrarotheizungen. Die innovative Technik ermöglicht eine effiziente Beheizung von Räumen und verhindert Schimmelbildung durch gezielte Bauteilaktivierung. Das System kann über eine App gesteuert werden, was eine flexible Nutzung ermöglicht. Auch ältere Modelle können nachgerüstet werden, was die Nachhaltigkeit erhöht. Die Paneele sind in verschiedenen Designs erhältlich und eignen sich für unterschiedliche Wohnstile.",
+        "source_name": "5 Minuten",
+        "source_url": "https://www.5min.at/5lokales/nie-mehr-eine-alte-heizung-smart-heizen-mit-der-neuen-celsius-wifi-technologie/",
+        "emoji": "⚙️",
+        "warning": ""
+    },
+    {
+        "category": "Gesellschaft",
+        "headline": "Einwintern von Freizeitgeräten wird günstiger",
+        "teaser": "Diskont Depot bietet günstige Lagermöglichkeiten für Freizeitgeräte wie Vespa und SUP an. Die Lagerung beginnt ab 69 Euro pro Monat und bietet optimalen Schutz vor Witterungseinflüssen. Die Einrichtungen sind modern und videoüberwacht, was Sicherheit und Komfort gewährleistet. Mieter haben 24/7 Zugriff auf ihre Lagerräume. Zudem gibt es spezielle Angebote für langfristige Mieten, die zusätzliche Einsparungen ermöglichen.",
+        "source_name": "5 Minuten",
+        "source_url": "https://www.5min.at/5lokales/so-kommen-vespa-sup-und-co-jetzt-guenstig-und-sicher-durch-die-kalte-jahreszeit/",
+        "emoji": "🏠",
+        "warning": ""
+    },
+    {
+        "category": "Österreich",
+        "headline": "Doppelte Trauer in der Steiermark: Feuerwehr verliert Kameraden",
+        "teaser": "In der Steiermark trauert die Freiwillige Feuerwehr Obergralla um zwei langjährige Mitglieder, die am selben Tag verstorben sind. Die Feuerwehr nimmt mit bewegenden Worten Abschied von den Kameraden, die viele Jahre im Dienst standen. Die Gemeinde und die Feuerwehrgemeinschaft zeigen sich betroffen und würdigen das Engagement der Verstorbenen.",
+        "source_name": "5 Minuten",
+        "source_url": "https://www.5min.at/5region/steiermark/",
+        "emoji": "🇦🇹",
+        "warning": ""
+    },
+    {
+        "category": "Österreich",
+        "headline": "Trinkwasser-Alarm in der Steiermark: Verunreinigung festgestellt",
+        "teaser": "In Oberzeiring, Bezirk Murtal, wurde eine Verunreinigung des Trinkwassers festgestellt. Die Gemeinde hat eine Warnung herausgegeben, dass das Wasser abgekocht werden muss, bevor es konsumiert wird. Die zuständigen Behörden arbeiten an der Behebung des Problems und informieren die Bevölkerung über die notwendigen Maßnahmen.",
+        "source_name": "5 Minuten",
+        "source_url": "https://www.5region/steiermark/",
+        "emoji": "🚰",
+        "warning": ""
+    },
+    {
+        "category": "Gesellschaft",
+        "headline": "Christine Nöstlinger wird zum 90. Geburtstag gewürdigt",
+        "teaser": "Die österreichische Kinderbuchautorin Christine Nöstlinger wird anlässlich ihres 90. Geburtstags mit verschiedenen Veranstaltungen und einer Kinodokumentation geehrt. Nöstlinger, die 2018 verstorben ist, revolutionierte die Kinderliteratur mit ihrem unverblümten Stil und ihren kritischen Themen. Ihre Werke, darunter 'Maikäfer, flieg!' und 'Die feuerrote Friederike', prägten Generationen von Kindern. Die Doku 'Nöstlinger – Sowieso und überhaupt' zeigt ihre Biografie und ihre Haltung zur Kinderliteratur. Nöstlinger gilt als die meistübersetzte deutschsprachige Autorin und hinterlässt ein bedeutendes literarisches Erbe.",
+        "source_name": "ORF",
+        "source_url": "https://orf.at/stories/3444794/",
+        "emoji": "📚",
+        "warning": ""
+    },
+    {
+        "category": "Politik",
+        "headline": "Saudi-Arabien sieht sich zunehmendem Druck durch Huthis ausgesetzt",
+        "teaser": "Saudi-Arabien gerät durch wiederholte Angriffe der Huthi-Miliz im Jemen unter Druck. Die Huthis haben moderne Technologien und Waffen eingesetzt, um den internationalen Flughafen in Riad anzugreifen, was zu zahlreichen Opfern führte. Die saudische Regierung sieht sich in einer schwierigen Lage, da eine politische Lösung durch Verhandlungen mit den Huthis zunehmend unwahrscheinlich erscheint. Analysten spekulieren über mögliche militärische Bodenoffensiven Saudi-Arabiens, was die Situation weiter eskalieren könnte. Die jemenitische Bevölkerung leidet unter den Folgen des Konflikts, während internationale Akteure wie die USA in die Situation involviert sind.",
+        "source_name": "ORF",
+        "source_url": "https://orf.at/stories/3444817/",
+        "emoji": "⚖️",
+        "warning": ""
+    },
+    {
+        "category": "Wirtschaft",
+        "headline": "Neue Stromnetztarife ab 2027 in Österreich",
+        "teaser": "Die E-Control hat eine neue Grundsatzverordnung für Stromnetztarife erlassen, die ab 1. Jänner 2027 in Kraft tritt. Die Verordnung zielt darauf ab, die Kosten für den Netzausbau zu senken und die Netzkosten verursachergerecht zu verteilen. Haushalte mit hohem Stromverbrauch, wie E-Autos und Wärmepumpen, müssen ihre Leistungsspitzen reduzieren, um Kosten zu sparen. Die Reform fördert eine flexible Netznutzung und bietet Rabatte für Kunden, die ihren Verbrauch in weniger ausgelasteten Zeiten legen. Kritiker warnen jedoch, dass die Regelung den Ausbau von Batteriespeichern behindern könnte.",
+        "source_name": "ORF",
+        "source_url": "https://orf.at/stories/3444842/",
+        "emoji": "📈",
+        "warning": ""
+    },
+    {
+        "category": "Politik",
+        "headline": "Ungarn ändert umstrittenes LGBTQ-Gesetz",
+        "teaser": "Das ungarische Parlament hat beschlossen, wesentliche Passagen des umstrittenen LGBTQ-Gesetzes zurückzunehmen, das unter der Vorgängerregierung von Viktor Orban verabschiedet wurde. Die Änderungen sollen die Darstellung von Homosexualität in Medien für Minderjährige erlauben. Die neue Regierung betont, dass die Regelungen im Einklang mit EU-Recht stehen. Die LGBTQ-Community in Ungarn begrüßt die Änderungen, fordert jedoch weitere Gespräche zur Verbesserung ihrer Rechte. Kritiker aus der Opposition befürchten, dass die Änderungen zu einer Rückkehr von 'LGBTQ-Propaganda' an Schulen führen könnten.",
+        "source_name": "ORF",
+        "source_url": "https://orf.at/stories/3444845/",
+        "emoji": "⚖️",
+        "warning": ""
+    },
+    {
+        "category": "Gesellschaft",
+        "headline": "Schauspieler RJ Mitte verstorben",
+        "teaser": "Der US-Schauspieler RJ Mitte ist im Alter von 34 Jahren verstorben. Bekannt wurde er durch seine Rolle in der Serie 'Breaking Bad', in der er den Sohn von Walter White spielte. Mitte, der selbst mit Zerebralparese lebte, setzte sich für die Rechte von Menschen mit Behinderungen ein. Sein Tod wird von Kollegen und Fans betrauert, die seine Authentizität und sein Engagement für Inklusion schätzten. Der Verlust von Mitte wird als großer Verlust für die Film- und Fernsehbranche angesehen.",
+        "source_name": "ORF",
+        "source_url": "https://orf.at/stories/3444897/",
+        "emoji": "🎭",
+        "warning": ""
+    },
+    {
+        "category": "Wirtschaft",
+        "headline": "IWF prognostiziert langsames Wachstum der Weltwirtschaft",
+        "teaser": "Der Internationale Währungsfonds (IWF) rechnet mit einem langsamen Wachstum der Weltwirtschaft, das erst 2024 anziehen soll. Die Industrieländer zeigen sich widerstandsfähig, profitieren von Investitionen in künstliche Intelligenz. Ärmere Länder stehen vor Herausforderungen durch hohe Energiepreise. Der IWF warnt vor Risiken, die den Inflationsdruck erhöhen könnten. Für Österreich wird ein Wirtschaftswachstum von 0,6 Prozent in diesem Jahr und 0,9 Prozent im nächsten Jahr prognostiziert. Die Inflationsrate soll 2023 bei 3,1 Prozent liegen und 2024 auf 3,3 Prozent steigen.",
+        "source_name": "ORF",
+        "source_url": "https://orf.at/stories/3444906/",
+        "emoji": "📈",
+        "warning": ""
+    },
+    {
+        "category": "Chronik",
+        "headline": "Mutmaßlicher Drohnenangriff auf Schiffe vor Bulgarien",
+        "teaser": "Ein mutmaßlicher Drohnenangriff im Schwarzen Meer hat zwei Schiffe vor der bulgarischen Küste getroffen. Ein Schiff sank, während die Besatzung eines anderen gerettet werden konnte. Der bulgarische Ministerpräsident kündigte an, die russische Botschafterin einbestellen zu wollen. Dies ist bereits der zweite Vorfall dieser Art in kurzer Zeit. Die EU-Kommission verurteilte die Angriffe scharf. Die bulgarischen Behörden konnten bislang nicht klären, wer die Drohnen abgefeuert hat.",
+        "source_name": "ORF",
+        "source_url": "https://orf.at/stories/3444912/",
+        "emoji": "🚢",
+        "warning": ""
+    },
+    {
+        "category": "Gesellschaft / Steiermark",
+        "headline": "Museum für Fotografie in St. Peter am Ottersbach",
+        "teaser": "Johann Kurzweil eröffnet ein kleines, aber bemerkenswertes Museum für Fotografie mit Raritäten aus der Foto- und Filmgeschichte. Auf 40 Quadratmetern zeigt er eine Sammlung, die von historischen Fotoapparaten bis zu Kinoprojektoren reicht. Das Museum bietet technische Einblicke in die Entwicklung der Fotografie und ist nach Voranmeldung zugänglich. Kurzweil plant, auch digitale Fotoapparate zu sammeln, die oft weggeworfen werden.",
+        "source_name": "ORF",
+        "source_url": "https://steiermark.orf.at/magazin/stories/3371661/",
+        "emoji": "📷",
+        "warning": ""
+    },
+    {
+        "category": "Gesellschaft / Steiermark",
+        "headline": "Steirischer Herbst 2026 mit Ausstellung \"Red Flags\"",
+        "teaser": "Der steirische herbst widmet sich in seiner Hauptausstellung dem Thema \"Red Flags\" und thematisiert die gegenwärtigen gesellschaftlichen Herausforderungen. Die Ausstellung findet in einem ehemaligen Schnitzellokal in Graz statt und soll kein Wohlfühlort sein. Künstlerinnen und Künstler präsentieren verschiedene Realitäten und laden zur Reflexion über die gegenwärtige Krisensituation ein. Die Ausstellung läuft bis zum 15. November.",
+        "source_name": "ORF",
+        "source_url": "https://steiermark.orf.at/magazin/stories/3372731/",
+        "emoji": "🎨",
+        "warning": ""
+    },
+    {
+        "category": "Chronik / Steiermark",
+        "headline": "Polizei sucht nach Zeugen eines Radunfalls in Graz",
+        "teaser": "Im Grazer Bezirk Puntigam kam es am 5. Oktober zu einem Unfall zwischen zwei Radfahrerinnen. Eine 65-jährige E-Bike-Fahrerin wurde leicht verletzt, während die andere Radfahrerin Fahrerflucht beging. Die Polizei sucht nun nach Zeugen des Vorfalls. Der Unfall ereignete sich gegen 17:35 Uhr, als die verletzte Frau nach links in die Gmeinstraße abbog und von der anderen Radfahrerin gestreift wurde. Hinweise können an die Verkehrsinspektion Graz I gegeben werden.",
+        "source_name": "ORF",
+        "source_url": "https://steiermark.orf.at/stories/3374934/",
+        "emoji": "🚴‍♀️",
+        "warning": ""
+    },
+    {
+        "category": "Wissenschaft / Steiermark",
+        "headline": "Forschende untersuchen Fruchtfliegen als Modell für menschliches Gehirn",
+        "teaser": "Ein internationales Team von Forschenden der Med Uni Graz hat das Gehirn der Fruchtfliegen untersucht, um neue Erkenntnisse für die Entwicklung von Arzneimitteln zu gewinnen. Die Forscher haben die räumliche Verteilung von Ionenkanälen im Fruchtfliegengehirn kartiert, was für das Verständnis neuronaler Informationsverarbeitung wichtig ist. Diese Ionenkanäle sind auch im menschlichen Gehirn vorhanden und könnten bei neurologischen Erkrankungen eine Rolle spielen. Die Ergebnisse könnten zudem Inspiration für energieeffiziente Mikrochips bieten.",
+        "source_name": "ORF",
+        "source_url": "https://steiermark.orf.at/stories/3374949/",
+        "emoji": "🧠",
+        "warning": ""
+    },
+    {
+        "category": "Wirtschaft / Steiermark",
+        "headline": "Neue Grundsatzverordnung für Stromnetztarife ab 2027",
+        "teaser": "Die E-Control hat eine neue Grundsatzverordnung für Stromnetztarife erlassen, die ab 1. Jänner 2027 in Kraft tritt. Ziel ist eine Entlastung des Stromnetzes. Verbraucher sollen durch flexiblen Strombezug Kosten sparen können. Die Verordnung sieht vor, dass Haushalte, die ihren Stromverbrauch gleichmäßiger gestalten, profitieren. Zudem wird ein Rabatt für Stromverbrauch in weniger ausgelasteten Stunden eingeführt. Diese Maßnahmen sollen helfen, jährlich rund 300 Millionen Euro an Netzausbau-Kosten zu vermeiden.",
+        "source_name": "ORF",
+        "source_url": "https://steiermark.orf.at/stories/3374953/",
+        "emoji": "📈",
+        "warning": ""
+    },
+    {
+        "category": "Österreich / Steiermark",
+        "headline": "Volksschule Retznei hofft auf Unterstützung vom Bund",
+        "teaser": "Die Volksschule Retznei im Bezirk Leibnitz stand Anfang des Jahres kurz vor der Schließung. Bildungsminister Christoph Wiederkehr hat die Schule besucht und betont, dass die Entscheidung über die Schließung lokal getroffen werden muss. Die Schule erhofft sich Unterstützung vom Bund, um eine Schließung zu verhindern. Es sind auch Clusterlösungen vorgesehen, um Schulen gemeinsam zu führen und zu leiten. Diese Reformpartnerschaft zwischen Bund, Ländern und Kommunen wird derzeit ausgehandelt.",
+        "source_name": "ORF",
+        "source_url": "https://steiermark.orf.at/stories/3374960/",
+        "emoji": "🇦🇹",
+        "warning": ""
+    },
+    {
+        "category": "Chronik / Steiermark",
+        "headline": "52-Jähriger nach Radunfall in Graz schwer verletzt",
+        "teaser": "Ein 52-jähriger Radfahrer hat sich am Montag im Grazer Bezirk Gösting bei einem Unfall schwere Verletzungen zugezogen. Der Unfall ereignete sich, als ein 15-Jähriger mit seinem Motorfahrrad an einer Kreuzung links abbog. Der Radfahrer führte eine Vollbremsung durch, stürzte jedoch ohne Berührung mit dem Mopedfahrer. Er wurde in ein Grazer Spital eingeliefert, während der Mopedfahrer unverletzt blieb.",
+        "source_name": "ORF",
+        "source_url": "https://steiermark.orf.at/stories/3374953/",
+        "emoji": "🚑",
+        "warning": ""
+    },
+    {
+        "category": "Chronik",
+        "headline": "Vergewaltigungsversuch und mehrere Überfälle in Bregenz",
+        "teaser": "In Bregenz kam es zu einem Vergewaltigungsversuch, bei dem eine Frau über eine Böschung gezerrt wurde. Zudem wurden zwei Männer von Unbekannten überfallen. Weitere Vorfälle umfassen einen Transporter, der bei der Flucht von Motorrad-Dieben kippte, und einen Pkw-Lenker, der nach einer Kollision auf der Autobahn flüchtete. Ein Alkolenker wurde zweimal von der Polizei gestoppt, während ein 20-Jähriger am Hauptbahnhof mit einem Messer zuschlug. Die Polizei ermittelt in mehreren Fällen.",
+        "source_name": "Krone",
+        "source_url": "https://www.krone.at/blaulicht",
+        "emoji": "🚨",
+        "warning": ""
+    },
+    {
+        "category": "Österreich",
+        "headline": "Bundesländerübersicht auf Krone",
+        "teaser": "Die Webseite der Kronen Zeitung bietet eine Übersicht über die Bundesländer in Österreich, darunter Niederösterreich, Burgenland, Steiermark, Oberösterreich, Kärnten, Salzburg und Vorarlberg. Diese Sektion informiert über regionale Themen und Entwicklungen. Es werden verschiedene Kategorien wie Politik, Wirtschaft und Kultur abgedeckt.",
+        "source_name": "Krone",
+        "source_url": "https://www.krone.at/bundeslaender",
+        "emoji": "🇦🇹",
+        "warning": ""
+    },
+    {
+        "category": "Gesellschaft",
+        "headline": "Vielfältige Themen im Burgenland",
+        "teaser": "Im Burgenland werden zahlreiche Themen behandelt, darunter Autonomie und Ärztebedarf. Der Landeshauptmann Doskozil fordert den Bund zum Handeln auf. Zudem werden kulturelle Veranstaltungen und lokale Weine hervorgehoben. Die Berichterstattung umfasst auch gesellschaftliche Aspekte wie die Seidenzucht und den Einfluss der Kirche auf die Stromkunden.",
+        "source_name": "Krone",
+        "source_url": "https://www.krone.at/burgenland",
+        "emoji": "🏞️",
+        "warning": ""
+    },
+    {
+        "category": "Allgemein",
+        "headline": "Vielfältige Leseraktionen und Kolumnen",
+        "teaser": "Die Kronen Zeitung bietet eine Vielzahl von Leseraktionen, Gewinnspielen und Kolumnen an. Diese Sektion fördert die Interaktion mit den Lesern und bietet Plattformen für Leserreporter sowie Foren zur Diskussion. Die Netiquette wird ebenfalls thematisiert, um einen respektvollen Austausch zu gewährleisten.",
+        "source_name": "Krone",
+        "source_url": "https://www.krone.at/community",
+        "emoji": "📰",
+        "warning": ""
+    },
+    {
+        "category": "Wissenschaft",
+        "headline": "Historische Themen und Entdeckungen",
+        "teaser": "Die Kronen Zeitung behandelt eine Vielzahl historischer Themen, von den Habsburgern bis zu den Royals. Es werden interessante Entdeckungen wie DNA-Analysen und deren Auswirkungen auf historische Narrative thematisiert. Auch gesellschaftliche Fragestellungen, wie die Verfolgung von Frauen als Hexen, werden behandelt. Diese Artikel bieten einen tiefen Einblick in die Geschichte und deren Relevanz für die heutige Gesellschaft.",
+        "source_name": "Krone",
+        "source_url": "https://www.krone.at/geschichte",
+        "emoji": "📜",
+        "warning": ""
+    },
+    {
+        "category": "Österreich",
+        "headline": "Trainer sucht 21 Spieler nach Unterschrift",
+        "teaser": "Ein Trainer steht vor der Herausforderung, 21 Spieler zu finden, nachdem er einen Vertrag unterschrieben hat. Diese Situation wirft Fragen zur Kaderplanung und den damit verbundenen Herausforderungen auf. Die Suche nach geeigneten Spielern könnte sich als schwierig erweisen, insbesondere in der aktuellen Transfersituation. Der Trainer muss schnell handeln, um ein konkurrenzfähiges Team zusammenzustellen. Die Reaktionen auf diese Entscheidung könnten weitreichende Folgen für den Verein haben.",
+        "source_name": "Krone",
+        "source_url": "https://www.krone.at/kroneplus",
+        "emoji": "🇦🇹",
+        "warning": ""
+    },
+    {
+        "category": "Wirtschaft",
+        "headline": "1,5 Milliarden Euro Ankunft in Österreich",
+        "teaser": "Österreich erwartet die Ankunft von 1,5 Milliarden Euro, was potenziell positive Auswirkungen auf die Wirtschaft haben könnte. Diese Summe könnte in verschiedenen Bereichen investiert werden, was zu einem Anstieg der wirtschaftlichen Aktivitäten führen könnte. Die genauen Verwendungszwecke sind noch unklar, jedoch wird spekuliert, dass sie zur Stärkung der Infrastruktur und zur Förderung von Projekten beitragen könnten. Die wirtschaftlichen Auswirkungen werden von Experten genau beobachtet.",
+        "source_name": "Krone",
+        "source_url": "https://www.krone.at/kroneplus",
+        "emoji": "📈",
+        "warning": ""
+    },
+    {
+        "category": "Österreich",
+        "headline": "Tirolerin findet sechs Riesenboviste",
+        "teaser": "Eine Tirolerin hat vor ihrem Haus sechs Riesenboviste entdeckt, was für Aufsehen sorgt. Diese Pilze sind bekannt für ihre Größe und Seltenheit. Die Entdeckung könnte das Interesse an der Pilzkunde und der Natur in der Region fördern. Experten sind sich einig, dass solche Funde nicht alltäglich sind und die Bedeutung der Biodiversität unterstreichen. Die Tirolerin plant, die Riesenboviste zu dokumentieren und möglicherweise zu konservieren.",
+        "source_name": "Krone",
+        "source_url": "https://www.krone.at/kroneplus",
+        "emoji": "🇦🇹",
+        "warning": ""
+    },
+    {
+        "category": "Österreich",
+        "headline": "Geschichte der Habsburger im Fokus",
+        "teaser": "Die Geschichte der Habsburger wird in mehreren Artikeln beleuchtet, die verschiedene Aspekte der Dynastie behandeln. Themen reichen von überraschenden Wendungen in der Familiengeschichte bis hin zu bedeutenden Ereignissen wie Hochzeiten und politischen Intrigen. Diese Artikel bieten einen tiefen Einblick in die komplexe Geschichte und die Auswirkungen der Habsburger auf Europa. Historiker und Interessierte können von den neuen Erkenntnissen profitieren.",
+        "source_name": "Krone",
+        "source_url": "https://www.krone.at/geschichte",
+        "emoji": "🇦🇹",
+        "warning": ""
+    },
+    {
+        "category": "Österreich",
+        "headline": "Tipps für den ersten Schultag und mehr",
+        "teaser": "Ein neuer Artikel bietet wertvolle Tipps für den ersten Schultag und behandelt verschiedene rechtliche Aspekte rund um Bildung und Arbeit. Themen wie Freistellung, Ferialjobs und Urlaubsmängel werden angesprochen. Diese Informationen sind besonders für Eltern und Schüler von Bedeutung, die sich auf den Schulstart vorbereiten. Die rechtlichen Hinweise sollen helfen, häufige Fragen zu klären und Unsicherheiten zu beseitigen.",
+        "source_name": "Krone",
+        "source_url": "https://www.krone.at/gewusstwie",
+        "emoji": "🇦🇹",
+        "warning": ""
+    },
+    {
+        "category": "Österreich",
+        "headline": "Mann stiehlt 100.000 Euro bei McDonald's in Graz",
+        "teaser": "Ein Fahrer eines Geldtransporters hat bei einem McDonald's in Graz zwei Geldsäcke mit insgesamt 100.000 Euro gestohlen. Die Säcke waren so voll, dass kein weiterer Geldschein mehr hineinpasste. Der Diebstahl wurde durch Überwachungsfotos dokumentiert, die zur Identifizierung des Täters führten. Die Polizei ermittelt in dem Fall und sucht nach weiteren Hinweisen zur Festnahme des Verdächtigen.",
+        "source_name": "Kleine Zeitung",
+        "source_url": "https://www.kleinezeitung.at/artikel/41341021/mann-liess-bei-mcdonalds-zwei-geldsaecke-mit-100000-euro-mitgehen",
+        "emoji": "💰",
+        "warning": ""
+    },
+    {
+        "category": "Wissenschaft",
+        "headline": "Harald Kainz hält letzte Vorlesung an TU Graz",
+        "teaser": "Der ehemalige Rektor der Technischen Universität Graz, Harald Kainz, hat seine letzte Vorlesung gehalten. In seiner Rückschau auf Jahrzehnte akademischer Arbeit betont er die Erfolge der Universität und die Ausbildung von Diplomanden, die nun selbst Professuren innehaben. Kainz, der vor drei Jahren das Rektorenamt übergab, plant, sich künftig auf persönliche Interessen zu konzentrieren und bleibt als emeritierter Professor aktiv.",
+        "source_name": "Kleine Zeitung",
+        "source_url": "https://www.kleinezeitung.at/artikel/41316042/harald-kainz-wir-haben-uns-toll-entwickelt",
+        "emoji": "🎓",
+        "warning": ""
+    },
+    {
+        "category": "Allgemein",
+        "headline": "Verwaltung von Push-Mitteilungen bei der Kleinen Zeitung",
+        "teaser": "Die Kleine Zeitung bietet ihren Lesern die Möglichkeit, Push-Mitteilungen zu verwalten. Nutzer können zwischen verschiedenen Arten von Nachrichten wählen, darunter tägliche Briefings und Top News. Die Verwaltung erfolgt über die Website oder über Messenger-Dienste wie Telegram und Facebook. Technische Einschränkungen bestehen derzeit für iPhone- und iPad-Nutzer. Die Datenschutzinformationen sind ebenfalls verfügbar.",
+        "source_name": "Kleine Zeitung",
+        "source_url": "https://www.kleinezeitung.at/artikel/17575440/verwaltung-von-push-mitteilungen",
+        "emoji": "📲",
+        "warning": ""
+    },
+    {
+        "category": "Allgemein",
+        "headline": "Vielfältige Rezeptideen in der Krone",
+        "teaser": "Die Kronen Zeitung präsentiert eine Vielzahl von Rezepten, die von klassischen Gerichten bis zu modernen Kreationen reichen. Die Auswahl umfasst unter anderem Chimichurri, Gemüsegratin und verschiedene Desserts. Diese kulinarischen Vorschläge bieten Inspiration für Hobbyköche und Feinschmecker. Die Rezepte sind leicht nachzuvollziehen und eignen sich für unterschiedliche Anlässe.",
+        "source_name": "Krone",
+        "source_url": "https://www.krone.at/kulinarik",
+        "emoji": "🍽️",
+        "warning": ""
+    },
+    {
+        "category": "Allgemein",
+        "headline": "Vielfältige Themen in der Krone",
+        "teaser": "Die Kronen Zeitung behandelt eine breite Palette von Themen, darunter Politik, Wirtschaft und regionale Nachrichten. Zu den aktuellen Berichten zählen unter anderem die Suche nach neuen Spielern für einen Trainer sowie die Entdeckung von Riesenbovisten in Tirol. Auch wirtschaftliche Entwicklungen, wie der bevorstehende Zufluss von 1,5 Milliarden Euro nach Österreich, werden thematisiert.",
+        "source_name": "Krone",
+        "source_url": "https://www.krone.at/kroneplus",
+        "emoji": "📰",
+        "warning": ""
+    },
+    {
+        "category": "Gesellschaft",
+        "headline": "Vergewaltigungen enden häufig mit Freispruch",
+        "teaser": "Die aktuellen Zahlen zu Vergewaltigungen in der Steiermark zeigen eine besorgniserregende Tendenz. Im Jahr 2024 wurden nur 12,7 Prozent der angezeigten Fälle verurteilt. Der Fall Cornell hat weltweit Empörung ausgelöst und verdeutlicht die Problematik der Strafverfolgung in solchen Delikten. Die Dunkelziffer bleibt hoch, und viele Opfer fühlen sich von der Justiz nicht ausreichend unterstützt. Die gesellschaftliche Diskussion über den Umgang mit sexualisierter Gewalt wird dadurch neu angestoßen.",
+        "source_name": "Kleine Zeitung",
+        "source_url": "https://www.kleinezeitung.at/artikel/41347369/schlag-ins-gesicht-vergewaltigungen-enden-meist-mit-freispruch",
+        "emoji": "⚖️",
+        "warning": ""
+    },
+    {
+        "category": "Sport",
+        "headline": "Votingphase für Vita Award bricht Rekorde",
+        "teaser": "Die Votingphase für den diesjährigen Vita Award hat alle bisherigen Rekorde gebrochen. In den kommenden Tagen werden die Top Fünf der jeweiligen Kategorien vorgestellt. Der Vita Award zeichnet herausragende Leistungen in verschiedenen Bereichen aus und erfreut sich großer Beliebtheit. Die hohe Teilnehmerzahl zeigt das große Interesse der Öffentlichkeit an den Nominierten und deren Leistungen. Die Preisverleihung verspricht ein spannendes Event zu werden.",
+        "source_name": "Kleine Zeitung",
+        "source_url": "https://www.kleinezeitung.at/artikel/41349067/neue-trophaee-das-sind-die-top-30-fuer-den-vita-award",
+        "emoji": "🏆",
+        "warning": ""
+    },
+    {
+        "category": "Chronik",
+        "headline": "Zugunfall in Wiener Neustadt sorgt für Chaos",
+        "teaser": "Ein Zugunfall in Wiener Neustadt hat am Montag zu erheblichen Ausfällen und Verspätungen auf der Südstrecke geführt. 21 Güterwagen entrollten, zwei davon entgleisten und beschädigten die Oberleitung. Der Bahnverkehr war am Dienstag weiterhin eingeschränkt, während die Erhebungen zur Unfallursache andauern. Passagiere berichteten von chaotischen Verhältnissen am Bahnhof Mürzzuschlag. Ein Schienenersatzverkehr wurde eingerichtet, um die gestrandeten Reisenden zu unterstützen.",
+        "source_name": "Kleine Zeitung",
+        "source_url": "https://www.kleinezeitung.at/artikel/41352532/chaos-durch-entgleiste-gueterzuege-wurden-vorgaben-eingehalten",
+        "emoji": "🚆",
+        "warning": ""
+    },
+    {
+        "category": "Allgemein",
+        "headline": "Vielfältige Veranstaltungen im Murtal",
+        "teaser": "Im Murtal finden zahlreiche Veranstaltungen statt, die Bildung, Kunst und Musik fördern. Der Volksliedchor Gaal verabschiedet sich mit einem Konzert auf der Alm. Die HTL Zeltweg veranstaltet einen Businessday, der Karrieremöglichkeiten aufzeigt. Zudem gibt es kulturelle Highlights wie Fotokunst-Ausstellungen und Musical-Schnuppertage. Diese Events bieten der Bevölkerung die Möglichkeit, sich zu engagieren und neue Talente zu entdecken.",
+        "source_name": "Murtalinfo",
+        "source_url": "https://www.murtalinfo.at/aktuelle-nachrichten-murtal-murau",
+        "emoji": "🎨",
+        "warning": ""
+    },
+    {
+        "category": "Bildung",
+        "headline": "Businessday der HTL Zeltweg öffnet Karrieretüren",
+        "teaser": "Die HTL Zeltweg veranstaltet einen Businessday, der Schülern die Möglichkeit bietet, Kontakte zu Unternehmen zu knüpfen und Einblicke in verschiedene Berufsfelder zu gewinnen. Dies fördert die berufliche Orientierung und stärkt die Verbindung zwischen Bildungseinrichtungen und der Wirtschaft. Die Veranstaltung zielt darauf ab, Schüler auf ihre zukünftigen Karrieren vorzubereiten und ihnen wertvolle Informationen zu bieten. Zudem wird der Holzbaupreis, der Murau und Murtal verbindet, an der HTL Zeltweg verliehen. Solche Initiativen sind entscheidend für die Entwicklung junger Talente.",
+        "source_name": "Murtalinfo",
+        "source_url": "https://www.murtalinfo.at/aktuelle-nachrichten-murtal-murau/categories/bildung",
+        "emoji": "🎓",
+        "warning": ""
+    },
+    {
+        "category": "Gesundheit",
+        "headline": "LKH Murtal beantwortet Fragen zur Geburt",
+        "teaser": "Das LKH Murtal bietet eine Informationsveranstaltung mit dem Titel „Bereit für die Geburt?“, um werdenden Eltern wichtige Fragen zu beantworten. Diese Initiative zielt darauf ab, Ängste abzubauen und eine informierte Entscheidung für die Geburt zu ermöglichen. Die Veranstaltung behandelt verschiedene Aspekte der Geburt und gibt praktische Tipps. Solche Angebote sind wichtig, um die Gesundheit von Mutter und Kind zu fördern und das Vertrauen in den Geburtsprozess zu stärken.",
+        "source_name": "Murtalinfo",
+        "source_url": "https://www.murtalinfo.at/aktuelle-nachrichten-murtal-murau/categories/gesundheit",
+        "emoji": "🩺",
+        "warning": ""
+    },
+    {
+        "category": "Freizeit",
+        "headline": "Schnuppertag der Musical-HiT-Akademie in Fohnsdorf",
+        "teaser": "Die Musical-HiT-Akademie in Fohnsdorf lädt zu einem Schnuppertag ein, um Interessierten die Möglichkeit zu geben, ihre Bühnentalente zu entdecken. Diese Veranstaltung fördert die Kreativität und das künstlerische Talent junger Menschen. Teilnehmer können verschiedene Workshops besuchen und erste Erfahrungen im Bereich Musical sammeln. Solche Veranstaltungen sind wichtig, um das kulturelle Angebot in der Region zu stärken und junge Talente zu fördern.",
+        "source_name": "Murtalinfo",
+        "source_url": "https://www.murtalinfo.at/aktuelle-nachrichten-murtal-murau/categories/freizeit",
+        "emoji": "🎭",
+        "warning": ""
+    },
+    {
+        "category": "Sport",
+        "headline": "ATUS Knittelfeld Schwimmen bestätigt Vorstand einstimmig",
+        "teaser": "Der ATUS Knittelfeld hat in einer Sitzung den Vorstand einstimmig bestätigt. Diese Entscheidung zeigt die Stabilität und das Vertrauen innerhalb des Vereins. Der Schwimmsport in Knittelfeld wird weiterhin gefördert, und die Mitglieder setzen sich für die Weiterentwicklung des Vereins ein. Solche Entscheidungen sind wichtig für die Zukunft des Sports in der Region und fördern das Gemeinschaftsgefühl.",
+        "source_name": "Murtalinfo",
+        "source_url": "https://www.murtalinfo.at/aktuelle-nachrichten-murtal-murau/categories/sport",
+        "emoji": "🏊‍♂️",
+        "warning": ""
+    },
+    {
+        "category": "Österreich",
+        "headline": "Veranstaltungstipps und Entwicklungen im Murtal",
+        "teaser": "In Murau und Fohnsdorf finden verschiedene Veranstaltungen statt, darunter ein Schnuppertag der Musical-HiT-Akademie. Zudem wird über die Murtalbahn berichtet, die Weichen für die Zukunft stellt. Ein neuer Schutzwasserverband wird gegründet und es wird diskutiert, welche wirtschaftlichen Auswirkungen die WKO durch den Gründungsrekord hat. Auch die Bedeutung der Bienen für die Umwelt wird thematisiert.",
+        "source_name": "Murtalinfo",
+        "source_url": "https://www.murtalinfo.at/aktuelle-nachrichten-murtal-murau/categories/im-fokus",
+        "emoji": "🇦🇹",
+        "warning": ""
+    },
+    {
+        "category": "Allgemein",
+        "headline": "Allgemeine Nutzungsbedingungen von Profil",
+        "teaser": "Die Allgemeinen Nutzungsbedingungen der Profil Redaktion GmbH regeln die Nutzung ihrer Online-Plattformen. Sie umfassen Aspekte wie Urheberrechte, Werbung, Datenschutz und Haftung. Nutzer müssen sich registrieren und akzeptieren die Bedingungen, um auf die Inhalte zugreifen zu können. Die Plattform ist kostenfrei, jedoch sind vollständige Artikel nur gegen Entgelt zugänglich. Die Bedingungen gelten bis zur Kündigung des Nutzungsverhältnisses.",
+        "source_name": "Profil",
+        "source_url": "https://www.profil.at/allgemeine-nutzungsbedingungen/400926032",
+        "emoji": "📄",
+        "warning": ""
+    },
+    {
+        "category": "Wissenschaft",
+        "headline": "Digitalisierung und ihre Auswirkungen auf die Gesellschaft",
+        "teaser": "Die Digitalisierung hat bereits viele Branchen transformiert und wird auch in der E-Mobilität eine Rolle spielen. Künstliche Intelligenz könnte das Wohnen komfortabler machen, birgt jedoch auch Risiken. Österreich sieht sich einem Mangel an IT-Fachkräften gegenüber, was die digitale Zukunft gefährden könnte. Die digitale Verwaltung hat Fortschritte gemacht, jedoch gibt es noch Herausforderungen auf dem Weg zum Smart Government.",
+        "source_name": "Profil",
+        "source_url": "https://www.profil.at/extra/digitale-welt",
+        "emoji": "💻",
+        "warning": ""
+    },
+    {
+        "category": "Wirtschaft",
+        "headline": "Finanzwissen als Schlüssel zur Vermögensbildung",
+        "teaser": "Das profil EXTRA widmet sich dem Thema Finanzwissen und dessen Bedeutung für die Vermögensbildung. Die steigende Lebenserwartung erfordert eine Neubewertung der Finanz- und Pensionsplanung. Zudem wird die digitale Zukunft des Geldes thematisiert, einschließlich neuer Zahlungsmethoden. Eltern sind gefordert, ihren Kindern den Umgang mit Geld näherzubringen. Experten geben Tipps zur Auswahl von Finanzprodukten.",
+        "source_name": "Profil",
+        "source_url": "https://www.profil.at/extra/finanzwissen",
+        "emoji": "📈",
+        "warning": ""
+    },
+    {
+        "category": "Gesellschaft",
+        "headline": "Herausforderungen in der Gesundheitsvorsorge",
+        "teaser": "Das profil EXTRA beleuchtet die Herausforderungen in der Gesundheitsvorsorge und -förderung in Österreich. Die Gender Health Gap wird thematisiert, die viele Frauen betrifft. Studien zeigen, dass Österreich bei der Prävention Aufholbedarf hat. Der Gesundheitstourismus erlebt einen Boom, während Herz-Kreislauf-Erkrankungen nach wie vor die häufigste Todesursache sind. Prävention und Früherkennung sind entscheidend für ein gesundes Altern.",
+        "source_name": "Profil",
+        "source_url": "https://www.profil.at/extra/gesundheit",
+        "emoji": "🏥",
+        "warning": ""
+    },
+    {
+        "category": "Wirtschaft",
+        "headline": "Strabag erhält Großauftrag in Nordmazedonien",
+        "teaser": "Das Bauunternehmen Strabag sichert sich einen bedeutenden Auftrag in Nordmazedonien. Der Auftrag umfasst den Bau wichtiger Infrastrukturprojekte, die zur wirtschaftlichen Entwicklung des Landes beitragen sollen. Strabag setzt auf seine Expertise im internationalen Bauwesen, um die Anforderungen des Projekts zu erfüllen. Die Umsetzung des Auftrags könnte auch positive Auswirkungen auf die lokale Wirtschaft haben. Details zu den finanziellen Aspekten des Auftrags wurden nicht veröffentlicht.",
+        "source_name": "trend.at",
+        "source_url": "https://www.trend.at/aktuell?page=1",
+        "emoji": "📈",
+        "warning": ""
+    },
+    {
+        "category": "Wirtschaft",
+        "headline": "Vienna Insurance Group baut Kriegsrisikoversicherung in Ukraine aus",
+        "teaser": "Die Vienna Insurance Group erweitert ihr Angebot an Kriegsrisikoversicherungen in der Ukraine. Diese Entscheidung erfolgt vor dem Hintergrund der anhaltenden Konflikte in der Region. Die Versicherungsgesellschaft reagiert damit auf die gestiegene Nachfrage nach Schutzmaßnahmen für Unternehmen und Investoren. Die neuen Produkte sollen eine umfassendere Absicherung bieten und die wirtschaftliche Stabilität fördern. Details zu den neuen Versicherungspolicen wurden veröffentlicht.",
+        "source_name": "trend.at",
+        "source_url": "https://www.trend.at/aktuell?page=1",
+        "emoji": "📈",
+        "warning": ""
+    },
+    {
+        "category": "Wirtschaft",
+        "headline": "China-Krise zieht BMW beim Absatz ins Minus",
+        "teaser": "BMW verzeichnet einen Rückgang beim Absatz, der auf die anhaltenden wirtschaftlichen Schwierigkeiten in China zurückzuführen ist. Die Automobilindustrie leidet unter den Auswirkungen der Krise, was sich negativ auf die Verkaufszahlen auswirkt. BMW passt seine Prognosen an und sucht nach Strategien, um die Herausforderungen zu bewältigen. Die Situation könnte langfristige Auswirkungen auf die Marktstellung des Unternehmens haben. Weitere Details zur Absatzentwicklung werden erwartet.",
+        "source_name": "trend.at",
+        "source_url": "https://www.trend.at/aktuell?page=1",
+        "emoji": "📈",
+        "warning": ""
+    },
+    {
+        "category": "Wirtschaft",
+        "headline": "Wiener Börse startet mit Gewinnen",
+        "teaser": "Die Wiener Börse eröffnet den Handel mit einem Plus von 0,5 Prozent. Der ATX zeigt sich stabil und reagiert positiv auf die aktuellen Marktbedingungen. Analysten erwarten, dass sich dieser Trend fortsetzen könnte, abhängig von den Entwicklungen in der internationalen Wirtschaft. Investoren zeigen sich optimistisch, was sich in den Handelsaktivitäten widerspiegelt. Weitere Informationen zur Marktentwicklung werden in den kommenden Tagen erwartet.",
+        "source_name": "trend.at",
+        "source_url": "https://www.trend.at/aktuell?page=1",
+        "emoji": "📈",
+        "warning": ""
+    },
+    {
+        "category": "Wirtschaft",
+        "headline": "BP-Milliarden-Abschreibungen im Ökostrom-Geschäft",
+        "teaser": "BP meldet Milliarden-Abschreibungen in seinem Ökostrom-Geschäft. Diese finanziellen Anpassungen sind das Ergebnis von Marktveränderungen und strategischen Neuausrichtungen. Das Unternehmen plant, seine Investitionen in erneuerbare Energien zu überprüfen und anzupassen. Die Abschreibungen könnten Auswirkungen auf die zukünftige Wachstumsstrategie von BP haben. Weitere Details zu den finanziellen Ergebnissen werden in der nächsten Unternehmensmeldung erwartet.",
+        "source_name": "trend.at",
+        "source_url": "https://www.trend.at/aktuell?page=1",
+        "emoji": "📈",
+        "warning": ""
+    },
+    {
+        "category": "Gesellschaft",
+        "headline": "Expats fühlen sich in Österreich unwillkommen",
+        "teaser": "Eine aktuelle Studie zeigt, dass internationale Fachkräfte in Österreich häufig negative Erfahrungen machen. Viele Expats berichten von unfreundlichem Verhalten und Schwierigkeiten, sich in die Gesellschaft zu integrieren. Diese Ergebnisse stehen im Widerspruch zum Selbstbild Österreichs als gastfreundliches Land. Experten fordern Maßnahmen, um die Integration von Expats zu verbessern und die Attraktivität des Arbeitsmarktes zu steigern. Die Studie könnte Auswirkungen auf zukünftige Rekrutierungsstrategien haben.",
+        "source_name": "profil.at",
+        "source_url": "https://www.profil.at/extra/karriere",
+        "emoji": "🇦🇹",
+        "warning": ""
+    },
+    {
+        "category": "Wirtschaft",
+        "headline": "Altersdiskriminierung im Bewerbungsprozess",
+        "teaser": "Trotz Fachkräftemangel ist Altersdiskriminierung im Bewerbungsprozess weit verbreitet. Besonders Bewerber über 50 Jahre haben es schwer, neue Jobs zu finden. Unternehmen sind gefordert, ihre Recruiting-Strategien zu überdenken, um von der Vielfalt der Generationen zu profitieren. Die Herausforderungen für ältere Arbeitnehmer sind vielfältig und erfordern neue Ansätze sowohl von Arbeitgebern als auch von Jobsuchenden. Die Diskussion über Altersdiskriminierung gewinnt an Bedeutung.",
+        "source_name": "profil.at",
+        "source_url": "https://www.profil.at/extra/karriere",
+        "emoji": "🇦🇹",
+        "warning": ""
+    },
+    {
+        "category": "Wirtschaft",
+        "headline": "Digitalisierung verstärkt Benachteiligung von Frauen",
+        "teaser": "Die Digitalisierung hat in vielen Bereichen zu einer Benachteiligung von Frauen geführt. Studien zeigen, dass Frauen in der Arbeitswelt oft weniger Chancen haben, von den Vorteilen der Digitalisierung zu profitieren. Dies hat nicht nur soziale, sondern auch wirtschaftliche Konsequenzen. Experten fordern Maßnahmen, um die Gleichstellung der Geschlechter in der digitalen Wirtschaft zu fördern. Die Diskussion über Chancengleichheit wird zunehmend wichtiger.",
+        "source_name": "profil.at",
+        "source_url": "https://www.profil.at/extra/karriere",
+        "emoji": "🇦🇹",
+        "warning": ""
+    },
+    {
+        "category": "Wirtschaft",
+        "headline": "Rekruiting-Tipp: Talente gewinnen",
+        "teaser": "Aktuell zeigt sich der Arbeitsmarkt etwas entspannter aus Sicht der Arbeitgeber. Dennoch bleibt es eine Herausforderung, die besten Talente zu gewinnen und Mangelberufe erfolgreich zu besetzen. Unternehmen müssen innovative Ansätze im Recruiting entwickeln, um sich im Wettbewerb um Fachkräfte zu behaupten. Der Fachkräftemangel bleibt ein zentrales Thema in der Wirtschaft. Tipps und Strategien zur Talentgewinnung sind gefragt.",
+        "source_name": "profil.at",
+        "source_url": "https://www.profil.at/extra/karriere",
+        "emoji": "🇦🇹",
+        "warning": ""
+    },
+    {
+        "category": "Wirtschaft",
+        "headline": "Volkswagen verzeichnet stärksten Absatzrückgang seit 2022",
+        "teaser": "Volkswagen meldet einen signifikanten Rückgang im Absatz, der den stärksten Rückgang seit 2022 darstellt. Die Gründe für diesen Rückgang sind vielfältig und betreffen sowohl interne als auch externe Faktoren. Der Automobilhersteller sieht sich Herausforderungen gegenüber, die durch die aktuelle Marktsituation und veränderte Verbraucherpräferenzen bedingt sind. Diese Entwicklung könnte langfristige Auswirkungen auf die Marktposition von Volkswagen haben. Analysten beobachten die Situation genau, um die nächsten Schritte des Unternehmens zu bewerten.",
+        "source_name": "trend.at",
+        "source_url": "https://www.trend.at/aktuell?page=3",
+        "emoji": "📈",
+        "warning": ""
+    },
+    {
+        "category": "Wirtschaft",
+        "headline": "IWF-Chefin: KI-Boom stützt Weltwirtschaft",
+        "teaser": "Die Chefin des Internationalen Währungsfonds (IWF) hebt hervor, dass der Boom im Bereich Künstliche Intelligenz (KI) positive Auswirkungen auf die Weltwirtschaft hat. Die Entwicklungen in der KI-Technologie fördern Innovationen und Effizienzsteigerungen in verschiedenen Sektoren. Dies könnte zu einem nachhaltigen Wirtschaftswachstum führen. Der IWF beobachtet die Trends genau und analysiert die potenziellen langfristigen Effekte auf die globale Wirtschaft. Die Aussage unterstreicht die Bedeutung von Technologie in der modernen Wirtschaft.",
+        "source_name": "trend.at",
+        "source_url": "https://www.trend.at/aktuell?page=3",
+        "emoji": "📈",
+        "warning": ""
+    },
+    {
+        "category": "Wirtschaft",
+        "headline": "EU begrenzt chinesische Hybridauto-Importe",
+        "teaser": "Die Europäische Union hat Maßnahmen ergriffen, um die Importe von chinesischen Hybridautos zu begrenzen. Diese Entscheidung zielt darauf ab, den heimischen Automobilmarkt zu schützen und die Wettbewerbsbedingungen zu verbessern. Die Regelung könnte Auswirkungen auf die Handelsbeziehungen zwischen der EU und China haben. Experten diskutieren die möglichen Folgen für die Automobilindustrie in Europa und die Reaktionen der betroffenen Unternehmen. Die Maßnahmen sind Teil einer breiteren Strategie zur Förderung nachhaltiger Mobilität.",
+        "source_name": "trend.at",
+        "source_url": "https://www.trend.at/aktuell?page=3",
+        "emoji": "📈",
+        "warning": ""
+    },
+    {
+        "category": "Wirtschaft",
+        "headline": "Nordex steigert Auftragseingang kräftig",
+        "teaser": "Das Unternehmen Nordex meldet einen deutlichen Anstieg beim Auftragseingang. Diese Entwicklung zeigt das wachsende Interesse an erneuerbaren Energien und Windkraftanlagen. Nordex profitiert von der steigenden Nachfrage nach nachhaltigen Energiequellen und plant, die Produktion entsprechend zu erhöhen. Die positive Geschäftsentwicklung könnte sich auch auf die Beschäftigung im Unternehmen auswirken. Analysten bewerten die Situation optimistisch und erwarten weiteres Wachstum in den kommenden Jahren.",
+        "source_name": "trend.at",
+        "source_url": "https://www.trend.at/aktuell?page=4",
+        "emoji": "📈",
+        "warning": ""
+    },
+    {
+        "category": "Wirtschaft",
+        "headline": "US-Börsen mit Gewinnen ins Wochenende",
+        "teaser": "Die US-Börsen schließen die Handelswoche mit Gewinnen ab. Diese positive Entwicklung wird durch verschiedene Faktoren begünstigt, darunter optimistische Unternehmensberichte und positive Wirtschaftsdaten. Investoren zeigen sich zuversichtlich, was sich in den Kursen widerspiegelt. Die Marktanalysen deuten darauf hin, dass die positive Stimmung anhalten könnte, sofern keine unerwarteten negativen Nachrichten eintreffen. Die Entwicklungen an den US-Börsen haben auch Auswirkungen auf die internationalen Märkte.",
+        "source_name": "trend.at",
+        "source_url": "https://www.trend.at/aktuell?page=4",
+        "emoji": "📈",
+        "warning": ""
+    }
+]
